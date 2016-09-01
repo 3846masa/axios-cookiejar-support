@@ -1,6 +1,6 @@
 # axios-cookiejar-support
 
-Convert [``axios``] to support [``tough-cookie``].
+Add [``tough-cookie``] support to [``axios``].
 
 [``axios``]: https://github.com/mzabriskie/axios
 [``tough-cookie``]: https://github.com/SalesforceEng/tough-cookie

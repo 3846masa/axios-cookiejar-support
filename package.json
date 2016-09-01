@@ -1,6 +1,6 @@
 {
   "name": "@3846masa/axios-cookiejar-support",
-  "description": "Convert axios to support tough-cookie.",
+  "description": "Add tough-cookie support to axios.",
   "version": "0.0.1",
   "author": "3846masa",
   "browser": {
@@ -10,6 +10,7 @@
     "url": "https://github.com/3846masa/axios-cookiejar-support/issues"
   },
   "dependencies": {
+    "greenkeeper": "3.3.1",
     "tough-cookie": "2.3.1"
   },
   "devDependencies": {
