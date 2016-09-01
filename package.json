@@ -24,6 +24,9 @@
   "homepage": "https://github.com/3846masa/axios-cookiejar-support#readme",
   "keywords": [
     "axios",
+    "cookie",
+    "cookiejar",
+    "cookies",
     "tough-cookie"
   ],
   "license": "MIT",
