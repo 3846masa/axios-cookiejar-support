@@ -1,0 +1,39 @@
+{
+  "name": "axios-cookiejar-support",
+  "description": "Convert axios to support tough-cookie.",
+  "version": "0.0.1",
+  "author": "3846masa",
+  "browser": {
+    "./index.js": "./noop.js"
+  },
+  "bugs": {
+    "url": "https://github.com/3846masa/axios-cookiejar-support/issues"
+  },
+  "dependencies": {
+    "tough-cookie": "2.3.1"
+  },
+  "devDependencies": {
+    "eslint": "3.4.0",
+    "eslint-config-standard": "6.0.0",
+    "eslint-plugin-promise": "2.0.1",
+    "eslint-plugin-standard": "2.0.0"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "homepage": "https://github.com/3846masa/axios-cookiejar-support#readme",
+  "keywords": [
+    "axios",
+    "tough-cookie"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "peerDependencies": {
+    "axios": "^0.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3846masa/axios-cookiejar-support.git"
+  },
+  "scripts": {}
+}

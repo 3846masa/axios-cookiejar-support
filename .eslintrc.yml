@@ -1,0 +1,12 @@
+env:
+  es6: true
+  node: true
+  mocha: true
+extends: standard
+plugins:
+  - standard
+  - promise
+rules:
+  semi:
+    - error
+    - always
