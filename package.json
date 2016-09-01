@@ -1,5 +1,5 @@
 {
-  "name": "axios-cookiejar-support",
+  "name": "@3846masa/axios-cookiejar-support",
   "description": "Convert axios to support tough-cookie.",
   "version": "0.0.1",
   "author": "3846masa",

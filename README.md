@@ -8,16 +8,14 @@ Convert [``axios``] to support [``tough-cookie``].
 ## Install
 
 ```sh
-# Not available on npm, yet.
-# $ npm i axios axios-cookiejar-support
-$ npm i axios https://github.com/3846masa/axios-cookiejar-support
+$ npm i axios @3846masa/axios-cookiejar-support
 ```
 
 ## Usage
 
 ```js
 const axios = require('axios');
-const axiosCookieJarSupport = require('axios-cookiejar-support');
+const axiosCookieJarSupport = require('@3846masa/axios-cookiejar-support');
 const tough = require('tough-cookie');
 
 axiosCookieJarSupport(axios);
