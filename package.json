@@ -10,7 +10,6 @@
     "url": "https://github.com/3846masa/axios-cookiejar-support/issues"
   },
   "dependencies": {
-    "greenkeeper": "3.3.1",
     "tough-cookie": "2.3.1"
   },
   "devDependencies": {
