@@ -5,12 +5,12 @@ const utils = require('axios/lib/utils');
 const requestInterceptorWrapper = require('./lib/request-interceptor-wrapper');
 const responseInterceptorWrapper = require('./lib/response-interceptor-wrapper');
 
-function enableCookieJarSupport (instance) {
+function axiosCookieJarSupport (instance) {
   if (instance.create) {
     const createInstance = instance.create.bind(instance);
     instance.create = function create (defaultConfig) {
       const newInstance = createInstance(defaultConfig);
-      return enableCookieJarSupport(newInstance);
+      return axiosCookieJarSupport(newInstance);
     };
   }
 
@@ -52,4 +52,4 @@ function enableCookieJarSupport (instance) {
   return instance;
 }
 
-module.exports = enableCookieJarSupport;
+module.exports = axiosCookieJarSupport;
