@@ -19,11 +19,16 @@ function axiosCookieJarSupport (instance) {
     if (instance.defaults.jar === true) {
       instance.defaults.jar = new tough.CookieJar();
     }
-    config.$$__jar =
-      config.$$__jar ||
-        (config.jar === true)
-        ? (instance.defaults.jar || new tough.CookieJar())
-        : (config.jar || instance.defaults.jar);
+
+    if (!config.$$__jar) {
+      if (config.jar === true) {
+        config.$$__jar = (instance.defaults.jar || new tough.CookieJar());
+      } else if (config.jar === false) {
+        config.$$__jar = false;
+      } else {
+        config.$$__jar = (config.jar || instance.defaults.jar);
+      }
+    }
     return origRequest(config);
   };
 
