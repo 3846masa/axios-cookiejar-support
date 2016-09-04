@@ -17,4 +17,4 @@ deployment:
     tag: /v\d+(\.\d+)*/
     commands:
       - echo -e "$NPM_USER\n$NPM_PASS\n$NPM_EMAIL" | npm login
-      - npm publish
+      - npm publish --access=public
