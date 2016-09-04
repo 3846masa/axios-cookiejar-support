@@ -1,0 +1,20 @@
+machine:
+  node:
+    version: 4
+  post:
+    - npm install -g npm@3
+  timezone: Asia/Tokyo
+dependencies:
+  override:
+    - npm config set progress false
+    - npm config set spin false
+    - npm install -d
+test:
+  override:
+    - npm test
+deployment:
+  production:
+    tag: /v\d+(\.\d+)*/
+    commands:
+      - echo -e "$NPM_USER\n$NPM_PASS\n$NPM_EMAIL" | npm login
+      - npm publish
