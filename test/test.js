@@ -290,8 +290,8 @@ describe('axios', () => {
         .reply(200);
 
       axios.get('http://example.com', { withCredentials: true })
-        .then(({ status }) => {
-          assert.strictEqual(status, 200);
+        .then((res) => {
+          assert.strictEqual(res.status, 200);
         }).then(done).catch(done);
     });
 
@@ -307,8 +307,8 @@ describe('axios', () => {
         .reply(200);
 
       axios.get('http://example.com', { withCredentials: false })
-        .then(({ status }) => {
-          assert.strictEqual(status, 200);
+        .then((res) => {
+          assert.strictEqual(res.status, 200);
         }).then(done).catch(done);
     });
 
@@ -332,8 +332,8 @@ describe('axios', () => {
         headers: { 'Cookie': 'from=string' },
         withCredentials: true
       })
-        .then(({ status }) => {
-          assert.strictEqual(status, 200);
+        .then((res) => {
+          assert.strictEqual(res.status, 200);
         }).then(done).catch(done);
     });
   });
