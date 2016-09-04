@@ -49,6 +49,7 @@
   },
   "scripts": {
     "postpublish": "greenkeeper-postpublish",
+    "postversion": "git commit --amend --allow-empty -m \"[skip ci] `git log -1 --pretty=%s`\"",
     "test": "mocha --require intelli-espower-loader"
   }
 }
