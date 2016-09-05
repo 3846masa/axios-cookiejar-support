@@ -16,19 +16,23 @@ function axiosCookieJarSupport (instance) {
 
   const origRequest = instance.request.bind(instance);
   instance.request = function request (config) {
+    config._COOKIEJAR_SUPPORT_LOCAL =
+      config._COOKIEJAR_SUPPORT_LOCAL || {};
+    const local = config._COOKIEJAR_SUPPORT_LOCAL;
+
     if (instance.defaults.jar === true) {
       instance.defaults.jar = new tough.CookieJar();
     }
-
-    if (!config.$$__jar) {
+    if (!local.jar) {
       if (config.jar === true) {
-        config.$$__jar = (instance.defaults.jar || new tough.CookieJar());
+        local.jar = (instance.defaults.jar || new tough.CookieJar());
       } else if (config.jar === false) {
-        config.$$__jar = false;
+        local.jar = false;
       } else {
-        config.$$__jar = (config.jar || instance.defaults.jar);
+        local.jar = (config.jar || instance.defaults.jar);
       }
     }
+
     return origRequest(config);
   };
 
