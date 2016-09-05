@@ -54,6 +54,24 @@ axios.get('https://google.com', {
 });
 ```
 
+See [examples](./example).
+
+### Extended Request Config
+
+c.f.) https://github.com/mzabriskie/axios#request-config
+
+```js
+{
+  // `jar` is tough.CookieJar instance or boolean.
+  // If true, axios create CookieJar automatically.
+  jar: undefined, // default
+
+  // **IMPORTANT**
+  // If false, axios DONOT send cookies from cookiejar.
+  withCredentials: false // default
+}
+```
+
 ### Browser
 
 Running on browser, this library becomes noop (``config.jar`` might be ignored).
@@ -74,5 +92,7 @@ Running on browser, this library becomes noop (``config.jar`` might be ignored).
 
 ## Author
 
-![3846masa icon](https://www.gravatar.com/avatar/cfeae69aae4f4fc102960f01d35d2d86?s=50)
+![3846masa icon][3846masa-icon]
 [3846masa](https://github.com/3846masa)
+
+[3846masa-icon]: https://www.gravatar.com/avatar/cfeae69aae4f4fc102960f01d35d2d86?s=50
