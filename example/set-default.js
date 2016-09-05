@@ -11,7 +11,8 @@ axios.defaults.jar = cookieJar;
 axios.defaults.withCredentials = true;
 
 axios.get('https://google.com')
-.then(({ config }) => {
+.then((response) => {
+  const config = response.config;
   // axios.defaults.jar === config.jar
   console.log(config.jar.toJSON());
 })

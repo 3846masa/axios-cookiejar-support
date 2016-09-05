@@ -12,7 +12,8 @@ axios.get('https://google.com', {
   jar: cookieJar,
   withCredentials: true
 })
-.then(({ config }) => {
+.then((response) => {
+  const config = response.config;
   console.log(config.jar.toJSON());
 })
 .catch((err) => {

@@ -13,7 +13,8 @@ axios.get('https://mockbin.org/request', {
   jar: cookieJar,
   withCredentials: true // IMPORTANT!
 })
-.then(({ data }) => {
+.then((response) => {
+  const data = response.data;
   console.log(data.headers.cookie);
 })
 .catch((err) => {
