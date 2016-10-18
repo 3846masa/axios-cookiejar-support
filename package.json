@@ -41,7 +41,7 @@
   "license": "MIT",
   "main": "./index.js",
   "peerDependencies": {
-    "axios": "^0.15.0"
+    "axios": "^0.15.2"
   },
   "repository": {
     "type": "git",
