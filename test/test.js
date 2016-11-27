@@ -11,7 +11,7 @@ let axios;
 beforeEach(() => {
   decache('axios');
   axios = require('axios');
-  axios.defaults.validateStatus = null;
+  axios.defaults.validateStatus = () => true;
 });
 
 describe('axiosCookieJarSupport', () => {
