@@ -80,6 +80,22 @@ describe('axios', () => {
         .then(done).catch(done);
     });
 
+    it('should redirect many times 30X response', (done) => {
+      nockHost.post('/').reply(302, null, {
+        'Location': 'http://example.com/redirect/01'
+      });
+      nockHost.get('/redirect/01').reply(302, null, {
+        'Location': 'http://example.com/redirect/02'
+      });
+      nockHost.get('/redirect/02').reply(200);
+
+      axios.post('http://example.com')
+        .then((res) => {
+          assert.strictEqual(res.status, 200);
+        })
+        .then(done).catch(done);
+    });
+
     it('should redirect 307 response', (done) => {
       nockHost.post('/').reply(307, null, {
         'Location': 'http://example.com/redirect'
