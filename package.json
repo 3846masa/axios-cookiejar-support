@@ -19,7 +19,7 @@
     "eslint": "3.19.0",
     "eslint-config-standard": "7.1.0",
     "eslint-plugin-promise": "3.5.0",
-    "eslint-plugin-standard": "2.1.1",
+    "eslint-plugin-standard": "3.0.1",
     "greenkeeper-postpublish": "1.0.1",
     "intelli-espower-loader": "1.0.1",
     "mocha": "3.2.0",
