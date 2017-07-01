@@ -108,6 +108,53 @@ describe('axios', () => {
         })
         .then(done).catch(done);
     });
+
+    it('should redirect to relative path', () => {
+      nockHost.post('/').reply(302, null, {
+        'Location': '/redirect'
+      });
+      nockHost.get('/redirect').reply(200);
+
+      return axios.post('https://example.com')
+        .then((res) => {
+          assert.strictEqual(res.status, 200);
+        });
+    });
+
+    it('should redirect to relative path, after redirect to different domain', () => {
+      let anotherNockHost = nock('http://another.com');
+      anotherNockHost.get('/redirect').reply(302, null, {
+        'Location': '/final'
+      });
+      anotherNockHost.get('/final').reply(200, 'final');
+      nockHost.post('/').reply(302, null, {
+        'Location': 'http://another.com/redirect'
+      });
+
+      return axios.post('http://example.com')
+        .then((res) => {
+          assert.strictEqual(res.status, 200);
+          assert.strictEqual(res.data, 'final');
+        });
+    });
+
+    it('should redirect to relative path, jumping through a different domain that is different than `baseURL`', () => {
+      let anotherNockHost = nock('http://another.com');
+      anotherNockHost.get('/redirect').reply(302, null, {
+        'Location': '/final'
+      });
+      anotherNockHost.get('/final').reply(200, 'final');
+      nockHost.post('/').reply(302, null, {
+        'Location': 'http://another.com/redirect'
+      });
+
+      return axios.create({ baseURL: 'http://example.com' })
+        .post('http://example.com')
+        .then((res) => {
+          assert.strictEqual(res.status, 200);
+          assert.strictEqual(res.data, 'final');
+        });
+    });
   });
 
   context('when hasn\'t defaults.jar', () => {
