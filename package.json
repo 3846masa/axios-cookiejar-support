@@ -20,7 +20,6 @@
     "eslint-config-standard": "10.2.1",
     "eslint-plugin-promise": "3.5.0",
     "eslint-plugin-standard": "3.0.1",
-    "greenkeeper-postpublish": "1.0.1",
     "intelli-espower-loader": "1.0.1",
     "mocha": "3.3.0",
     "nock": "9.0.13",
@@ -48,7 +47,6 @@
     "url": "git+https://github.com/3846masa/axios-cookiejar-support.git"
   },
   "scripts": {
-    "postpublish": "greenkeeper-postpublish",
     "postversion": "git commit --amend --allow-empty -m \"[skip ci] `git log -1 --pretty=%s`\"",
     "test": "mocha --require intelli-espower-loader"
   }
