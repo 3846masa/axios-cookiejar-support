@@ -10,6 +10,7 @@
     "url": "https://github.com/3846masa/axios-cookiejar-support/issues"
   },
   "dependencies": {
+    "@types/tough-cookie": "^2.3.1",
     "tough-cookie": "2.3.2"
   },
   "devDependencies": {
@@ -30,15 +31,10 @@
     "test": "test"
   },
   "homepage": "https://github.com/3846masa/axios-cookiejar-support#readme",
-  "keywords": [
-    "axios",
-    "cookie",
-    "cookiejar",
-    "cookies",
-    "tough-cookie"
-  ],
+  "keywords": ["axios", "cookie", "cookiejar", "cookies", "tough-cookie"],
   "license": "MIT",
   "main": "./index.js",
+  "types": "./index.d.ts",
   "peerDependencies": {
     "axios": "^0.16.2"
   },
