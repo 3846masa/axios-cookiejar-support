@@ -1,7 +1,7 @@
 {
   "name": "@3846masa/axios-cookiejar-support",
   "description": "Add tough-cookie support to axios.",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "author": "3846masa",
   "browser": {
     "./index.js": "./noop.js"
@@ -31,7 +31,13 @@
     "test": "test"
   },
   "homepage": "https://github.com/3846masa/axios-cookiejar-support#readme",
-  "keywords": ["axios", "cookie", "cookiejar", "cookies", "tough-cookie"],
+  "keywords": [
+    "axios",
+    "cookie",
+    "cookiejar",
+    "cookies",
+    "tough-cookie"
+  ],
   "license": "MIT",
   "main": "./index.js",
   "types": "./index.d.ts",
