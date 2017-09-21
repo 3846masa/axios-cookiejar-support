@@ -12,7 +12,7 @@
   "dependencies": {
     "@types/tough-cookie": "^2.3.1",
     "pify": "3.0.0",
-    "tough-cookie": "2.3.2"
+    "tough-cookie": "2.3.3"
   },
   "devDependencies": {
     "axios": "0.16.1",
