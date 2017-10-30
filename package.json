@@ -20,7 +20,7 @@
     "decache": "4.1.0",
     "eslint": "4.1.0",
     "eslint-config-standard": "10.2.1",
-    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-promise": "3.6.0",
     "eslint-plugin-standard": "3.0.1",
     "intelli-espower-loader": "1.0.1",
     "mocha": "4.0.1",
