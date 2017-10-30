@@ -1,7 +1,7 @@
 {
   "name": "@3846masa/axios-cookiejar-support",
   "description": "Add tough-cookie support to axios.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "3846masa",
   "browser": {
     "./index.js": "./noop.js"
