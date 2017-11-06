@@ -24,7 +24,7 @@
     "eslint-plugin-standard": "3.0.1",
     "intelli-espower-loader": "1.0.1",
     "mocha": "4.0.1",
-    "nock": "9.0.27",
+    "nock": "9.0.28",
     "power-assert": "1.4.3"
   },
   "directories": {
