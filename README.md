@@ -34,11 +34,20 @@ Add [``tough-cookie``] support to [``axios``].
 $ npm i axios @3846masa/axios-cookiejar-support
 ```
 
+**-- OR --**
+
+```sh
+$ npm i axios axios-cookiejar-support # Same as above
+```
+
+**Note** | If you don't mind to use a scoped library, please use the scoped library. To put my account name in your dependencies is my pleasure :)
+
 ## Usage
 
 ```js
 const axios = require('axios');
 const axiosCookieJarSupport = require('@3846masa/axios-cookiejar-support');
+// const axiosCookieJarSupport = require('axios-cookiejar-support');
 const tough = require('tough-cookie');
 
 axiosCookieJarSupport(axios);

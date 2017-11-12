@@ -18,3 +18,5 @@ deployment:
     commands:
       - echo -e "$NPM_USER\n$NPM_PASS\n$NPM_EMAIL" | npm login
       - npm publish --access=public
+      - sed -i package.json -e "s/@3846masa\/axios-cookiejar-support/axios-cookiejar-support/g"
+      - npm publish --access=public
