@@ -2,11 +2,11 @@ env:
   es6: true
   node: true
   mocha: true
-extends: standard
-plugins:
-  - standard
-  - promise
+extends: eslint:recommended
 rules:
   semi:
     - error
     - always
+  indent:
+    - error
+    - 2
