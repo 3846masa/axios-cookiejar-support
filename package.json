@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/3846masa/axios-cookiejar-support/issues"
   },
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "./index.js",
   "directories": {
     "example": "example",
