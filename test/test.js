@@ -358,6 +358,26 @@ describe('axios', () => {
         }).then(done).catch(done);
     });
 
+    it('should send cookie if withCredentials = true and set baseURL', (done) => {
+      cookieJar.setCookieSync(originalCookie, 'http://example.com');
+
+      nock('http://example.com')
+        .matchHeader('cookie', (value) => {
+          assert.ok(value);
+          const receivedCookie = cookie.parse(value);
+          assert.ok(originalCookie.key in receivedCookie);
+          assert.strictEqual(receivedCookie[originalCookie.key], originalCookie.value);
+          return true;
+        })
+        .get('/')
+        .reply(200);
+
+      axios.get('/', { withCredentials: true, baseURL: 'http://example.com' })
+        .then((res) => {
+          assert.strictEqual(res.status, 200);
+        }).then(done).catch(done);
+    });
+
     it('should not send cookie if withCredentials = false', (done) => {
       cookieJar.setCookieSync(originalCookie, 'http://example.com');
 
