@@ -36,7 +36,7 @@
     "eslint": "4.11.0",
     "intelli-espower-loader": "1.0.1",
     "mocha": "4.0.1",
-    "nock": "9.1.0",
+    "nock": "9.1.1",
     "power-assert": "1.4.4"
   },
   "keywords": [
