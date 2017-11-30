@@ -20,8 +20,7 @@
   "scripts": {
     "build": "babel lib -x .mjs --out-dir lib",
     "clean": "rimraf lib/**/*.js",
-    "test": "mocha --require intelli-espower-loader",
-    "postversion": "git commit --amend --allow-empty -m \"[skip ci] `git log -1 --pretty=%s`\""
+    "test": "mocha --require intelli-espower-loader"
   },
   "dependencies": {
     "@types/tough-cookie": "^2.3.1",
@@ -47,13 +46,7 @@
     "power-assert": "1.4.4",
     "rimraf": "^2.6.2"
   },
-  "keywords": [
-    "axios",
-    "cookie",
-    "cookiejar",
-    "cookies",
-    "tough-cookie"
-  ],
+  "keywords": ["axios", "cookie", "cookiejar", "cookies", "tough-cookie"],
   "browser": {
     "./index.js": "./noop.js"
   },
