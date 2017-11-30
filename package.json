@@ -12,12 +12,14 @@
     "url": "https://github.com/3846masa/axios-cookiejar-support/issues"
   },
   "version": "0.1.4",
-  "main": "./index.js",
+  "main": "./lib/index",
   "directories": {
     "example": "example",
     "test": "test"
   },
   "scripts": {
+    "build": "babel lib -x .mjs --out-dir lib",
+    "clean": "rimraf lib/**/*.js",
     "test": "mocha --require intelli-espower-loader",
     "postversion": "git commit --amend --allow-empty -m \"[skip ci] `git log -1 --pretty=%s`\""
   },
@@ -30,14 +32,20 @@
     "axios": ">=0.16.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.32",
+    "@babel/core": "^7.0.0-beta.32",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.32",
     "axios": "0.17.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "cookie": "0.3.1",
     "decache": "4.3.0",
     "eslint": "4.11.0",
+    "fast-async": "^6.3.0",
     "intelli-espower-loader": "1.0.1",
     "mocha": "4.0.1",
     "nock": "9.1.1",
-    "power-assert": "1.4.4"
+    "power-assert": "1.4.4",
+    "rimraf": "^2.6.2"
   },
   "keywords": [
     "axios",

@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    "add-module-exports",
+    "module:@babel/plugin-transform-modules-commonjs",
+    [
+      "module:fast-async",
+      {
+        "compiler": {
+          "promises": true,
+          "generators": true
+        }
+      }
+    ]
+  ]
+}
