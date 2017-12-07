@@ -8,4 +8,4 @@ declare module 'axios' {
 }
 
 declare var axiosCookieJarSupport: (instance: AxiosInstance) => AxiosInstance;
-export default axiosCookieJarSupport;
+export = axiosCookieJarSupport;
