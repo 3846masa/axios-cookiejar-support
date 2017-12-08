@@ -5,12 +5,12 @@ const nock = require('nock');
 const tough = require('tough-cookie');
 const cookie = require('cookie');
 const decache = require('decache');
-const axiosCookieJarSupport = require('../');
+const axiosCookieJarSupport = require('../').default;
 
 let axios;
 beforeEach(() => {
   decache('axios');
-  axios = require('axios');
+  axios = require('axios').default;
   axios.defaults.validateStatus = () => true;
 });
 
