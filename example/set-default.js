@@ -1,8 +1,8 @@
 'use strict';
 
-const axios = require('axios');
+const axios = require('axios').default;
 const tough = require('tough-cookie');
-const axiosCookieJarSupport = require('../');
+const axiosCookieJarSupport = require('../').default;
 
 axiosCookieJarSupport(axios);
 

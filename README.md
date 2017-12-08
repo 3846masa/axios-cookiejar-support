@@ -45,9 +45,9 @@ $ npm i axios axios-cookiejar-support # Same as above
 ## Usage
 
 ```js
-const axios = require('axios');
-const axiosCookieJarSupport = require('@3846masa/axios-cookiejar-support');
-// const axiosCookieJarSupport = require('axios-cookiejar-support');
+const axios = require('axios').default;
+const axiosCookieJarSupport = require('@3846masa/axios-cookiejar-support').default;
+// const axiosCookieJarSupport = require('axios-cookiejar-support').default;
 const tough = require('tough-cookie');
 
 axiosCookieJarSupport(axios);
