@@ -80,6 +80,20 @@ describe('axios', () => {
         .catch(done);
     });
 
+    it('should not redirect if it is not 30X response', done => {
+      nockHost.get('/').reply(201, null, {
+        Location: 'http://example.com/created',
+      });
+
+      axios
+        .get('http://example.com')
+        .then(res => {
+          assert.strictEqual(res.status, 201);
+        })
+        .then(done)
+        .catch(done);
+    });
+
     it('should redirect 30X response', done => {
       nockHost.post('/').reply(302, null, {
         Location: 'http://example.com/redirect',
@@ -175,8 +189,8 @@ describe('axios', () => {
     });
   });
 
-  context("when hasn't defaults.jar", () => {
-    context("and hasn't config.jar", () => {
+  context('when hasn\'t defaults.jar', () => {
+    context('and hasn\'t config.jar', () => {
       it('should not create cookiejar', done => {
         nock('http://example.com')
           .get('/')
@@ -244,7 +258,7 @@ describe('axios', () => {
       axios.defaults.jar = cookieJar;
     });
 
-    context("and hasn't config.jar", () => {
+    context('and hasn\'t config.jar', () => {
       it('should create cookiejar if defaults.jar = true', done => {
         nock('http://example.com')
           .get('/')
@@ -444,7 +458,7 @@ describe('axios', () => {
         .catch(done);
     });
 
-    it("should send all cookies if set headers['Cookie']", done => {
+    it('should send all cookies if set headers[\'Cookie\']', done => {
       cookieJar.setCookieSync(originalCookie, 'http://example.com');
 
       nock('http://example.com')
