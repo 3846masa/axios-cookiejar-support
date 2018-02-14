@@ -46,15 +46,9 @@
     "power-assert": "1.4.4",
     "rimraf": "^2.6.2"
   },
-  "keywords": [
-    "axios",
-    "cookie",
-    "cookiejar",
-    "cookies",
-    "tough-cookie"
-  ],
+  "keywords": ["axios", "cookie", "cookiejar", "cookies", "tough-cookie"],
   "browser": {
-    "./index.js": "./noop.js"
+    "./lib/index": "./noop.js"
   },
   "types": "./index.d.ts"
 }
