@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/3846masa/axios-cookiejar-support/issues"
   },
-  "version": "0.3.3",
+  "version": "0.3.4",
   "main": "./lib/index",
   "directories": {
     "example": "example",
@@ -46,7 +46,13 @@
     "power-assert": "1.4.4",
     "rimraf": "^2.6.2"
   },
-  "keywords": ["axios", "cookie", "cookiejar", "cookies", "tough-cookie"],
+  "keywords": [
+    "axios",
+    "cookie",
+    "cookiejar",
+    "cookies",
+    "tough-cookie"
+  ],
   "browser": {
     "./lib/index": "./noop.js"
   },
