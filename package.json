@@ -35,7 +35,7 @@
     "@babel/cli": "^7.0.0-beta.32",
     "@babel/core": "^7.0.0-beta.32",
     "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.32",
-    "axios": "0.17.1",
+    "axios": "0.18.0",
     "cookie": "0.3.1",
     "decache": "4.4.0",
     "eslint": "4.18.0",
