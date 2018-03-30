@@ -43,7 +43,7 @@
     "intelli-espower-loader": "1.0.1",
     "mocha": "5.0.2",
     "nock": "9.1.7",
-    "power-assert": "1.4.4",
+    "power-assert": "1.5.0",
     "rimraf": "^2.6.2"
   },
   "keywords": [
