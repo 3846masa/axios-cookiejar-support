@@ -6,6 +6,7 @@ const tough = require('tough-cookie');
 const cookie = require('cookie');
 const decache = require('decache');
 const axiosCookieJarSupport = require('../').default;
+const symbols = require('../lib/symbol');
 
 let axios;
 beforeEach(() => {
@@ -33,6 +34,11 @@ describe('axiosCookieJarSupport', () => {
     });
     axiosCookieJarSupport(instance);
     assert.strictEqual(cookieJar, instance.defaults.jar);
+  });
+
+  it('should set flag for ignore to wrap multiple', () => {
+    axiosCookieJarSupport(axios);
+    assert.strictEqual(axios[symbols.COOKIEJAR_SUPPORTED], true);
   });
 });
 
