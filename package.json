@@ -25,7 +25,7 @@
   "dependencies": {
     "@types/tough-cookie": "^2.3.1",
     "is-redirect": "^1.0.0",
-    "pify": "3.0.0",
+    "pify": "4.0.0",
     "tough-cookie": "2.3.4"
   },
   "peerDependencies": {
