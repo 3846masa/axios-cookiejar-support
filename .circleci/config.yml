@@ -6,7 +6,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:4
+      - image: circleci/node:6
     steps:
       - checkout
       - restore_cache:
@@ -26,7 +26,7 @@ jobs:
           key: v1-build-{{ .Environment.CIRCLE_SHA1 }}
   test:
     docker:
-      - image: circleci/node:4
+      - image: circleci/node:6
     steps:
       - checkout
       - restore_cache:
@@ -36,7 +36,7 @@ jobs:
       - run: yarn test
   deploy-npm:
     docker:
-      - image: circleci/node:8
+      - image: circleci/node:6
     steps:
       - checkout
       - restore_cache:
@@ -44,9 +44,9 @@ jobs:
       - run:
           command: |
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-            npm publish ---access public
+            npm publish --access public
             sed -i package.json -e "s/@3846masa\/axios-cookiejar-support/axios-cookiejar-support/g"
-            npm publish --access=public
+            npm publish --access public
 
 workflows:
   version: 2
