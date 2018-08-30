@@ -23,28 +23,28 @@
     "test": "mocha --require intelli-espower-loader"
   },
   "dependencies": {
-    "@types/tough-cookie": "^2.3.1",
+    "@types/tough-cookie": "^2.3.3",
     "is-redirect": "^1.0.0",
-    "pify": "3.0.0",
-    "tough-cookie": "2.3.4"
+    "pify": "^4.0.0",
+    "tough-cookie": "^2.4.3"
   },
   "peerDependencies": {
     "axios": ">=0.16.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.32",
-    "@babel/core": "^7.0.0-beta.32",
-    "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.32",
+    "@babel/cli": "7.0.0",
+    "@babel/core": "7.0.0",
+    "@babel/plugin-transform-modules-commonjs": "7.0.0",
     "axios": "0.18.0",
     "cookie": "0.3.1",
     "decache": "4.4.0",
-    "eslint": "5.0.0",
-    "fast-async": "^6.3.0",
+    "eslint": "5.4.0",
+    "fast-async": "6.3.7",
     "intelli-espower-loader": "1.0.1",
-    "mocha": "5.1.0",
-    "nock": "9.2.4",
+    "mocha": "5.2.0",
+    "nock": "9.6.1",
     "power-assert": "1.6.0",
-    "rimraf": "^2.6.2"
+    "rimraf": "2.6.2"
   },
   "keywords": [
     "axios",
