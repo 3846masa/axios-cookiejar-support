@@ -74,11 +74,11 @@ describe('axios', () => {
 
       axios
         .get('http://example.com', {
-          adapter: async config => {
-            const response = await axios.defaults.adapter(config);
-            delete response.config[symbols.COOKIEJAR_SUPPORT_LOCAL];
-            return response;
-          },
+          adapter: config =>
+            axios.defaults.adapter(config).then(response => {
+              delete response.config[symbols.COOKIEJAR_SUPPORT_LOCAL];
+              return response;
+            }),
         })
         .then(res => {
           assert.strictEqual(res.status, 200);
