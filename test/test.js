@@ -66,6 +66,28 @@ describe('axios', () => {
       .catch(done);
   });
 
+  context('when response lacks COOKIEJAR_SUPPORT_LOCAL', () => {
+    it('should receive response', done => {
+      nock('http://example.com')
+        .get('/')
+        .reply(200);
+
+      axios
+        .get('http://example.com', {
+          adapter: async config => {
+            const response = await axios.defaults.adapter(config);
+            delete response.config[symbols.COOKIEJAR_SUPPORT_LOCAL];
+            return response;
+          },
+        })
+        .then(res => {
+          assert.strictEqual(res.status, 200);
+        })
+        .then(done)
+        .catch(done);
+    });
+  });
+
   context('when response has redirect', () => {
     let nockHost;
     beforeEach(() => {
