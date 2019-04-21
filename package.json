@@ -26,25 +26,25 @@
     "@types/tough-cookie": "^2.3.3",
     "is-redirect": "^1.0.0",
     "pify": "^4.0.0",
-    "tough-cookie": "^2.4.3"
+    "tough-cookie": "^3.0.1"
   },
   "peerDependencies": {
     "axios": ">=0.16.2"
   },
   "devDependencies": {
-    "@babel/cli": "7.0.0",
-    "@babel/core": "7.0.0",
-    "@babel/plugin-transform-modules-commonjs": "7.0.0",
+    "@babel/cli": "7.4.3",
+    "@babel/core": "7.4.3",
+    "@babel/plugin-transform-modules-commonjs": "7.4.3",
     "axios": "0.18.0",
     "cookie": "0.3.1",
-    "decache": "4.4.0",
-    "eslint": "5.4.0",
+    "decache": "4.5.1",
+    "eslint": "5.16.0",
     "fast-async": "7.0.6",
     "intelli-espower-loader": "1.0.1",
-    "mocha": "5.2.0",
-    "nock": "9.6.1",
-    "power-assert": "1.6.0",
-    "rimraf": "2.6.2"
+    "mocha": "6.1.4",
+    "nock": "10.0.6",
+    "power-assert": "1.6.1",
+    "rimraf": "2.6.3"
   },
   "keywords": [
     "axios",
