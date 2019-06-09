@@ -44,7 +44,7 @@
     "mocha": "6.1.4",
     "nock": "9.6.1",
     "power-assert": "1.6.1",
-    "rimraf": "2.6.2"
+    "rimraf": "2.6.3"
   },
   "keywords": [
     "axios",
