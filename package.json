@@ -42,7 +42,7 @@
     "fast-async": "7.0.6",
     "intelli-espower-loader": "1.0.1",
     "mocha": "6.1.4",
-    "nock": "9.6.1",
+    "nock": "10.0.6",
     "power-assert": "1.6.1",
     "rimraf": "2.6.3"
   },
