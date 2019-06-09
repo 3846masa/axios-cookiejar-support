@@ -727,9 +727,9 @@ empower-core@^1.2.0:
     call-signature "0.0.2"
     core-js "^2.0.0"
 
-empower@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/empower/-/empower-1.3.0.tgz#6b05e77625e77dc44945c4328562c3020b01fa4b"
+empower@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/empower/-/empower-1.3.1.tgz#768979cbbb36d71d8f5edaab663deacb9dab916c"
   dependencies:
     core-js "^2.0.0"
     empower-core "^1.2.0"
@@ -2193,12 +2193,12 @@ power-assert-util-string-width@^1.1.1:
   dependencies:
     eastasianwidth "^0.1.1"
 
-power-assert@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/power-assert/-/power-assert-1.6.0.tgz#3a9d2b943cf0d6fc6a623766869c4460838c05fb"
+power-assert@1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/power-assert/-/power-assert-1.6.1.tgz#b28cbc02ae808afd1431d0cd5093a39ac5a5b1fe"
   dependencies:
     define-properties "^1.1.2"
-    empower "^1.3.0"
+    empower "^1.3.1"
     power-assert-formatter "^1.4.1"
     universal-deep-strict-equal "^1.2.1"
     xtend "^4.0.0"
