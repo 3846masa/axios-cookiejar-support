@@ -38,7 +38,7 @@
     "axios": "0.18.1",
     "cookie": "0.4.0",
     "decache": "4.5.1",
-    "eslint": "5.4.0",
+    "eslint": "5.16.0",
     "fast-async": "7.0.6",
     "intelli-espower-loader": "1.0.1",
     "mocha": "6.1.4",
