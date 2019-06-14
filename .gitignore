@@ -45,5 +45,4 @@ jspm_packages
 .node_repl_history
 
 # Build
-/lib/**/*.js
 .node-version
