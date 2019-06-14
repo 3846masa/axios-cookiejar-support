@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "workspaces": [
+    "workspaces/axios-cookiejar-support"
+  ]
+}
