@@ -1,8 +1,8 @@
 {
   "name": "@3846masa/axios-cookiejar-support",
   "description": "Add tough-cookie support to axios.",
-  "author": "3846masa",
   "license": "MIT",
+  "author": "3846masa",
   "homepage": "https://github.com/3846masa/axios-cookiejar-support#readme",
   "repository": {
     "type": "git",
@@ -13,6 +13,9 @@
   },
   "version": "0.4.2",
   "main": "./lib/index",
+  "browser": {
+    "./lib/index": "./noop.js"
+  },
   "directories": {
     "example": "example"
   },
@@ -22,6 +25,7 @@
     "clean": "rimraf lib/**/*.js",
     "test": "echo noop"
   },
+  "types": "./index.d.ts",
   "dependencies": {
     "@types/tough-cookie": "^2.3.3",
     "is-redirect": "^1.0.0",
@@ -44,9 +48,5 @@
     "cookiejar",
     "cookies",
     "tough-cookie"
-  ],
-  "browser": {
-    "./lib/index": "./noop.js"
-  },
-  "types": "./index.d.ts"
+  ]
 }
