@@ -2,6 +2,7 @@
   "private": true,
   "workspaces": [
     "workspaces/axios-cookiejar-support",
+    "workspaces/scoped-axios-cookiejar-support",
     "workspaces/tests/**"
   ],
   "scripts": {
