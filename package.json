@@ -5,7 +5,7 @@
     "workspaces/tests/**"
   ],
   "scripts": {
-    "build": "yarn workspace @3846masa/axios-cookiejar-support run build",
+    "build": "yarn workspace axios-cookiejar-support run build",
     "test": "yarn workspaces run test"
   }
 }

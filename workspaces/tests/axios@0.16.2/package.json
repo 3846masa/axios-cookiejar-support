@@ -6,7 +6,7 @@
     "test": "mocha test.spec.js --require intelli-espower-loader"
   },
   "dependencies": {
-    "@3846masa/axios-cookiejar-support": "*",
+    "axios-cookiejar-support": "*",
     "axios": "0.16.2"
   },
   "devDependencies": {

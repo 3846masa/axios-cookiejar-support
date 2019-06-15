@@ -5,8 +5,8 @@ const nock = require('nock');
 const tough = require('tough-cookie');
 const cookie = require('cookie');
 const decache = require('decache');
-const axiosCookieJarSupport = require('@3846masa/axios-cookiejar-support').default;
-const symbols = require('@3846masa/axios-cookiejar-support/lib/symbol');
+const axiosCookieJarSupport = require('axios-cookiejar-support').default;
+const symbols = require('axios-cookiejar-support/lib/symbol');
 
 let axios;
 beforeEach(() => {
