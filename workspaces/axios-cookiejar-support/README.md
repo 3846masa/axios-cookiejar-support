@@ -63,6 +63,26 @@ axios
 
 See [examples](./example).
 
+### Notice: Set default cookiejar
+
+`axios@>=0.19.0` cannot assign `defaults.jar` via `axios.create()` before wrapping instance.
+When you want to set `defaults.jar`, please set directly after wrapping instance.
+
+```js
+const axios = require('axios').default;
+const axiosCookieJarSupport = require('axios-cookiejar-support').default;
+const tough = require('tough-cookie');
+
+const instance = axios.create({
+  // WARNING: This value will be ignored.
+  jar: new tough.CookieJar(),
+});
+
+// Set directly after wrapping instance.
+axiosCookieJarSupport(instance);
+instance.defaults.jar = new tough.CookieJar();
+```
+
 ### Extended Request Config
 
 c.f.) https://github.com/mzabriskie/axios#request-config
