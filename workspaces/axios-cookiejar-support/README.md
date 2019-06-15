@@ -18,15 +18,15 @@ Add [``tough-cookie``] support to [``axios``].
 [npm]: https://www.npmjs.com/package/axios-cookiejar-support
 [license]: https://3846masa.mit-license.org
 [circleci]: https://circleci.com/gh/3846masa/axios-cookiejar-support
-[dependencies-david]: https://david-dm.org/axios-cookiejar-support?view=list
-[peerdependencies-david]: https://david-dm.org/axios-cookiejar-support?type=peer&view=list
-[devdependencies-david]: https://david-dm.org/axios-cookiejar-support?type=dev&view=list
+[dependencies-david]: https://david-dm.org/3846masa/axios-cookiejar-support?path=workspaces%2Faxios-cookiejar-support&view=list
+[peerdependencies-david]: https://david-dm.org/3846masa/axios-cookiejar-support?path=workspaces%2Faxios-cookiejar-support&type=peer&view=list
+[devdependencies-david]: https://david-dm.org/3846masa/axios-cookiejar-support?path=workspaces%2Faxios-cookiejar-support&type=dev&view=list
 [npm-badge]: https://flat.badgen.net/npm/v/axios-cookiejar-support?icon=npm
 [license-badge]: https://flat.badgen.net/badge/license/MIT/blue
 [circleci-badge]: https://flat.badgen.net/circleci/github/3846masa/axios-cookiejar-support?icon=circleci
-[dependencies-badge]: https://flat.badgen.net/david/dep/3846masa/axios-cookiejar-support
-[peerdependencies-badge]: https://flat.badgen.net/david/peer/3846masa/axios-cookiejar-support
-[devdependencies-badge]: https://flat.badgen.net/david/dev/3846masa/axios-cookiejar-support
+[dependencies-badge]: https://flat.badgen.net/david/dep/3846masa/axios-cookiejar-support/workspaces/axios-cookiejar-support
+[peerdependencies-badge]: https://flat.badgen.net/david/peer/3846masa/axios-cookiejar-support/workspaces/axios-cookiejar-support
+[devdependencies-badge]: https://flat.badgen.net/david/dev/3846masa/axios-cookiejar-support/workspaces/axios-cookiejar-support
 
 ## Install
 
