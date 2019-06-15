@@ -2,7 +2,7 @@
 
 const axios = require('axios').default;
 const tough = require('tough-cookie');
-const axiosCookieJarSupport = require('../').default;
+const axiosCookieJarSupport = require('axios-cookiejar-support').default;
 
 axiosCookieJarSupport(axios);
 
@@ -12,11 +12,11 @@ axios.defaults.withCredentials = true;
 
 axios
   .get('https://google.com')
-  .then(response => {
+  .then((response) => {
     const config = response.config;
     // axios.defaults.jar === config.jar
     console.log(config.jar.toJSON());
   })
-  .catch(err => {
+  .catch((err) => {
     console.error(err.stack || err);
   });

@@ -41,9 +41,9 @@ async function requestInterceptor(config, instance) {
     if (cookieString) {
       if (config.headers) {
         const currentCookie = config.headers['Cookie'];
-        config.headers['Cookie'] = [currentCookie, cookieString].filter(c => !!c).join(';\x20');
+        config.headers['Cookie'] = [currentCookie, cookieString].filter((c) => !!c).join(';\x20');
       } else {
-        config.headers = { 'Cookie': cookieString };
+        config.headers = { Cookie: cookieString };
       }
     }
   }

@@ -32,8 +32,8 @@ function axiosCookieJarSupport(instance) {
   });
 
   // Add interceptors
-  instance.interceptors.request.use(res => requestInterceptor(res, instance));
-  instance.interceptors.response.use(res => responseInterceptor(res, instance));
+  instance.interceptors.request.use((res) => requestInterceptor(res, instance));
+  instance.interceptors.response.use((res) => responseInterceptor(res, instance));
 
   return instance;
 }

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import tough from 'tough-cookie';
-import axiosCookieJarSupport from '../';
+import axiosCookieJarSupport from 'axios-cookiejar-support';
 
 axiosCookieJarSupport(axios);
 
@@ -11,10 +11,10 @@ axios
     jar: cookieJar,
     withCredentials: true,
   })
-  .then(response => {
+  .then((response) => {
     const config = response.config;
     console.log(config.jar.toJSON());
   })
-  .catch(err => {
+  .catch((err) => {
     console.error(err.stack || err);
   });
