@@ -1,60 +1,11 @@
 {
-  "name": "@3846masa/axios-cookiejar-support",
-  "description": "Add tough-cookie support to axios.",
-  "author": "3846masa",
-  "license": "MIT",
-  "homepage": "https://github.com/3846masa/axios-cookiejar-support#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/3846masa/axios-cookiejar-support.git"
-  },
-  "bugs": {
-    "url": "https://github.com/3846masa/axios-cookiejar-support/issues"
-  },
-  "version": "0.4.2",
-  "main": "./lib/index",
-  "directories": {
-    "example": "example",
-    "test": "test"
-  },
-  "scripts": {
-    "build": "babel lib -x .mjs --out-dir lib",
-    "clean": "rimraf lib/**/*.js",
-    "test": "mocha --require intelli-espower-loader"
-  },
-  "dependencies": {
-    "@types/tough-cookie": "^2.3.3",
-    "is-redirect": "^1.0.0",
-    "pify": "^4.0.0",
-    "tough-cookie": "^3.0.1"
-  },
-  "peerDependencies": {
-    "axios": ">=0.16.2"
-  },
-  "devDependencies": {
-    "@babel/cli": "7.4.4",
-    "@babel/core": "7.4.5",
-    "@babel/plugin-transform-modules-commonjs": "7.4.4",
-    "axios": "0.18.1",
-    "cookie": "0.4.0",
-    "decache": "4.5.1",
-    "eslint": "5.16.0",
-    "fast-async": "7.0.6",
-    "intelli-espower-loader": "1.0.1",
-    "mocha": "6.1.4",
-    "nock": "10.0.6",
-    "power-assert": "1.6.1",
-    "rimraf": "2.6.3"
-  },
-  "keywords": [
-    "axios",
-    "cookie",
-    "cookiejar",
-    "cookies",
-    "tough-cookie"
+  "private": true,
+  "workspaces": [
+    "workspaces/axios-cookiejar-support",
+    "workspaces/tests/**"
   ],
-  "browser": {
-    "./lib/index": "./noop.js"
-  },
-  "types": "./index.d.ts"
+  "scripts": {
+    "build": "yarn workspace axios-cookiejar-support run build",
+    "test": "yarn workspaces run test"
+  }
 }

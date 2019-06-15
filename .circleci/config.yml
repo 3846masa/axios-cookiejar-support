@@ -10,19 +10,22 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
+          key: v1-yarn-cache
+      - restore_cache:
+          key: v1-yarn-deps-{{ checksum "yarn.lock" }}
       - run: yarn install
       - save_cache:
           paths:
+            - ~/.yarn-cache
+          key: v1-yarn-cache
+      - save_cache:
+          paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v1-yarn-deps-{{ checksum "yarn.lock" }}
       - run: yarn build
       - save_cache:
           paths:
-            - lib
+            - workspaces/axios-cookiejar-support/lib
           key: v1-build-{{ .Environment.CIRCLE_SHA1 }}
   test:
     docker:
@@ -30,9 +33,12 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v1-yarn-cache
+      - restore_cache:
+          key: v1-yarn-deps-{{ checksum "yarn.lock" }}
       - restore_cache:
           key: v1-build-{{ .Environment.CIRCLE_SHA1 }}
+      - run: yarn install
       - run: yarn test
   deploy-npm:
     docker:
@@ -40,13 +46,18 @@ jobs:
     steps:
       - checkout
       - restore_cache:
+          key: v1-yarn-cache
+      - restore_cache:
+          key: v1-yarn-deps-{{ checksum "yarn.lock" }}
+      - restore_cache:
           key: v1-build-{{ .Environment.CIRCLE_SHA1 }}
+      - run: yarn install
       - run:
           command: |
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-            npm publish --access public
-            sed -i package.json -e "s/@3846masa\/axios-cookiejar-support/axios-cookiejar-support/g"
-            npm publish --access public
+            yarn workspace axios-cookiejar-support publish --access public
+            yarn workspace @3846masa/axios-cookiejar-support publish --access public
+            npm deprecate @3846masa/axios-cookiejar-support "Use axios-cookiejar-support instead."
 
 workflows:
   version: 2

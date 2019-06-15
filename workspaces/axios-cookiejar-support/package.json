@@ -1,0 +1,54 @@
+{
+  "name": "axios-cookiejar-support",
+  "description": "Add tough-cookie support to axios.",
+  "license": "MIT",
+  "author": "3846masa",
+  "homepage": "https://github.com/3846masa/axios-cookiejar-support#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3846masa/axios-cookiejar-support.git"
+  },
+  "bugs": {
+    "url": "https://github.com/3846masa/axios-cookiejar-support/issues"
+  },
+  "version": "0.4.2",
+  "main": "./lib/index",
+  "browser": {
+    "./lib/index": "./noop.js"
+  },
+  "files": [
+    "lib",
+    "index.d.ts",
+    "noop.js"
+  ],
+  "scripts": {
+    "prebuild": "yarn clean",
+    "build": "babel lib -x .mjs --out-dir lib",
+    "clean": "rimraf lib/**/*.js",
+    "test": "echo noop"
+  },
+  "types": "./index.d.ts",
+  "dependencies": {
+    "@types/tough-cookie": "^2.3.3",
+    "is-redirect": "^1.0.0",
+    "pify": "^4.0.0",
+    "tough-cookie": "^3.0.1"
+  },
+  "peerDependencies": {
+    "axios": ">=0.16.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.5",
+    "@babel/plugin-transform-modules-commonjs": "7.4.4",
+    "fast-async": "7.0.6",
+    "rimraf": "2.6.3"
+  },
+  "keywords": [
+    "axios",
+    "cookie",
+    "cookiejar",
+    "cookies",
+    "tough-cookie"
+  ]
+}
