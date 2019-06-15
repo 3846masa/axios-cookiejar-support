@@ -14,13 +14,13 @@
   "version": "0.4.2",
   "main": "./lib/index",
   "directories": {
-    "example": "example",
-    "test": "test"
+    "example": "example"
   },
   "scripts": {
+    "prebuild": "yarn clean",
     "build": "babel lib -x .mjs --out-dir lib",
     "clean": "rimraf lib/**/*.js",
-    "test": "mocha --require intelli-espower-loader"
+    "test": "echo noop"
   },
   "dependencies": {
     "@types/tough-cookie": "^2.3.3",
@@ -35,15 +35,7 @@
     "@babel/cli": "7.4.4",
     "@babel/core": "7.4.5",
     "@babel/plugin-transform-modules-commonjs": "7.4.4",
-    "axios": "0.18.1",
-    "cookie": "0.4.0",
-    "decache": "4.5.1",
-    "eslint": "5.16.0",
     "fast-async": "7.0.6",
-    "intelli-espower-loader": "1.0.1",
-    "mocha": "6.1.4",
-    "nock": "10.0.6",
-    "power-assert": "1.6.1",
     "rimraf": "2.6.3"
   },
   "keywords": [

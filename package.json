@@ -1,6 +1,11 @@
 {
   "private": true,
   "workspaces": [
-    "workspaces/axios-cookiejar-support"
-  ]
+    "workspaces/axios-cookiejar-support",
+    "workspaces/tests/**"
+  ],
+  "scripts": {
+    "build": "yarn workspace @3846masa/axios-cookiejar-support run build",
+    "test": "yarn workspaces run test"
+  }
 }
