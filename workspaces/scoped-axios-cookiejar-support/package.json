@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/3846masa/axios-cookiejar-support/issues"
   },
-  "version": "0.4.2",
+  "version": "0.5.0",
   "main": "./lib/index",
   "browser": {
     "./lib/index": "./noop.js"
@@ -26,7 +26,7 @@
   },
   "types": "./index.d.ts",
   "dependencies": {
-    "axios-cookiejar-support": "0.4.2"
+    "axios-cookiejar-support": "0.5.0"
   },
   "peerDependencies": {
     "axios": ">=0.16.2"
