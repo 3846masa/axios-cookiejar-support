@@ -28,11 +28,11 @@ describe('axiosCookieJarSupport', () => {
   });
 
   it('should keep instance.defaults.jar of created axios instance', () => {
+    axiosCookieJarSupport(axios);
     const cookieJar = new tough.CookieJar();
     const instance = axios.create({
       jar: cookieJar,
     });
-    axiosCookieJarSupport(instance);
     assert.strictEqual(cookieJar, instance.defaults.jar);
   });
 
