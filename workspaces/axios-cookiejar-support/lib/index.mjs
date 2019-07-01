@@ -56,12 +56,12 @@ function overwriteRequestFunction(instance) {
 
   ['delete', 'get', 'head', 'options'].forEach((method) => {
     instance[method] = function(url, config = {}) {
-      return this.request(Object.assign(config, { method, url }));
+      return instance.request(Object.assign(config, { method, url }));
     };
   });
   ['post', 'put', 'patch'].forEach((method) => {
     instance[method] = function(url, data, config = {}) {
-      return this.request(Object.assign(config, { method, url, data }));
+      return instance.request(Object.assign(config, { method, url, data }));
     };
   });
 }
