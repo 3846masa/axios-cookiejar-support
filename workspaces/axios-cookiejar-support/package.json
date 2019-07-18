@@ -38,7 +38,7 @@
     "axios": ">=0.16.2"
   },
   "devDependencies": {
-    "@babel/cli": "7.5.0",
+    "@babel/cli": "7.5.5",
     "@babel/core": "7.5.4",
     "@babel/plugin-transform-modules-commonjs": "7.5.0",
     "fast-async": "7.0.6",
