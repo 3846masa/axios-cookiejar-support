@@ -25,7 +25,7 @@ jobs:
       - run: yarn build
       - save_cache:
           paths:
-            - workspaces/axios-cookiejar-support/lib
+            - lib
           key: v1-build-{{ .Environment.CIRCLE_SHA1 }}
   test:
     docker:
@@ -55,8 +55,9 @@ jobs:
       - run:
           command: |
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-            yarn workspace axios-cookiejar-support publish --access public
-            yarn workspace @3846masa/axios-cookiejar-support publish --access public
+            npm publish --access public
+            sed -i package.json -e "0,/axios-cookiejar-support/s/axios-cookiejar-support/@3846masa\/axios-cookiejar-support/"
+            npm publish --access public
             npm deprecate @3846masa/axios-cookiejar-support "Use axios-cookiejar-support instead."
 
 workflows:
