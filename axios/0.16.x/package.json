@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "name": "axios--0.16.x",
+  "version": "0.16.2",
+  "dependencies": {
+    "axios": "0.16.2"
+  }
+}
