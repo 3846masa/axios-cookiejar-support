@@ -2,22 +2,22 @@
 # yarn lockfile v1
 
 
-"@babel/cli@7.5.0":
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.5.0.tgz#f403c930692e28ecfa3bf02a9e7562b474f38271"
-  integrity sha512-qNH55fWbKrEsCwID+Qc/3JDPnsSGpIIiMDbppnR8Z6PxLAqMQCFNqBctkIkBrMH49Nx+qqVTrHRWUR+ho2k+qQ==
+"@babel/cli@7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.6.2.tgz#4ce8b5b4b2e4b4c1b7bd841cec62085e2dfc4465"
+  integrity sha512-JDZ+T/br9pPfT2lmAMJypJDTTTHM9ePD/ED10TRjRzJVdEVy+JB3iRlhzYmTt5YkNgHvxWGlUVnLtdv6ruiDrQ==
   dependencies:
     commander "^2.8.1"
     convert-source-map "^1.1.0"
     fs-readdir-recursive "^1.1.0"
     glob "^7.0.0"
-    lodash "^4.17.11"
+    lodash "^4.17.13"
     mkdirp "^0.5.1"
     output-file-sync "^2.0.0"
     slash "^2.0.0"
     source-map "^0.5.0"
   optionalDependencies:
-    chokidar "^2.0.4"
+    chokidar "^2.1.8"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.5.5":
   version "7.5.5"
@@ -490,10 +490,10 @@ check-error@^1.0.2:
   resolved "https://registry.yarnpkg.com/check-error/-/check-error-1.0.2.tgz#574d312edd88bb5dd8912e9286dd6c0aed4aac82"
   integrity sha1-V00xLt2Iu13YkS6Sht1sCu1KrII=
 
-chokidar@^2.0.4:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.1.6.tgz#b6cad653a929e244ce8a834244164d241fa954c5"
-  integrity sha512-V2jUo67OKkc6ySiRpJrjlpJKl9kDuG+Xb8VgsGzb+aEouhgS1D0weyPU4lEzdAcsCAvrih2J2BqyXqHWvVLw5g==
+chokidar@^2.1.8:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.1.8.tgz#804b3a7b6a99358c3c5c61e71d8728f041cff917"
+  integrity sha512-ZmZUazfOzf0Nve7duiCKD23PFSCs4JPoYyccjUFF3aQkQadqBhfzhjkwBH2mNOG9cTBwhamM37EIsIkZw3nRgg==
   dependencies:
     anymatch "^2.0.0"
     async-each "^1.0.1"
