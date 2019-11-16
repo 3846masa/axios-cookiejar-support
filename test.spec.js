@@ -223,6 +223,44 @@ function main(libName) {
             assert.strictEqual(res.data, 'final');
           });
       });
+
+      it('should send cookies without duplication', (done) => {
+        const baseCookieJar = new tough.CookieJar();
+        const baseCookie = new tough.Cookie({
+          key: 'key',
+          value: 'value_default',
+        });
+        baseCookieJar.setCookieSync(baseCookie, 'http://example.com');
+
+        const servedCookie = new tough.Cookie({
+          key: 'key',
+          value: 'value_from_redirect',
+        });
+
+        nockHost.get('/').reply(302, null, {
+          Location: 'http://example.com/redirect',
+          'Set-Cookie': servedCookie.toString(),
+        });
+        nockHost
+          .get('/redirect')
+          .matchHeader('cookie', (value) => {
+            console.log(value);
+            assert.ok(value);
+            const receivedCookie = cookie.parse(value);
+            assert.ok(servedCookie.key in receivedCookie);
+            assert.strictEqual(receivedCookie[servedCookie.key], servedCookie.value);
+            return true;
+          })
+          .reply(200);
+
+        axios
+          .get('http://example.com', { jar: baseCookieJar, withCredentials: true })
+          .then((res) => {
+            assert.strictEqual(res.status, 200);
+          })
+          .then(done)
+          .catch(done);
+      });
     });
 
     context("when hasn't defaults.jar", () => {
