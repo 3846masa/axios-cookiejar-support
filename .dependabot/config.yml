@@ -1,0 +1,58 @@
+version: 1
+update_configs:
+  - package_manager: javascript
+    directory: /
+    update_schedule: daily
+    automerged_updates:
+      - match:
+          dependency_type: all
+          update_type: all
+    version_requirement_updates: increase_versions
+  - package_manager: javascript
+    directory: /axios/0.16.x
+    update_schedule: daily
+    ignored_updates:
+      - match:
+          dependency_name: 'axios'
+          version_requirement: '>= 0.17.0'
+    automerged_updates:
+      - match:
+          dependency_type: all
+          update_type: all
+    version_requirement_updates: increase_versions
+  - package_manager: javascript
+    directory: /axios/0.17.x
+    update_schedule: daily
+    ignored_updates:
+      - match:
+          dependency_name: 'axios'
+          version_requirement: '>= 0.18.0'
+    automerged_updates:
+      - match:
+          dependency_type: all
+          update_type: all
+    version_requirement_updates: increase_versions
+  - package_manager: javascript
+    directory: /axios/0.18.x
+    update_schedule: daily
+    ignored_updates:
+      - match:
+          dependency_name: 'axios'
+          version_requirement: '>= 0.19.0'
+    automerged_updates:
+      - match:
+          dependency_type: all
+          update_type: all
+    version_requirement_updates: increase_versions
+  - package_manager: javascript
+    directory: /axios/0.19.x
+    update_schedule: daily
+    ignored_updates:
+      - match:
+          dependency_name: 'axios'
+          version_requirement: '>= 0.20.0'
+    automerged_updates:
+      - match:
+          dependency_type: all
+          update_type: all
+    version_requirement_updates: increase_versions
