@@ -48,7 +48,7 @@
     "cookie": "^0.4.0",
     "decache": "^4.5.1",
     "intelli-espower-loader": "^1.0.1",
-    "mocha": "^6.2.0",
+    "mocha": "^6.2.2",
     "nock": "^11.7.0",
     "power-assert": "^1.6.1",
     "rimraf": "3.0.0"
