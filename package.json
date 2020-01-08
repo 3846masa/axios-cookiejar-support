@@ -49,7 +49,7 @@
     "decache": "^4.5.1",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^7.0.0",
-    "nock": "^11.7.1",
+    "nock": "^11.7.2",
     "power-assert": "^1.6.1",
     "rimraf": "3.0.0"
   },

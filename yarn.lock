@@ -327,7 +327,7 @@ axios--0.18.x@./axios/0.18.x:
 axios--0.19.x@./axios/0.19.x:
   version "0.19.0"
   dependencies:
-    axios "0.19.0"
+    axios "0.19.1"
 
 axios@0.16.2:
   version "0.16.2"
@@ -353,13 +353,12 @@ axios@0.18.1:
     follow-redirects "1.5.10"
     is-buffer "^2.0.2"
 
-axios@0.19.0:
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.0.tgz#8e09bff3d9122e133f7b8101c8fbdd00ed3d2ab8"
-  integrity sha512-1uvKqKQta3KBxIz14F2v06AEHZ/dIoeKfbTRkK1E5oqjDnuEerLmYTgJB5AiQZHJcljpg1TuRzdjDR06qNk0DQ==
+axios@0.19.1:
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.1.tgz#8a6a04eed23dfe72747e1dd43c604b8f1677b5aa"
+  integrity sha512-Yl+7nfreYKaLRvAvjNPkvfjnQHJM1yLBY3zhqAwcJSwR/6ETkanUgylgtIvkvz0xJ+p/vZuNw8X7Hnb7Whsbpw==
   dependencies:
     follow-redirects "1.5.10"
-    is-buffer "^2.0.2"
 
 babel-plugin-dynamic-import-node@^2.3.0:
   version "2.3.0"
@@ -1756,10 +1755,10 @@ next-tick@^1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-nock@^11.7.1:
-  version "11.7.1"
-  resolved "https://registry.yarnpkg.com/nock/-/nock-11.7.1.tgz#761971f24093e291af6e1f0af5b6eb048b94b1c1"
-  integrity sha512-fW+dlMyquAEvgtmGoRHftKrNnJ7yZcbINQDTW7OKRoTYa+11GA0u0UokWHuvCyZrG5TXkplnEv2jmj6R3vvImg==
+nock@^11.7.2:
+  version "11.7.2"
+  resolved "https://registry.yarnpkg.com/nock/-/nock-11.7.2.tgz#4cee4fa838dc3635c074c5b3436bcdec7f7ee213"
+  integrity sha512-7swr5bL1xBZ5FctyubjxEVySXOSebyqcL7Vy1bx1nS9IUqQWj81cmKjVKJLr8fHhtzI1MV8nyCdENA/cGcY1+Q==
   dependencies:
     debug "^4.1.0"
     json-stringify-safe "^5.0.1"
