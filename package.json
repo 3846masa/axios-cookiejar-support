@@ -29,7 +29,7 @@
   },
   "types": "./index.d.ts",
   "dependencies": {
-    "@types/tough-cookie": "^2.3.3",
+    "@types/tough-cookie": "^4.0.0",
     "is-redirect": "^1.0.0",
     "pify": "^5.0.0",
     "tough-cookie": "^4.0.0"
