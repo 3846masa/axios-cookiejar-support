@@ -29,18 +29,19 @@
   },
   "types": "./index.d.ts",
   "dependencies": {
-    "@types/tough-cookie": "^4.0.0",
     "is-redirect": "^1.0.0",
-    "pify": "^5.0.0",
-    "tough-cookie": "^4.0.0"
+    "pify": "^5.0.0"
   },
   "peerDependencies": {
-    "axios": ">=0.16.2"
+    "@types/tough-cookie": ">=2.3.3",
+    "axios": ">=0.16.2",
+    "tough-cookie": ">=2.3.3"
   },
   "devDependencies": {
     "@babel/cli": "7.8.4",
     "@babel/core": "7.9.0",
     "@babel/plugin-transform-modules-commonjs": "7.9.0",
+    "@types/tough-cookie": "^4.0.0",
     "axios--0.16.x": "./axios/0.16.x",
     "axios--0.17.x": "./axios/0.17.x",
     "axios--0.18.x": "./axios/0.18.x",
@@ -51,7 +52,8 @@
     "mocha": "^7.1.1",
     "nock": "^12.0.3",
     "power-assert": "^1.6.1",
-    "rimraf": "3.0.2"
+    "rimraf": "3.0.2",
+    "tough-cookie": "^4.0.0"
   },
   "keywords": [
     "axios",
