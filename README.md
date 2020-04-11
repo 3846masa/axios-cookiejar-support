@@ -31,13 +31,21 @@ Add [``tough-cookie``] support to [``axios``].
 ## Install
 
 ```sh
-$ npm i axios axios-cookiejar-support
+$ npm i axios tough-cookie axios-cookiejar-support
 ```
 
 **-- OR --**
 
 ```sh
-$ npm i axios @3846masa/axios-cookiejar-support # Same as above
+$ npm i axios tough-cookie @3846masa/axios-cookiejar-support # Same as above
+```
+
+### TypeScript
+
+If you want to use it with TypeScript, add `@types/tough-cookie`.
+
+```sh
+npm i @types/tough-cookie
 ```
 
 ## Usage
