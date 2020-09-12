@@ -559,6 +559,33 @@ function main(libName) {
           .then(done)
           .catch(done);
       });
+      it('should not ignore bad cookies unless axios config specifies it', (done) => {
+        nock('http://example.com')
+          .get('/')
+          .reply(200, 'OK', { 'Set-Cookie': 'doesn\'t parse' });
+
+        axios
+          .get('http://example.com')
+          .then(() => {
+            throw new Error('did not error on badly formatted cookie');
+          })
+          .catch(e => {
+            assert.notStrictEqual(e.message, 'did not error on badly formatted cookie');
+          })
+          .finally(done);
+      });
+      it('should ignore bad cookies when axios config specifies it', (done) => {
+        nock('http://example.com')
+          .get('/')
+          .reply(200, 'OK', { 'Set-Cookie': 'doesn\'t parse' });
+
+        axios
+          .get('http://example.com', { ignoreCookieErrors: true })
+          .catch(() => {
+            assert.strictEqual(true, false, 'errored on badly formatted cookie after being instructed not to');
+          })
+          .finally(done);
+      });
     });
   });
 }
