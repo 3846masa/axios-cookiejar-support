@@ -101,6 +101,11 @@ c.f.) https://github.com/mzabriskie/axios#request-config
   // If true, axios create CookieJar automatically.
   jar: undefined, // default
 
+  // After installing cookie support, certain cookie problems
+  // will throw and cause the entire request to fail.
+  // set this true to ignore cookie errors instead
+  ignoreCookieErrors: false // default
+
   // **IMPORTANT**
   // If false, axios DONOT send cookies from cookiejar.
   withCredentials: false // default
