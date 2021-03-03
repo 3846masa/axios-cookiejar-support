@@ -50,7 +50,7 @@
     "decache": "^4.6.0",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^8.3.0",
-    "nock": "^13.0.9",
+    "nock": "^13.0.10",
     "power-assert": "^1.6.1",
     "rimraf": "3.0.2",
     "tough-cookie": "^4.0.0"
