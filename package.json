@@ -46,6 +46,8 @@
     "axios--0.17.x": "./axios/0.17.x",
     "axios--0.18.x": "./axios/0.18.x",
     "axios--0.19.x": "./axios/0.19.x",
+    "axios--0.20.x": "./axios/0.20.x",
+    "axios--0.21.x": "./axios/0.21.x",
     "cookie": "^0.4.1",
     "decache": "^4.6.0",
     "intelli-espower-loader": "^1.1.0",

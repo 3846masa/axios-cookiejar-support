@@ -9,7 +9,7 @@ const decache = require('decache');
 const axiosCookieJarSupport = require('./').default;
 const symbols = require('./lib/symbol');
 
-['0.16.x', '0.17.x', '0.18.x', '0.19.x'].forEach((libName) => {
+['0.16.x', '0.17.x', '0.18.x', '0.19.x', '0.20.x','0.21.x'].forEach((libName) => {
   describe(`axios@${libName}`, () => {
     main(`axios--${libName}`);
   });
