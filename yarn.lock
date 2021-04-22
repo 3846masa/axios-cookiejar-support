@@ -1421,10 +1421,10 @@ is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   dependencies:
     isobject "^3.0.1"
 
-is-redirect@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/is-redirect/-/is-redirect-1.0.0.tgz#1d03dded53bd8db0f30c26e4f95d36fc7c87dc24"
-  integrity sha1-HQPd7VO9jbDzDCbk+V02/HyH3CQ=
+is-redirect@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/is-redirect/-/is-redirect-2.0.0.tgz#b10e6f27a830694ac81e6767e1aba5f88c96f392"
+  integrity sha512-LEbfx8sJ7tUYOZ46D2Bbs+HIGKxLAaPYV7V+WGpNV16I4+oCHw7+SpEnjNpBb3ms5LV46IYwPdb7I8YQy4PN4Q==
 
 is-url@^1.2.1:
   version "1.2.4"
