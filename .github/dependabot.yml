@@ -1,0 +1,58 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 10
+  versioning-strategy: increase
+- package-ecosystem: npm
+  directory: "/axios/0.16.x"
+  schedule:
+    interval: daily
+    time: "20:00"
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 10
+  versioning-strategy: increase
+  ignore:
+  - dependency-name: axios
+    versions:
+    - ">= 0.17.0"
+- package-ecosystem: npm
+  directory: "/axios/0.17.x"
+  schedule:
+    interval: daily
+    time: "20:00"
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 10
+  versioning-strategy: increase
+  ignore:
+  - dependency-name: axios
+    versions:
+    - ">= 0.18.0"
+- package-ecosystem: npm
+  directory: "/axios/0.18.x"
+  schedule:
+    interval: daily
+    time: "20:00"
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 10
+  versioning-strategy: increase
+  ignore:
+  - dependency-name: axios
+    versions:
+    - ">= 0.19.0"
+- package-ecosystem: npm
+  directory: "/axios/0.19.x"
+  schedule:
+    interval: daily
+    time: "20:00"
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 10
+  versioning-strategy: increase
+  ignore:
+  - dependency-name: axios
+    versions:
+    - ">= 0.20.0"
