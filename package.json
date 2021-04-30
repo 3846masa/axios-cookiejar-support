@@ -40,7 +40,7 @@
   "devDependencies": {
     "@babel/cli": "7.13.16",
     "@babel/core": "7.14.0",
-    "@babel/plugin-transform-modules-commonjs": "7.13.8",
+    "@babel/plugin-transform-modules-commonjs": "7.14.0",
     "@types/tough-cookie": "^4.0.0",
     "axios--0.16.x": "./axios/0.16.x",
     "axios--0.17.x": "./axios/0.17.x",
