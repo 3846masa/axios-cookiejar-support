@@ -5,3 +5,4 @@ function noopEnableCookieJarSupport (instance) {
 }
 
 module.exports = noopEnableCookieJarSupport;
+module.exports.default = noopEnableCookieJarSupport
