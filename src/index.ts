@@ -1,0 +1,51 @@
+import type { AxiosStatic, AxiosInstance, AxiosRequestConfig } from 'axios';
+import type { CookieJar } from 'tough-cookie';
+
+import { HttpCookieAgent, HttpsCookieAgent } from 'http-cookie-agent';
+
+declare module 'axios' {
+  interface AxiosRequestConfig {
+    jar?: CookieJar;
+  }
+}
+
+function requestInterceptor(config: AxiosRequestConfig): AxiosRequestConfig {
+  if (!config.jar) {
+    return config;
+  }
+
+  // @ts-expect-error
+  if (config.jar === true) {
+    throw new Error('config.jar does not accept boolean since axios-cookiejar-support@2.0.0.');
+  }
+
+  if (config.httpAgent || config.httpsAgent) {
+    throw new Error('axios-cookiejar-support does not support for use with other http(s).Agent.');
+  }
+
+  config.httpAgent = new HttpCookieAgent({ jar: config.jar });
+  config.httpsAgent = new HttpsCookieAgent({ jar: config.jar });
+
+  return config;
+}
+
+export function wrapper<T extends AxiosStatic | AxiosInstance>(axios: T): T {
+  const isWrapped = axios.interceptors.request.handlers.find(({ fulfilled }) => fulfilled === requestInterceptor);
+
+  if (isWrapped) {
+    return axios;
+  }
+
+  axios.interceptors.request.use(requestInterceptor);
+
+  if ('create' in axios) {
+    const create = axios.create;
+    axios.create = (...args) => {
+      const instance = create.apply(axios, args);
+      instance.interceptors.request.use(requestInterceptor);
+      return instance;
+    };
+  }
+
+  return axios;
+}
