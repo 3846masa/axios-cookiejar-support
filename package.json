@@ -22,6 +22,7 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
+    "semantic-release": "semantic-release",
     "pretest": "npm run build",
     "test": "ava"
   },
@@ -35,10 +36,14 @@
   },
   "devDependencies": {
     "@ava/typescript": "2.0.0",
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/exec": "5.0.0",
+    "@semantic-release/git": "9.0.1",
     "@types/node": "12.20.24",
     "@types/tough-cookie": "4.0.1",
     "ava": "3.15.0",
     "axios": "0.21.4",
+    "semantic-release": "17.4.7",
     "tough-cookie": "4.0.0",
     "typescript": "4.4.3"
   },
@@ -51,6 +56,9 @@
   ],
   "engines": {
     "node": ">=12.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "ava": {
     "files": [
