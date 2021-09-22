@@ -34,6 +34,10 @@
       "groupName": "node",
       "matchPackageNames": ["node", "@types/node"],
       "allowedVersions": "<13.0.0"
+    },
+    {
+      "groupName": "semantic-release",
+      "matchPackagePatterns": ["^semantic-release$", "^@semantic-release/"]
     }
   ]
 }
