@@ -124,6 +124,29 @@ test.serial('should not send cookies which received first request when redirecti
   t.plan(1);
 });
 
+test.serial('should send cookies even when target is same host but different port', async (t) => {
+  const { port: firstServerPort } = await createTestServer([
+    (_req, res) => {
+      res.setHeader('Set-Cookie', 'key=expected');
+      res.end();
+    },
+  ]);
+
+  const { port: secondServerPort } = await createTestServer([
+    (req, res) => {
+      t.is(req.headers['cookie'], 'key=expected');
+      res.end();
+    },
+  ]);
+
+  const jar = new CookieJar();
+
+  await axios.get(`http://localhost:${firstServerPort}`, { jar });
+  await axios.get(`http://localhost:${secondServerPort}`, { jar });
+
+  t.plan(1);
+});
+
 test.serial('should throw error when config.httpAgent was assigned', async (t) => {
   const { server, port } = await createTestServer([
     (_req, res) => {
