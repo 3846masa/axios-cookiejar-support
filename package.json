@@ -1,6 +1,6 @@
 {
   "name": "axios-cookiejar-support",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Add tough-cookie support to axios.",
   "license": "MIT",
   "author": "3846masa <3846masahiro+git@gmail.com>",
