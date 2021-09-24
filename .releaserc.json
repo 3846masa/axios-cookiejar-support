@@ -7,7 +7,10 @@
     ["@semantic-release/npm", { "npmPublish": false }],
     "@semantic-release/github",
     ["@semantic-release/git", { "assets": ["CHANGELOG.md", "package.json"] }],
-    ["@semantic-release/exec", { "publishCmd": "./.scripts/publish.sh" }]
+    [
+      "@semantic-release/exec",
+      { "verifyConditionsCmd": "./.scripts/verify_conditions.sh", "publishCmd": "./.scripts/publish.sh" }
+    ]
   ],
   "preset": "angular",
   "releaseRules": [
