@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/3846masa/axios-cookiejar-support/compare/v2.0.1...v2.0.2) (2021-09-24)
+
+
+### Bug Fixes
+
+* change axios semver in peer dependencies ([#411](https://github.com/3846masa/axios-cookiejar-support/issues/411)) ([f58c4b4](https://github.com/3846masa/axios-cookiejar-support/commit/f58c4b46bd08e989bf894e9f62c198824c7330c9))
+
 ## [2.0.1](https://github.com/3846masa/axios-cookiejar-support/compare/v2.0.0...v2.0.1) (2021-09-24)
 
 
