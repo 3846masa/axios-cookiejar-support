@@ -11,7 +11,7 @@
 
 ### Update requirements.
 
-- Node.js v12 or above
+- Node.js v12.19.0 / v14.5.0 or above
 - `axios@0.20.0` or above
 - `tough-cookie@4.0.0` or above
 
