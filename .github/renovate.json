@@ -5,7 +5,7 @@
   "reviewers": ["3846masa"],
   "labels": ["dependencies"],
   "semanticCommits": "enabled",
-  "semanticCommitType": "chore",
+  "semanticCommitType": "fix",
   "semanticCommitScope": "deps",
   "packageRules": [
     {
@@ -14,6 +14,7 @@
     },
     {
       "matchDepTypes": ["devDependencies"],
+      "semanticCommitType": "chore",
       "semanticCommitScope": "deps-dev"
     },
     {
