@@ -1990,7 +1990,7 @@ http-cache-semantics@^4.0.0, http-cache-semantics@^4.1.0:
   resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.1.0.tgz#49e91c5cbf36c9b94bcfcd71c23d5249ec74e390"
   integrity sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ==
 
-http-cookie-agent@^1.0.2:
+http-cookie-agent@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/http-cookie-agent/-/http-cookie-agent-1.0.2.tgz#563f7b590ffb6361bbba0ae974d58e1ec97ff8c8"
   integrity sha512-F5gdg5ZtXQ0uChYM1uJUCzSPh/bJiDsVGNxqs3GcsvifS/w6/Rj2+keyTpDju6Os2/TV5YqQoYquxfBXmfAnNw==
