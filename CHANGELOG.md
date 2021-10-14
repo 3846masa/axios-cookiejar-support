@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/3846masa/axios-cookiejar-support/compare/v2.0.2...v2.0.3) (2021-10-14)
+
+
+### Bug Fixes
+
+* fix supported node version ([#423](https://github.com/3846masa/axios-cookiejar-support/issues/423)) ([8fbbb45](https://github.com/3846masa/axios-cookiejar-support/commit/8fbbb45d0b0977d7d911b9cc5378eb2e7f0d8f6e)), closes [/github.com/3846masa/axios-cookiejar-support/issues/420#issuecomment-943350949](https://github.com//github.com/3846masa/axios-cookiejar-support/issues/420/issues/issuecomment-943350949)
+
 ## [2.0.2](https://github.com/3846masa/axios-cookiejar-support/compare/v2.0.1...v2.0.2) (2021-09-24)
 
 
