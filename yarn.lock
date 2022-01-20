@@ -2,13 +2,13 @@
 # yarn lockfile v1
 
 
-"@ava/typescript@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@ava/typescript/-/typescript-2.0.0.tgz#519aff16ce53bec7f323cae0bcf427a957679ba3"
-  integrity sha512-sn+upcMk81AMrlnx/hb/9T7gCGuBfw7hi+p79NPSSQMvY2G64mOB7qRaDExiHiZfZ7FN9j7HwQeFhHZLGD/NWQ==
+"@ava/typescript@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@ava/typescript/-/typescript-3.0.1.tgz#b89efbe000b800fa477c9613795b3ca6a53f7112"
+  integrity sha512-/JXIUuKsvkaneaiA9ckk3ksFTqvu0mDNlChASrTe2BnDsvMbhQdPWyqQjJ9WRJWVhhs5TWn1/0Pp1G6Rv8Syrw==
   dependencies:
-    escape-string-regexp "^4.0.0"
-    execa "^5.0.0"
+    escape-string-regexp "^5.0.0"
+    execa "^5.1.1"
 
 "@babel/code-frame@^7.0.0":
   version "7.14.5"
@@ -1451,11 +1451,6 @@ escape-string-regexp@^2.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-2.0.0.tgz#a30304e99daa32e23b2fd20f51babd07cffca344"
   integrity sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
 
-escape-string-regexp@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
-  integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
-
 esprima@^4.0.0, esprima@~4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
@@ -1481,7 +1476,7 @@ execa@^4.0.0:
     signal-exit "^3.0.2"
     strip-final-newline "^2.0.0"
 
-execa@^5.0.0:
+execa@^5.0.0, execa@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/execa/-/execa-5.1.1.tgz#f80ad9cbf4298f7bd1d4c9555c21e93741c411dd"
   integrity sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==

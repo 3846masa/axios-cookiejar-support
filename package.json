@@ -35,7 +35,7 @@
     "tough-cookie": ">=4.0.0"
   },
   "devDependencies": {
-    "@ava/typescript": "2.0.0",
+    "@ava/typescript": "3.0.1",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/exec": "5.0.0",
     "@semantic-release/git": "9.0.1",
