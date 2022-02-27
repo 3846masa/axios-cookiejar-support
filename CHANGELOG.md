@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/3846masa/axios-cookiejar-support/compare/v2.0.3...v2.0.4) (2022-02-27)
+
+
+### Bug Fixes
+
+* **deps:** update actions/setup-node action to v3 ([#450](https://github.com/3846masa/axios-cookiejar-support/issues/450)) ([0b6fca2](https://github.com/3846masa/axios-cookiejar-support/commit/0b6fca2c3d89c271616d66495a18e75813f6c1f7))
+
 ## [2.0.3](https://github.com/3846masa/axios-cookiejar-support/compare/v2.0.2...v2.0.3) (2021-10-14)
 
 
