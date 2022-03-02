@@ -5,17 +5,19 @@
   "reviewers": ["3846masa"],
   "labels": ["dependencies"],
   "semanticCommits": "enabled",
-  "semanticCommitType": "fix",
+  "semanticCommitType": "chore",
   "semanticCommitScope": "deps",
   "packageRules": [
     {
-      "matchDepTypes": ["peerDependencies"],
-      "enabled": false
+      "matchManagers": ["npm"],
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "npm-deps"
     },
     {
+      "matchManagers": ["npm"],
       "matchDepTypes": ["devDependencies"],
       "semanticCommitType": "chore",
-      "semanticCommitScope": "deps-dev"
+      "semanticCommitScope": "npm-deps-dev"
     },
     {
       "matchUpdateTypes": ["minor", "patch"],
