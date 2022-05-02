@@ -1182,11 +1182,6 @@ convert-to-spaces@^2.0.1:
   resolved "https://registry.yarnpkg.com/convert-to-spaces/-/convert-to-spaces-2.0.1.tgz#61a6c98f8aa626c16b296b862a91412a33bceb6b"
   integrity sha512-rcQ1bsQO9799wq24uE5AM2tAILy4gXGIK/njFWcVQkGNZ96edlpY+A7bjwvzjYvLDyzmG1MmMLZhpcsb+klNMQ==
 
-cookie@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/cookie/-/cookie-0.4.1.tgz#afd713fe26ebd21ba95ceb61f9a8116e50a537d1"
-  integrity sha512-ZwrFkGJxUR3EIoXtO+yVE69Eb7KlixbaeAWfBQB9vVsNn/o+Yw69gBWSSDK825hQNdN+wF8zELf3dFNl/kxkUA==
-
 core-util-is@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -1868,13 +1863,12 @@ http-cache-semantics@^4.1.0:
   resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.1.0.tgz#49e91c5cbf36c9b94bcfcd71c23d5249ec74e390"
   integrity sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ==
 
-http-cookie-agent@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/http-cookie-agent/-/http-cookie-agent-1.0.2.tgz#563f7b590ffb6361bbba0ae974d58e1ec97ff8c8"
-  integrity sha512-F5gdg5ZtXQ0uChYM1uJUCzSPh/bJiDsVGNxqs3GcsvifS/w6/Rj2+keyTpDju6Os2/TV5YqQoYquxfBXmfAnNw==
+http-cookie-agent@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/http-cookie-agent/-/http-cookie-agent-1.0.6.tgz#4d11436be06e4b2e00ee2e729a2abd79d969e639"
+  integrity sha512-Ei0BDjMfy6MSXATmCZ5nWr935NLYl6eD/BTxVGOIrKAlg4xDtMdk+8a+caq6Qwa4FACn+vACj89pFKlXmHOnkQ==
   dependencies:
     agent-base "^6.0.2"
-    cookie "^0.4.1"
 
 http-proxy-agent@^4.0.0, http-proxy-agent@^4.0.1:
   version "4.0.1"
