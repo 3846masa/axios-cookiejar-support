@@ -1,3 +1,5 @@
+## [2.0.5](https://github.com/3846masa/axios-cookiejar-support/compare/v2.0.4...v2.0.5) (2022-05-02)
+
 ## [2.0.4](https://github.com/3846masa/axios-cookiejar-support/compare/v2.0.3...v2.0.4) (2022-02-27)
 
 
