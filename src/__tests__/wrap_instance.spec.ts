@@ -3,6 +3,7 @@ import axios from 'axios';
 import { CookieJar } from 'tough-cookie';
 
 import { wrapper } from '../';
+
 import { createTestServer } from './helpers';
 
 test.serial('should store cookies to cookiejar when instance was wrapped', async (t) => {

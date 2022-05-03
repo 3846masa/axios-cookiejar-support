@@ -1,9 +1,9 @@
-import http from 'http';
-import { promisify } from 'util';
+import http from 'node:http';
+import { promisify } from 'node:util';
 
 export async function createTestServer(
   stories: http.RequestListener[],
-): Promise<{ server: http.Server; port: number }> {
+): Promise<{ port: number; server: http.Server }> {
   const server = http.createServer();
 
   await promisify(server.listen).apply(server);
@@ -24,7 +24,7 @@ export async function createTestServer(
   });
 
   return {
-    server,
     port: serverInfo.port,
+    server,
   };
 }

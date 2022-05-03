@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { CookieJar } from 'tough-cookie';
 import { wrapper } from 'axios-cookiejar-support';
+import { CookieJar } from 'tough-cookie';
 
 wrapper(axios);
 

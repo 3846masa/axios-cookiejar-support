@@ -1,10 +1,12 @@
+import http from 'node:http';
+import https from 'node:https';
+
 import test from 'ava';
-import http from 'http';
-import https from 'https';
 import axios from 'axios';
 import { CookieJar } from 'tough-cookie';
 
 import { wrapper } from '../';
+
 import { createTestServer } from './helpers';
 
 test.before(() => {
@@ -20,7 +22,7 @@ test.serial('should receive response correctly', async (t) => {
 
   const jar = new CookieJar();
 
-  const { status, data } = await axios.get(`http://localhost:${port}`, { jar, responseType: 'text' });
+  const { data, status } = await axios.get(`http://localhost:${port}`, { jar, responseType: 'text' });
   t.is(status, 200);
   t.is(data, 'Hello World!');
 
@@ -75,8 +77,8 @@ test.serial('should merge cookies from cookiejar and cookie header', async (t) =
   await jar.setCookie('key1=value1', `http://localhost:${port}`);
 
   await axios.get(`http://localhost:${port}`, {
-    jar,
     headers: { Cookie: 'key2=value2' },
+    jar,
   });
 
   t.plan(1);
@@ -148,7 +150,7 @@ test.serial('should send cookies even when target is same host but different por
 });
 
 test.serial('should throw error when config.httpAgent was assigned', async (t) => {
-  const { server, port } = await createTestServer([
+  const { port, server } = await createTestServer([
     (_req, res) => {
       res.end();
     },
@@ -158,7 +160,7 @@ test.serial('should throw error when config.httpAgent was assigned', async (t) =
 
   await t.throwsAsync(
     async () => {
-      await axios.get(`http://localhost:${port}`, { jar, httpAgent: new http.Agent() });
+      await axios.get(`http://localhost:${port}`, { httpAgent: new http.Agent(), jar });
     },
     {
       message: 'axios-cookiejar-support does not support for use with other http(s).Agent.',
@@ -170,7 +172,7 @@ test.serial('should throw error when config.httpAgent was assigned', async (t) =
 });
 
 test.serial('should throw error when config.httpsAgent was assigned', async (t) => {
-  const { server, port } = await createTestServer([
+  const { port, server } = await createTestServer([
     (_req, res) => {
       res.end();
     },
@@ -180,7 +182,7 @@ test.serial('should throw error when config.httpsAgent was assigned', async (t) 
 
   await t.throwsAsync(
     async () => {
-      await axios.get(`http://localhost:${port}`, { jar, httpsAgent: new https.Agent() });
+      await axios.get(`http://localhost:${port}`, { httpsAgent: new https.Agent(), jar });
     },
     {
       message: 'axios-cookiejar-support does not support for use with other http(s).Agent.',
@@ -192,7 +194,7 @@ test.serial('should throw error when config.httpsAgent was assigned', async (t) 
 });
 
 test.serial('should throw error when config.jar was assigned with boolean', async (t) => {
-  const { server, port } = await createTestServer([
+  const { port, server } = await createTestServer([
     (_req, res) => {
       res.end();
     },
@@ -201,7 +203,7 @@ test.serial('should throw error when config.jar was assigned with boolean', asyn
   await t.throwsAsync(
     async () => {
       await axios.get(`http://localhost:${port}`, {
-        // @ts-expect-error
+        // @ts-expect-error ...
         jar: true,
       });
     },
