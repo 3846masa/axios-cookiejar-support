@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/3846masa/axios-cookiejar-support/compare/v2.0.5...v3.0.0) (2022-05-03)
+
+
+### Features
+
+* drop Node.js v12 support ([#472](https://github.com/3846masa/axios-cookiejar-support/issues/472)) ([3ed3b37](https://github.com/3846masa/axios-cookiejar-support/commit/3ed3b3739fda356f2aa07c72c7b48c88b773e84f))
+
+
+### BREAKING CHANGES
+
+* drop Node.js v12 support, please use v14 or above
+
 ## [2.0.5](https://github.com/3846masa/axios-cookiejar-support/compare/v2.0.4...v2.0.5) (2022-05-02)
 
 ## [2.0.4](https://github.com/3846masa/axios-cookiejar-support/compare/v2.0.3...v2.0.4) (2022-02-27)
