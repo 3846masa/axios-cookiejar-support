@@ -1,62 +1,13 @@
 {
   "compilerOptions": {
-    // "incremental": true,
-    "target": "ESNext",
-    "module": "CommonJS",
-    "lib": ["ESNext"],
-    // "allowJs": true,
-    // "checkJs": true,
-    // "jsx": "preserve",
     "declaration": true,
-    // "declarationMap": true,
-    // "sourceMap": true,
-    // "outFile": "./",
+    "lib": ["ESNext"],
+    "module": "CommonJS",
     "outDir": "./dist",
     "rootDir": "./src",
-    // "composite": true,
-    // "tsBuildInfoFile": "./",
-    // "removeComments": true,
-    // "noEmit": true,
-    // "importHelpers": true,
-    // "downlevelIteration": true,
-    // "isolatedModules": true,
-
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true,
-    // "noImplicitReturns": true,
-    // "noFallthroughCasesInSwitch": true,
-    // "noUncheckedIndexedAccess": true,
-    // "noPropertyAccessFromIndexSignature": true,
-
-    "moduleResolution": "node",
-    "baseUrl": "./",
-    // "paths": {},
-    // "rootDirs": [],
-    // "typeRoots": [],
-    "types": ["@types/node"],
-    // "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    // "preserveSymlinks": true,
-    // "allowUmdGlobalAccess": true,
-
-    // "sourceRoot": "",
-    // "mapRoot": "",
-    // "inlineSourceMap": true,
-    // "inlineSources": true,
-
-    // "experimentalDecorators": true,
-    // "emitDecoratorMetadata": true,
-
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "target": "ESNext",
+    "types": ["@types/node"]
+  },
+  "extends": "@3846masa/configs/tsconfig.json",
+  "include": ["src/**/*"]
 }
