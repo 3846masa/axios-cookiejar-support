@@ -1,12 +1,12 @@
-import type { CookieJar } from 'tough-cookie';
+import 'axios';
 
 declare module 'axios' {
-  interface AxiosInterceptorManager<V> {
+  interface AxiosInterceptorManager {
     handlers: Array<{
       fulfilled: (...args: unknown[]) => unknown;
       rejected: (...args: unknown[]) => unknown;
-      synchronous: unknown;
       runWhen: unknown;
+      synchronous: unknown;
     }>;
   }
 }

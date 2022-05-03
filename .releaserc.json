@@ -4,21 +4,44 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    ["@semantic-release/npm", { "npmPublish": false }],
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false
+      }
+    ],
     "@semantic-release/github",
-    ["@semantic-release/git", { "assets": ["CHANGELOG.md", "package.json"] }],
+    [
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md", "package.json"]
+      }
+    ],
     [
       "@semantic-release/exec",
-      { "verifyConditionsCmd": "./.scripts/verify_conditions.sh", "publishCmd": "./.scripts/publish.sh" }
+      {
+        "publishCmd": "./.scripts/publish.sh",
+        "verifyConditionsCmd": "./.scripts/verify_conditions.sh"
+      }
     ]
   ],
   "preset": "angular",
   "releaseRules": [
-    { "breaking": true, "release": "major" },
-    { "revert": true, "release": "patch" },
-    { "type": "feat", "release": "minor" },
-    { "type": "fix", "release": "patch" },
-    { "type": "docs", "release": "patch" },
-    { "type": "chore", "scope": "npm-deps", "release": "patch" }
+    {
+      "breaking": true,
+      "release": "major"
+    },
+    {
+      "release": "patch",
+      "revert": true
+    },
+    {
+      "release": "minor",
+      "type": "feat"
+    },
+    {
+      "release": "patch",
+      "type": "fix"
+    }
   ]
 }

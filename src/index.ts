@@ -1,7 +1,6 @@
-import type { AxiosStatic, AxiosInstance, AxiosRequestConfig } from 'axios';
-import type { CookieJar } from 'tough-cookie';
-
+import type { AxiosInstance, AxiosRequestConfig, AxiosStatic } from 'axios';
 import { HttpCookieAgent, HttpsCookieAgent } from 'http-cookie-agent';
+import type { CookieJar } from 'tough-cookie';
 
 declare module 'axios' {
   interface AxiosRequestConfig {
@@ -14,7 +13,7 @@ function requestInterceptor(config: AxiosRequestConfig): AxiosRequestConfig {
     return config;
   }
 
-  // @ts-expect-error
+  // @ts-expect-error ...
   if (config.jar === true) {
     throw new Error('config.jar does not accept boolean since axios-cookiejar-support@2.0.0.');
   }

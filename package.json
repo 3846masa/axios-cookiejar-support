@@ -2,18 +2,26 @@
   "name": "axios-cookiejar-support",
   "version": "3.0.0",
   "description": "Add tough-cookie support to axios.",
-  "license": "MIT",
-  "author": "3846masa <3846masahiro+git@gmail.com>",
+  "keywords": [
+    "axios",
+    "cookie",
+    "cookiejar",
+    "cookies",
+    "tough-cookie"
+  ],
   "homepage": "https://github.com/3846masa/axios-cookiejar-support#readme",
+  "bugs": {
+    "url": "https://github.com/3846masa/axios-cookiejar-support/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/3846masa/axios-cookiejar-support.git"
   },
-  "bugs": {
-    "url": "https://github.com/3846masa/axios-cookiejar-support/issues"
-  },
+  "license": "MIT",
+  "author": "3846masa <3846masahiro+git@gmail.com>",
   "main": "dist/index.js",
   "browser": "noop.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "noop.js",
@@ -22,43 +30,16 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
+    "format": "npm-run-all format:*",
+    "format:eslint": "eslint --fix --ext .js,.ts,.mjs,.mts .",
+    "format:prettier": "prettier --write .",
+    "lint": "npm-run-all lint:*",
+    "lint:eslint": "eslint --ext .js,.ts,.mjs,.mts .",
+    "lint:prettier": "prettier --check .",
+    "lint:tsc": "tsc --noEmit",
     "semantic-release": "semantic-release",
     "pretest": "npm run build",
     "test": "ava"
-  },
-  "types": "dist/index.d.ts",
-  "dependencies": {
-    "http-cookie-agent": "^2.0.0"
-  },
-  "peerDependencies": {
-    "axios": ">=0.20.0",
-    "tough-cookie": ">=4.0.0"
-  },
-  "devDependencies": {
-    "@ava/typescript": "3.0.1",
-    "@semantic-release/changelog": "5.0.1",
-    "@semantic-release/exec": "5.0.0",
-    "@semantic-release/git": "9.0.1",
-    "@types/node": "14.18.16",
-    "@types/tough-cookie": "4.0.2",
-    "ava": "4.2.0",
-    "axios": "0.27.2",
-    "semantic-release": "17.4.7",
-    "tough-cookie": "4.0.0",
-    "typescript": "4.6.4"
-  },
-  "keywords": [
-    "axios",
-    "cookie",
-    "cookiejar",
-    "cookies",
-    "tough-cookie"
-  ],
-  "engines": {
-    "node": ">=14.18.0 <15.0.0 || >=16.0.0"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "ava": {
     "files": [
@@ -70,5 +51,33 @@
       },
       "compile": false
     }
+  },
+  "dependencies": {
+    "http-cookie-agent": "^2.0.0"
+  },
+  "devDependencies": {
+    "@3846masa/configs": "github:3846masa/configs",
+    "@ava/typescript": "3.0.1",
+    "@semantic-release/changelog": "5.0.1",
+    "@semantic-release/exec": "5.0.0",
+    "@semantic-release/git": "9.0.1",
+    "@types/node": "14.18.16",
+    "@types/tough-cookie": "4.0.2",
+    "ava": "4.2.0",
+    "axios": "0.27.2",
+    "npm-run-all": "4.1.5",
+    "semantic-release": "17.4.7",
+    "tough-cookie": "4.0.0",
+    "typescript": "4.6.4"
+  },
+  "peerDependencies": {
+    "axios": ">=0.20.0",
+    "tough-cookie": ">=4.0.0"
+  },
+  "engines": {
+    "node": ">=14.18.0 <15.0.0 || >=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
