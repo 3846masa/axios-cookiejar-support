@@ -1,8 +1,16 @@
 # MIGRATION GUIDES
 
-## Migration guide from v1.0.x to v2.0.0
+## Migration guide from v2.x.x to v3.0.0
 
 - [Update requirements.](#update-requirements)
+
+### Update requirements.
+
+- Node.js v14.18.0 / v16.0.0 or above
+
+## Migration guide from v1.0.x to v2.0.0
+
+- [Update requirements.](#update-requirements-1)
 - [The wrapper function are exported as "named exports".](#the-wrapper-function-are-exported-as-named-exports)
 - [No longer refers to `config.withCredentials`.](#no-longer-refers-to-configwithcredentials)
 - [`config.httpAgent` / `config.httpsAgent` cannot use with `axios-cookiejar-support`.](#confighttpagent--confighttpsagent-cannot-use-with-axios-cookiejar-support)
