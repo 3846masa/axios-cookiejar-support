@@ -71,7 +71,7 @@
     "typescript": "4.6.4"
   },
   "peerDependencies": {
-    "axios": ">=0.20.0",
+    "axios": ">=0.27.2",
     "tough-cookie": ">=4.0.0"
   },
   "engines": {
