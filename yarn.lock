@@ -430,10 +430,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.2.tgz#ee771e2ba4b3dc5b372935d549fd9617bf345b8c"
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
-"@types/node@12.20.50":
-  version "12.20.50"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.50.tgz#14ba5198f1754ffd0472a2f84ab433b45ee0b65e"
-  integrity sha512-+9axpWx2b2JCVovr7Ilgt96uc6C1zBKOQMpGtRbWT9IoR/8ue32GGMfGA4woP8QyP2gBs6GQWEVM3tCybGCxDA==
+"@types/node@14.18.16":
+  version "14.18.16"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.16.tgz#878f670ba3f00482bf859b6550b6010610fc54b5"
+  integrity sha512-X3bUMdK/VmvrWdoTkz+VCn6nwKwrKCFTHtqwBIaQJNx4RUIBBUFXM00bqPz/DsDd+Icjmzm6/tyYZzeGVqb6/Q==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -1863,10 +1863,10 @@ http-cache-semantics@^4.1.0:
   resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.1.0.tgz#49e91c5cbf36c9b94bcfcd71c23d5249ec74e390"
   integrity sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ==
 
-http-cookie-agent@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/http-cookie-agent/-/http-cookie-agent-1.0.6.tgz#4d11436be06e4b2e00ee2e729a2abd79d969e639"
-  integrity sha512-Ei0BDjMfy6MSXATmCZ5nWr935NLYl6eD/BTxVGOIrKAlg4xDtMdk+8a+caq6Qwa4FACn+vACj89pFKlXmHOnkQ==
+http-cookie-agent@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/http-cookie-agent/-/http-cookie-agent-2.0.0.tgz#0b8b7bb6eaecac79a4518421506bc1d7c32709c5"
+  integrity sha512-FHz6qr/U5UB55y+gSJd3qUkqsmMxz/dqjfNZ3DXi8l5atCiD0C+uRwFSbijSibYKFYnSvzp2t1HXx3ZJ5GZ2zA==
   dependencies:
     agent-base "^6.0.2"
 
