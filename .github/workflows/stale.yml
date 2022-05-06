@@ -12,11 +12,12 @@ jobs:
     steps:
       - uses: actions/stale@3cc123766321e9f15a6676375c154ccffb12a358 # renovate: tag=v5.0.0
         with:
-          days-before-issue-stale: 30
-          days-before-issue-close: 14
+          days-before-stale: 30
+          days-before-close: 7
           stale-issue-label: 'stale'
           stale-issue-message: 'This issue is stale because it has been open for 30 days with no activity.'
-          close-issue-message: 'This issue was closed because it has been inactive for 14 days since being marked as stale.'
-          days-before-pr-stale: -1
-          days-before-pr-close: -1
+          close-issue-message: 'This issue was closed because it has been inactive for 7 days since being marked as stale.'
+          stale-pr-message: 'This PR is stale because it has been open for 30 days with no activity.'
+          close-pr-message: 'This PR was closed because it has been inactive for 7 days since being marked as stale.'
+          exempt-pr-labels: 'dependencies'
           repo-token: ${{ secrets.GITHUB_TOKEN }}
