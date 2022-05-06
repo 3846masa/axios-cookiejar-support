@@ -9,13 +9,13 @@ export async function createTestServer(
   await promisify(server.listen).apply(server);
 
   const serverInfo = server.address();
-  if (serverInfo === null || typeof serverInfo === 'string') {
+  if (serverInfo == null || typeof serverInfo === 'string') {
     throw new Error('Failed to setup a test server.');
   }
 
   server.on('request', (req, res) => {
     const listener = stories.shift();
-    if (listener !== undefined) {
+    if (listener != null) {
       listener(req, res);
     }
     if (stories.length === 0) {
