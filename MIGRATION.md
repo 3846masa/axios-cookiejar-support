@@ -1,5 +1,36 @@
 # MIGRATION GUIDES
 
+## Migration guide from v3.x.x to v4.0.0
+
+- [An asynchronous Cookie store is no longer supported.](#an-asynchronous-cookie-store-is-no-longer-supported)
+
+### An asynchronous Cookie store is no longer supported.
+
+An asynchronous Cookie store (e.g. `redis-cookie-store`) is no longer supported.
+
+(If you create a CookieJar without options, this change has no effect.)
+
+`http-cookie-agent` allows to use an asynchronous Cookie store.
+
+```js
+import axios from 'axios';
+import { CookieJar } from 'tough-cookie';
+import redis from 'redis';
+import RedisCookieStore from 'redis-cookie-store';
+import { HttpCookieAgent, HttpsCookieAgent } from 'http-cookie-agent/node:http';
+
+const redisClient = redis.createClient();
+const store = new RedisCookieStore(redisClient);
+const jar = new CookieJar(store);
+
+const client = axios.create({
+  httpAgent: new HttpCookieAgent({ cookies: { async_UNSTABLE: true, jar } }),
+  httpsAgent: new HttpsCookieAgent({ cookies: { async_UNSTABLE: true, jar } }),
+});
+
+await client.get('https://example.com');
+```
+
 ## Migration guide from v2.x.x to v3.0.0
 
 - [Update requirements.](#update-requirements)
