@@ -1,5 +1,5 @@
 import type { AxiosInstance, AxiosRequestConfig, AxiosStatic } from 'axios';
-import { HttpCookieAgent, HttpsCookieAgent } from 'http-cookie-agent';
+import { HttpCookieAgent, HttpsCookieAgent } from 'http-cookie-agent/node:http';
 import type { CookieJar } from 'tough-cookie';
 
 declare module 'axios' {
@@ -22,8 +22,8 @@ function requestInterceptor(config: AxiosRequestConfig): AxiosRequestConfig {
     throw new Error('axios-cookiejar-support does not support for use with other http(s).Agent.');
   }
 
-  config.httpAgent = new HttpCookieAgent({ jar: config.jar });
-  config.httpsAgent = new HttpsCookieAgent({ jar: config.jar });
+  config.httpAgent = new HttpCookieAgent({ cookies: { jar: config.jar } });
+  config.httpsAgent = new HttpsCookieAgent({ cookies: { jar: config.jar } });
 
   return config;
 }
