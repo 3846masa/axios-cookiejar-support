@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/3846masa/axios-cookiejar-support/compare/v3.0.0...v4.0.0) (2022-05-07)
+
+
+### Features
+
+* **npm:** update dependency http-cookie-agent to ^3.0.0 ([#482](https://github.com/3846masa/axios-cookiejar-support/issues/482)) ([1dac53a](https://github.com/3846masa/axios-cookiejar-support/commit/1dac53a0c26e51c8d4327b3ee30304fc29ba1cf3))
+
+
+### BREAKING CHANGES
+
+* **npm:** an asynchronous Cookie store (e.g. `redis-cookie-store`) is no longer supported.
+
 # [3.0.0](https://github.com/3846masa/axios-cookiejar-support/compare/v2.0.5...v3.0.0) (2022-05-03)
 
 
