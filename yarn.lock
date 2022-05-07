@@ -2434,10 +2434,10 @@ http-cache-semantics@^4.1.0:
   resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.1.0.tgz#49e91c5cbf36c9b94bcfcd71c23d5249ec74e390"
   integrity sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ==
 
-http-cookie-agent@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/http-cookie-agent/-/http-cookie-agent-2.0.0.tgz#0b8b7bb6eaecac79a4518421506bc1d7c32709c5"
-  integrity sha512-FHz6qr/U5UB55y+gSJd3qUkqsmMxz/dqjfNZ3DXi8l5atCiD0C+uRwFSbijSibYKFYnSvzp2t1HXx3ZJ5GZ2zA==
+http-cookie-agent@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/http-cookie-agent/-/http-cookie-agent-2.1.2.tgz#b39aab0f79dd1cb9b68f6017b03ea12b8dc09478"
+  integrity sha512-JW4vAM0mx8fG49Kz0Lg5rj+k9uGH0/qXLguo+axyBUZ5bOpKrSkIpb2UaV3i4agqkD2zC5vLZMYEjSGSlErhwA==
   dependencies:
     agent-base "^6.0.2"
 
