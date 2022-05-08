@@ -1,5 +1,5 @@
 import type { AxiosInstance, AxiosRequestConfig, AxiosStatic } from 'axios';
-import { HttpCookieAgent, HttpsCookieAgent } from 'http-cookie-agent/node:http';
+import { HttpCookieAgent, HttpsCookieAgent } from 'http-cookie-agent/http';
 import type { CookieJar } from 'tough-cookie';
 
 declare module 'axios' {

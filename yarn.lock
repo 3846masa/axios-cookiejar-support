@@ -4,7 +4,6 @@
 
 "@3846masa/configs@github:3846masa/configs#c9cb404fd4e6ead15044c605e014aecea1182124":
   version "1.0.0"
-  uid c9cb404fd4e6ead15044c605e014aecea1182124
   resolved "https://codeload.github.com/3846masa/configs/tar.gz/c9cb404fd4e6ead15044c605e014aecea1182124"
   dependencies:
     "@tsconfig/strictest" "1.0.1"
@@ -2434,10 +2433,10 @@ http-cache-semantics@^4.1.0:
   resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.1.0.tgz#49e91c5cbf36c9b94bcfcd71c23d5249ec74e390"
   integrity sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ==
 
-http-cookie-agent@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/http-cookie-agent/-/http-cookie-agent-3.0.0.tgz#315d2290ed2bc908a9b7343b1c017ccef8eafd24"
-  integrity sha512-wqlyPQSKdMbb4Wj2PpFDDhVEzbZ56VbhwFJ4b1msJgk5XmpFtCciIwIEpg181S7U3k+JrAV+6z3j3rzYl0DvOQ==
+http-cookie-agent@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/http-cookie-agent/-/http-cookie-agent-4.0.0.tgz#66da5577c844cac1677d1b6f12e8d7d0ef64d73f"
+  integrity sha512-QkM0nYmTy1P0HiHlIQz/Vt18wVU1vYdwES7Kd60urh4ch1ko83swGMb10Ev9IgUWJwl4QCytf6+i6sBkyyqizg==
   dependencies:
     agent-base "^6.0.2"
 

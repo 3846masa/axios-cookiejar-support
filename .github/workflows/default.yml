@@ -19,10 +19,11 @@ jobs:
       - run: yarn lint
   test:
     name: Test
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         node: ["14", "16", "18"]
+        os: ["ubuntu-latest", "macos-latest", "windows-latest"]
     steps:
       - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3.0.2
       - uses: actions/setup-node@56337c425554a6be30cdef71bf441f15be286854 # tag=v3.1.1
