@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@3846masa/configs@github:3846masa/configs#f58359ef90371627df765df8e8caff69b85dfb23":
-  version "1.0.19"
-  uid f58359ef90371627df765df8e8caff69b85dfb23
-  resolved "https://codeload.github.com/3846masa/configs/tar.gz/f58359ef90371627df765df8e8caff69b85dfb23"
+"@3846masa/configs@github:3846masa/configs#c80e1fee19f90246b2d5e1bc8d5843c9001c5c8c":
+  version "1.0.20"
+  uid c80e1fee19f90246b2d5e1bc8d5843c9001c5c8c
+  resolved "https://codeload.github.com/3846masa/configs/tar.gz/c80e1fee19f90246b2d5e1bc8d5843c9001c5c8c"
   dependencies:
     "@tsconfig/strictest" "1.0.1"
     "@typescript-eslint/eslint-plugin" "5.29.0"
@@ -13,7 +13,7 @@
     better-typescript-lib "2.1.0"
     eslint "8.18.0"
     eslint-config-prettier "8.5.0"
-    eslint-import-resolver-typescript "3.1.0"
+    eslint-import-resolver-typescript "3.1.1"
     eslint-plugin-import "2.26.0"
     eslint-plugin-sort "2.4.0"
     eslint-plugin-unicorn "42.0.0"
@@ -1861,10 +1861,10 @@ eslint-import-resolver-node@^0.3.6:
     debug "^3.2.7"
     resolve "^1.20.0"
 
-eslint-import-resolver-typescript@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-import-resolver-typescript/-/eslint-import-resolver-typescript-3.1.0.tgz#c2d244ad9285a27470959743ed55297748ee8ee4"
-  integrity sha512-sWRwY40hH3YKZL4eMbXHKAbmnoN+CQ/XoehVX4POeJYhaM0zKf/HZC3qzvYcA9mdaTD/63H7NSRMujTkFgvUXw==
+eslint-import-resolver-typescript@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-import-resolver-typescript/-/eslint-import-resolver-typescript-3.1.1.tgz#9a3e4b9260a39608b7e42fd12190f19f9913fcc3"
+  integrity sha512-rnC7s69VAXeg3RVhPIhiX8M/fHiPaDyK8zqw8wUDYy34weWQcfyvN5sw/74HhGKiv/teD+BF8bQMZthoyrWTvA==
   dependencies:
     debug "^4.3.4"
     enhanced-resolve "^5.9.3"
