@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@3846masa/configs@github:3846masa/configs#e67cb0eecf73b36d5341c4fdc8327f624d25f6a4":
-  version "1.0.34"
-  uid e67cb0eecf73b36d5341c4fdc8327f624d25f6a4
-  resolved "https://codeload.github.com/3846masa/configs/tar.gz/e67cb0eecf73b36d5341c4fdc8327f624d25f6a4"
+"@3846masa/configs@github:3846masa/configs#4e4f408cbb6ce43ce9ed74e7ad62ef1f7fdbd8df":
+  version "1.0.35"
+  uid "4e4f408cbb6ce43ce9ed74e7ad62ef1f7fdbd8df"
+  resolved "https://codeload.github.com/3846masa/configs/tar.gz/4e4f408cbb6ce43ce9ed74e7ad62ef1f7fdbd8df"
   dependencies:
     "@tsconfig/strictest" "1.0.1"
     "@typescript-eslint/eslint-plugin" "5.30.5"
@@ -16,7 +16,7 @@
     eslint-import-resolver-typescript "3.1.1"
     eslint-plugin-import "2.26.0"
     eslint-plugin-sort "2.4.0"
-    eslint-plugin-unicorn "42.0.0"
+    eslint-plugin-unicorn "43.0.1"
     prettier "2.7.1"
     prettier-plugin-packagejson "2.2.18"
     prettier-plugin-sort-json "0.0.2"
@@ -37,10 +37,10 @@
   dependencies:
     "@babel/highlight" "^7.16.7"
 
-"@babel/helper-validator-identifier@^7.15.7", "@babel/helper-validator-identifier@^7.16.7":
-  version "7.16.7"
-  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.16.7.tgz#e8c602438c4a8195751243da9031d1607d247cad"
-  integrity sha512-hsEnFemeiW4D08A5gUAZxLBTXpZ39P+a+DGDsHw1yxqyQ/jzFEnxf5uTEGp+3bzAbNOxU1paTgYS4ECU/IgfDw==
+"@babel/helper-validator-identifier@^7.16.7", "@babel/helper-validator-identifier@^7.18.6":
+  version "7.18.6"
+  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.18.6.tgz#9c97e30d31b2b8c72a1d08984f2ca9b574d7a076"
+  integrity sha512-MmetCkz9ej86nJQV+sFCxoGGrUbU3q02kgLciwkrt9QqEB7cP39oKEY0PakknEO0Gu20SskMRi+AYZ3b1TpN9g==
 
 "@babel/highlight@^7.16.7":
   version "7.17.9"
@@ -1268,10 +1268,10 @@ chunkd@^2.0.1:
   resolved "https://registry.yarnpkg.com/chunkd/-/chunkd-2.0.1.tgz#49cd1d7b06992dc4f7fccd962fe2a101ee7da920"
   integrity sha512-7d58XsFmOq0j6el67Ug9mHf9ELUXsQXYJBkyxhH/k+6Ke0qXRnv0kbemx+Twc6fRJ07C49lcbdgm9FL1Ei/6SQ==
 
-ci-info@^3.3.0, ci-info@^3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.3.1.tgz#58331f6f472a25fe3a50a351ae3052936c2c7f32"
-  integrity sha512-SXgeMX9VwDe7iFFaEWkA5AstuER9YKqy4EhHqr4DVqkwmD9rpVimkMKWHdjn30Ja45txyjhSn63lVX69eVCckg==
+ci-info@^3.3.1, ci-info@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-3.3.2.tgz#6d2967ffa407466481c6c90b6e16b3098f080128"
+  integrity sha512-xmDt/QIAdeZ9+nfdPsaBCpMvHNLFiLdjj59qjqn+6iPe6YmHGQ35sBnQ8uslRBXFmXkiZQOJRjvQeoGppoTjjg==
 
 ci-parallel-vars@^1.0.1:
   version "1.0.1"
@@ -1908,13 +1908,13 @@ eslint-plugin-sort@2.4.0:
   dependencies:
     "@typescript-eslint/experimental-utils" "^5.9.0"
 
-eslint-plugin-unicorn@42.0.0:
-  version "42.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-42.0.0.tgz#47d60c00c263ad743403b052db689e39acbacff1"
-  integrity sha512-ixBsbhgWuxVaNlPTT8AyfJMlhyC5flCJFjyK3oKE8TRrwBnaHvUbuIkCM1lqg8ryYrFStL/T557zfKzX4GKSlg==
+eslint-plugin-unicorn@43.0.1:
+  version "43.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-43.0.1.tgz#71c79caa95dde626c1cd285540fbccaafc262511"
+  integrity sha512-wYvF6q0RRTKw6gzbKy5bbazWUrBEPIto2S9U6eSF+tsHgtgE+CwQ6Bww1W2Ie9TRED01QkZRN79c5aVMFgrFYw==
   dependencies:
-    "@babel/helper-validator-identifier" "^7.15.7"
-    ci-info "^3.3.0"
+    "@babel/helper-validator-identifier" "^7.18.6"
+    ci-info "^3.3.2"
     clean-regexp "^1.0.0"
     eslint-utils "^3.0.0"
     esquery "^1.4.0"
@@ -1925,7 +1925,7 @@ eslint-plugin-unicorn@42.0.0:
     read-pkg-up "^7.0.1"
     regexp-tree "^0.1.24"
     safe-regex "^2.1.1"
-    semver "^7.3.5"
+    semver "^7.3.7"
     strip-indent "^3.0.0"
 
 eslint-scope@^5.1.1:
