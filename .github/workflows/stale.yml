@@ -10,7 +10,7 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - uses: actions/stale@3cc123766321e9f15a6676375c154ccffb12a358 # renovate: tag=v5.0.0
+      - uses: actions/stale@532554b8a8498a0e006fbcde824b048728c4178f # tag=v5.1.0
         with:
           days-before-stale: 30
           days-before-close: 7
