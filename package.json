@@ -53,7 +53,7 @@
     }
   },
   "dependencies": {
-    "http-cookie-agent": "^4.0.1"
+    "http-cookie-agent": "^4.0.2"
   },
   "devDependencies": {
     "@3846masa/configs": "github:3846masa/configs#8ae5f7cc4740f9fc2f9d773dcb91ec920a1e7fe2",
