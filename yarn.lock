@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@3846masa/configs@github:3846masa/configs#587d32e6411d8d9180dc7aea6cf22049205e4744":
-  version "1.0.53"
-  uid "587d32e6411d8d9180dc7aea6cf22049205e4744"
-  resolved "https://codeload.github.com/3846masa/configs/tar.gz/587d32e6411d8d9180dc7aea6cf22049205e4744"
+"@3846masa/configs@github:3846masa/configs#645a1feba24064abe86b299ce607cee5c929e71e":
+  version "1.0.54"
+  uid "645a1feba24064abe86b299ce607cee5c929e71e"
+  resolved "https://codeload.github.com/3846masa/configs/tar.gz/645a1feba24064abe86b299ce607cee5c929e71e"
   dependencies:
     "@tsconfig/strictest" "1.0.1"
     "@typescript-eslint/eslint-plugin" "5.33.0"
@@ -19,7 +19,7 @@
     eslint-plugin-unicorn "43.0.2"
     prettier "2.7.1"
     prettier-plugin-packagejson "2.2.18"
-    prettier-plugin-sort-json "0.0.2"
+    prettier-plugin-sort-json "0.0.3"
     typescript "4.7.4"
 
 "@ava/typescript@3.0.1":
@@ -567,10 +567,10 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
-"@types/prettier@^2.2.0":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.6.0.tgz#efcbd41937f9ae7434c714ab698604822d890759"
-  integrity sha512-G/AdOadiZhnJp0jXCaBQU449W2h716OW/EoXeYkCytxKL06X1WCXB4DZpp8TpZ8eyIJVS1cw4lrlkkSYU21cDw==
+"@types/prettier@^2.3.2":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.7.0.tgz#ea03e9f0376a4446f44797ca19d9c46c36e352dc"
+  integrity sha512-RI1L7N4JnW5gQw2spvL7Sllfuf1SaHdrZpCHiBlCXjIlufi1SMNnbu2teze3/QE67Fg2tBlH7W+mi4hVNk4p0A==
 
 "@types/retry@0.12.0":
   version "0.12.0"
@@ -4200,12 +4200,12 @@ prettier-plugin-packagejson@2.2.18:
   dependencies:
     sort-package-json "1.57.0"
 
-prettier-plugin-sort-json@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-sort-json/-/prettier-plugin-sort-json-0.0.2.tgz#e2aa58829d1b895ed8d9e762860b3e3b84607245"
-  integrity sha512-St9zu6Alb+cA+FmnIFmjFOrTmBFWohYPReVjcMAI2y9mE0YJcW+RIchjLuOeXkLdh+eQlQtXy+3/6W6ZgyllQw==
+prettier-plugin-sort-json@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-sort-json/-/prettier-plugin-sort-json-0.0.3.tgz#724a4c377e236f6689f3a7e99ec4d666d30536f7"
+  integrity sha512-1WLOaeaRJRyVzDmuPif32xRn77+K6J00XIin1O/XuXpD5wy3XX8XyoQH/BSlzwdZ3GpnTOJRyIGXhxDCUb4L9Q==
   dependencies:
-    "@types/prettier" "^2.2.0"
+    "@types/prettier" "^2.3.2"
 
 prettier@2.7.1:
   version "2.7.1"
