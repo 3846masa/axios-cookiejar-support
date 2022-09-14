@@ -61,7 +61,7 @@
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@types/node": "14.18.28",
+    "@types/node": "14.18.29",
     "@types/tough-cookie": "4.0.2",
     "ava": "4.3.3",
     "axios": "0.27.2",
