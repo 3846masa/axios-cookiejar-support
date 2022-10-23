@@ -18,7 +18,10 @@ function requestInterceptor(config: AxiosRequestConfig): AxiosRequestConfig {
     throw new Error('config.jar does not accept boolean since axios-cookiejar-support@2.0.0.');
   }
 
-  if (config.httpAgent && !(config.httpAgent instanceof HttpCookieAgent) || config.httpsAgent && !(config.httpsAgent instanceof HttpsCookieAgent)) {
+  if (
+    (config.httpAgent && !(config.httpAgent instanceof HttpCookieAgent)) ||
+    (config.httpsAgent && !(config.httpsAgent instanceof HttpsCookieAgent))
+  ) {
     throw new Error('axios-cookiejar-support does not support for use with other http(s).Agent.');
   }
 
