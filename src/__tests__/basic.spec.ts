@@ -8,6 +8,7 @@ import { CookieJar } from 'tough-cookie';
 import { wrapper } from '../';
 
 import { createTestServer } from './helpers';
+import { HttpsCookieAgent, HttpCookieAgent } from 'http-cookie-agent/http';
 
 test.before(() => {
   wrapper(axios);
@@ -213,5 +214,60 @@ test.serial('should throw error when config.jar was assigned with boolean', asyn
   );
 
   t.plan(1);
+  server.close();
+});
+
+
+test.serial('should not throw error when config.httpAgent is instance of HttpCookieAgent', async (t) => {
+  const { port, server } = await createTestServer([
+    (_req, res) => {
+      res.end();
+    },
+    (_req, res) => {
+      res.write('success');
+      res.end();
+    },
+  ]);
+
+  const jar = new CookieJar();
+
+  await t.notThrowsAsync(async () => {
+
+    const { config } = await axios.get(`http://localhost:${port}`, { jar })
+    // simulate request retry
+    t.assert(config.httpAgent instanceof HttpCookieAgent)
+    const { data } = await axios.get(`http://localhost:${port}`, { httpAgent: config.httpAgent, jar })
+    t.assert(data === 'success', '')
+
+  })
+
+  t.plan(3);
+  server.close();
+});
+
+test.serial('should not throw error when config.httpsAgent is instance of HttpsCookieAgent', async (t) => {
+  const { port, server } = await createTestServer([
+    (_req, res) => {
+      res.end();
+    },
+    (_req, res) => {
+      res.write('success');
+      res.end();
+    },
+  ]);
+
+  const jar = new CookieJar();
+
+  await t.notThrowsAsync(async () => {
+
+    const { config } = await axios.get(`http://localhost:${port}`, { jar })
+    // simulate request retry
+    t.assert(config.httpsAgent instanceof HttpsCookieAgent)
+    const { data } = await axios.get(`http://localhost:${port}`, { httpsAgent: config.httpsAgent, jar })
+    t.assert(data === 'success', '')
+
+  })
+
+  t.plan(3);
   server.close();
 });
