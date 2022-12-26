@@ -1,3 +1,10 @@
+## [4.0.4](https://github.com/3846masa/axios-cookiejar-support/compare/v4.0.3...v4.0.4) (2022-12-26)
+
+
+### Bug Fixes
+
+* allow to reuse config (e.g. axios-retry) ([#650](https://github.com/3846masa/axios-cookiejar-support/issues/650)) ([86a759c](https://github.com/3846masa/axios-cookiejar-support/commit/86a759ca0ade2c39cda4e1c79eab2b8e1510d9f1))
+
 ## [4.0.3](https://github.com/3846masa/axios-cookiejar-support/compare/v4.0.2...v4.0.3) (2022-07-26)
 
 
