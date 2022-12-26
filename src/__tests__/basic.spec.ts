@@ -215,3 +215,20 @@ test.serial('should throw error when config.jar was assigned with boolean', asyn
   t.plan(1);
   server.close();
 });
+
+test.serial('should allow to reuse config', async (t) => {
+  const { port } = await createTestServer([
+    (_req, res) => {
+      res.end('Hello World!');
+    },
+    (_req, res) => {
+      res.end('Hello World!');
+    },
+  ]);
+
+  const jar = new CookieJar();
+
+  const { config } = await axios.get(`http://localhost:${port}`, { jar, responseType: 'text' });
+  await axios.get(`http://localhost:${port}`, config);
+  t.pass();
+});
