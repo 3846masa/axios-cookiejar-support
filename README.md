@@ -51,6 +51,13 @@ declare module 'axios' {
 
 See also https://github.com/axios/axios#request-config .
 
+## FAQ
+
+- Q. Why can't I assign the httpAgent / httpsAgent?
+  - A. axios-cookiejar-support uses httpAgent / httpsAgent to read and write cookies. If other Agents are assigned, cookies cannot be read/written.
+- Q. I want to use it with another Agent (e.g., http-proxy-agent).
+  - A. Consider using http-cookie-agent. axios-cookiejar-support also uses http-cookie-agent. Read http-cookie-agent's README for more details.
+
 ## Contributing
 
 PRs accepted.
