@@ -1,3 +1,10 @@
+## [4.0.5](https://github.com/3846masa/axios-cookiejar-support/compare/v4.0.4...v4.0.5) (2022-12-28)
+
+
+### Bug Fixes
+
+* **docs:** add funding link to README ([#653](https://github.com/3846masa/axios-cookiejar-support/issues/653)) ([d3a21b6](https://github.com/3846masa/axios-cookiejar-support/commit/d3a21b6f78dc13f89030300bd1837d98fdd847dd))
+
 ## [4.0.4](https://github.com/3846masa/axios-cookiejar-support/compare/v4.0.3...v4.0.4) (2022-12-26)
 
 
