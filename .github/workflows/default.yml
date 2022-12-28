@@ -32,6 +32,22 @@ jobs:
           cache: yarn
       - run: yarn install --frozen-lockfile
       - run: yarn test
+  passed:
+    name: All CI passed
+    runs-on: ubuntu-latest
+    needs:
+      - lint
+      - test
+    if: always()
+    steps:
+      - uses: actions/github-script@d556feaca394842dc55e4734bf3bb9f685482fa0 # tag=v6.3.3
+        env:
+          RESULT_JSON: ${{ toJSON(needs) }}
+        with:
+          script: |
+            const result = JSON.parse(process.env.RESULT_JSON);
+            const passed = Object.values(result).every(({ result }) => result === 'success');
+            if (!passed) process.exit(1);
   release:
     name: Release package
     if: github.ref == 'refs/heads/main'
@@ -40,11 +56,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b # v3.2.0
+        with:
+          ssh-key: ${{ secrets.DEPLOY_GIT_SSH_PRIVATE_KEY }}
       - uses: actions/setup-node@8c91899e586c5b171469028077307d293428b516 # tag=v3.5.1
         with:
           node-version: "16"
           cache: yarn
       - run: yarn install --frozen-lockfile
+      - run: yarn patch-package
       - run: yarn build
       - run: yarn run semantic-release
         env:
