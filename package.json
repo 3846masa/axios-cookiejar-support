@@ -17,6 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/3846masa/axios-cookiejar-support.git"
   },
+  "funding": "https://github.com/sponsors/3846masa",
   "license": "MIT",
   "author": "3846masa <3846masahiro+git@gmail.com>",
   "main": "dist/index.js",
