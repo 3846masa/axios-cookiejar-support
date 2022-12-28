@@ -48,5 +48,6 @@
       "release": "patch",
       "type": "fix"
     }
-  ]
+  ],
+  "repositoryUrl": "git@github.com:3846masa/axios-cookiejar-support.git"
 }

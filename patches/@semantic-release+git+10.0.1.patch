@@ -1,0 +1,13 @@
+diff --git a/node_modules/@semantic-release/git/lib/git.js b/node_modules/@semantic-release/git/lib/git.js
+index 267ef1d..1911c90 100644
+--- a/node_modules/@semantic-release/git/lib/git.js
++++ b/node_modules/@semantic-release/git/lib/git.js
+@@ -48,7 +48,7 @@ async function commit(message, execaOptions) {
+  * @throws {Error} if the push failed.
+  */
+ async function push(origin, branch, execaOptions) {
+-  await execa('git', ['push', '--tags', origin, `HEAD:${branch}`], execaOptions);
++  await execa('git', ['push', '--tags', '--force', origin, `HEAD:${branch}`], execaOptions);
+ }
+ 
+ /**
