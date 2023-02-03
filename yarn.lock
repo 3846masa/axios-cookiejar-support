@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@3846masa/configs@github:3846masa/configs#ae597109b6fd09200dc564678df654de9cf3147f":
-  version "1.0.143"
-  uid ae597109b6fd09200dc564678df654de9cf3147f
-  resolved "https://codeload.github.com/3846masa/configs/tar.gz/ae597109b6fd09200dc564678df654de9cf3147f"
+"@3846masa/configs@github:3846masa/configs#de8e888c24c7a39e56bed446feb085b48d10be77":
+  version "1.0.144"
+  uid de8e888c24c7a39e56bed446feb085b48d10be77
+  resolved "https://codeload.github.com/3846masa/configs/tar.gz/de8e888c24c7a39e56bed446feb085b48d10be77"
   dependencies:
     "@tsconfig/strictest" "1.0.2"
     "@typescript-eslint/eslint-plugin" "5.49.0"
@@ -20,7 +20,7 @@
     prettier "2.8.3"
     prettier-plugin-packagejson "2.4.2"
     prettier-plugin-sort-json "1.0.0"
-    typescript "4.9.4"
+    typescript "4.9.5"
 
 "@ava/typescript@3.0.1":
   version "3.0.1"
@@ -5360,11 +5360,6 @@ typed-array-length@^1.0.4:
     call-bind "^1.0.2"
     for-each "^0.3.3"
     is-typed-array "^1.1.9"
-
-typescript@4.9.4:
-  version "4.9.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.4.tgz#a2a3d2756c079abda241d75f149df9d561091e78"
-  integrity sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==
 
 typescript@4.9.5:
   version "4.9.5"
