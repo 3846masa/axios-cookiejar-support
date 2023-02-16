@@ -2,23 +2,23 @@
 # yarn lockfile v1
 
 
-"@3846masa/configs@github:3846masa/configs#5347f2c5052215232e73f136b857e9f3067d845f":
-  version "1.0.148"
-  uid "5347f2c5052215232e73f136b857e9f3067d845f"
-  resolved "https://codeload.github.com/3846masa/configs/tar.gz/5347f2c5052215232e73f136b857e9f3067d845f"
+"@3846masa/configs@github:3846masa/configs#95137f13c9fb0d78921200df6d58a79fa8e9881e":
+  version "1.0.151"
+  uid "95137f13c9fb0d78921200df6d58a79fa8e9881e"
+  resolved "https://codeload.github.com/3846masa/configs/tar.gz/95137f13c9fb0d78921200df6d58a79fa8e9881e"
   dependencies:
     "@tsconfig/strictest" "1.0.2"
     "@typescript-eslint/eslint-plugin" "5.51.0"
     "@typescript-eslint/parser" "5.51.0"
-    better-typescript-lib "2.2.0"
-    eslint "8.33.0"
+    better-typescript-lib "2.2.1"
+    eslint "8.34.0"
     eslint-config-prettier "8.6.0"
     eslint-import-resolver-typescript "3.5.3"
     eslint-plugin-import "2.27.5"
     eslint-plugin-sort "2.4.0"
     eslint-plugin-unicorn "45.0.2"
     prettier "2.8.4"
-    prettier-plugin-packagejson "2.4.2"
+    prettier-plugin-packagejson "2.4.3"
     prettier-plugin-sort-json "1.0.0"
     typescript "4.9.5"
 
@@ -713,75 +713,75 @@
     "@typescript-eslint/types" "5.51.0"
     eslint-visitor-keys "^3.3.0"
 
-"@typescript/lib-dom@npm:@better-typescript-lib/dom@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@better-typescript-lib/dom/-/dom-2.2.0.tgz#633b97a7dfe3eac73b4f1756dea6b499d756af86"
-  integrity sha512-uOVItZB0x/fQjZPSAp2Xpfu7IeJ+VAZjRvD7XBUZGPnBK+VGJqSjEGUwK0bmYi4jNTANLkfeiWrorBnIsDgXUA==
+"@typescript/lib-dom@npm:@better-typescript-lib/dom@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@better-typescript-lib/dom/-/dom-2.2.1.tgz#4a0b47ad45bdaddae82c9f08311bfeee131d3e2c"
+  integrity sha512-2aqj1QLALR0hSzljHbl+PicNwyI71r6BgfehLv8VHIALYag1Bbeh+HkaHFb0Uec5oKDdjqY26QHDGMwnTfseWQ==
 
-"@typescript/lib-es2015@npm:@better-typescript-lib/es2015@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2015/-/es2015-2.2.0.tgz#c713ebacc756c84a4964d3b4011bba1af50923e9"
-  integrity sha512-xcUDDEYOc0BQQ0/ETbsrnmzDkarGdMK3bBksOkf6/fVLV86+I4fQFiZH3VAlRRDg7YAIPY9aPVnRJGBOqA7n6w==
+"@typescript/lib-es2015@npm:@better-typescript-lib/es2015@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2015/-/es2015-2.2.1.tgz#2b0f022017058eaf45c5a19e3b43589d0602d9d3"
+  integrity sha512-YZUfxL+BrErRHGAvmYB4jDMvOIOENAQzLyegT34ceEWBUBmkHr2yhdSA1/6JJmWLRIqhi/fCYaKJo6nH5tjwlg==
 
-"@typescript/lib-es2016@npm:@better-typescript-lib/es2016@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2016/-/es2016-2.2.0.tgz#8a57be09f9a24da4740fca706b71edc8130c99bb"
-  integrity sha512-Bl9UsChoA8aAH3YZjRwruzPC7iu3RzqN5Y4I31Q0jaEF6FfUBZ424VjmRPdZBt3gSa6EVVkzB9uq90Q+/QuQMg==
+"@typescript/lib-es2016@npm:@better-typescript-lib/es2016@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2016/-/es2016-2.2.1.tgz#3cf8814562d0927cc5f5202aa30faed3724d9146"
+  integrity sha512-VkdyYxSPs4k7DDP0iD4RiUNstKK5qXj0e6R6dYY7i0GFN2tcC9w2immJxC9prJGtSPr3ANk8wX0s0jeYojjkzQ==
 
-"@typescript/lib-es2017@npm:@better-typescript-lib/es2017@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2017/-/es2017-2.2.0.tgz#63d592cf33a8a36033aa7d5f9702ac74c30e3150"
-  integrity sha512-UQ1bGuEnWbkfBf6HA3UAo4bYige5qcJKnP715aQctyIDrLmoQKFm7d04VqsKbUIETZHjhk7Kn7eZ3JJKBJI1+Q==
+"@typescript/lib-es2017@npm:@better-typescript-lib/es2017@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2017/-/es2017-2.2.1.tgz#99f8227b8cc8fe3267ae7929a52fef10ea025ce9"
+  integrity sha512-kYhUeps29qsKi98RPEreOlSAaKmR5CwH85M65Zkk9Ik4HIVJ/ceZxCs4g5kYIdpu44saEtF5cj2LJimeo9iSGA==
 
-"@typescript/lib-es2018@npm:@better-typescript-lib/es2018@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2018/-/es2018-2.2.0.tgz#38f4de298741518bef5a5a1ba6f0d6de888b9461"
-  integrity sha512-J6o4wya3j0XgZ70BO0yhWtpP/lKeNdrIfoOCbL4PFofYx7t6+RV5qwJ6F+hAvBE0yIylPHMAfr/a3VwzCQhSww==
+"@typescript/lib-es2018@npm:@better-typescript-lib/es2018@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2018/-/es2018-2.2.1.tgz#e6292e7526cdc4a9e322a052b24d20d6927501fa"
+  integrity sha512-z/WrC+iesrJiCTmEZavZWRvpoowxqI/9PyA2/CQjYXSHxloxQElnFHnZ+/RKdDQHUBQ+8NUm/9+5SD3DAgBcSg==
 
-"@typescript/lib-es2019@npm:@better-typescript-lib/es2019@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2019/-/es2019-2.2.0.tgz#7206a5b4a0ffe187b2c1e672bf41435ccc1e06a7"
-  integrity sha512-vA6asyhDNjKBYkMThVXq63Aw3l3MvqTgerB35wNTnJJ8FpWWDGvO66g7wD+wcRVw5rnfByKMNr+WvHCsXEeTag==
+"@typescript/lib-es2019@npm:@better-typescript-lib/es2019@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2019/-/es2019-2.2.1.tgz#cb0b8f1e778f4d82fc911121eb8d64ca7aa31654"
+  integrity sha512-/nqXCiIF9RYFQkToYhIela+90HGpb3Tz0r2AV2VT7I4geA0wWeeicpbvpPypYq5L45daLGfOx9vfmj05sxwlwg==
 
-"@typescript/lib-es2020@npm:@better-typescript-lib/es2020@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2020/-/es2020-2.2.0.tgz#1dbd2801575c0a2748ba38b31076b3bc9086df45"
-  integrity sha512-H5hwesQ/zjDc9sKVJg9LTntSpgNq2wwGvnpYRO/jNrRTfd6H6yPiqMwj8ub+autlo0i8bqUX8z929mj3cyi2AA==
+"@typescript/lib-es2020@npm:@better-typescript-lib/es2020@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2020/-/es2020-2.2.1.tgz#8053dc8b89962c85f51aa62713644292132aa8ae"
+  integrity sha512-UDIp7+oHQezQ6DWIwBiHdBLs2ktU14IYzA6CpZdHulB7zDtDssEyjoOnpcR6q+u232INcsiAemNtsekdScBxeA==
 
-"@typescript/lib-es2021@npm:@better-typescript-lib/es2021@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2021/-/es2021-2.2.0.tgz#7aa075753cd6ebbc690a1d0fce503e70a58640e8"
-  integrity sha512-sC3FR4AtjiBKDeKQleb3cM3ii9NC47f03T/e+wNnYGcnub2kP+F7jSzxfKhBDGizB19iXGoUwhBE1uU382F9Kg==
+"@typescript/lib-es2021@npm:@better-typescript-lib/es2021@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2021/-/es2021-2.2.1.tgz#e851408e5a5af5b7eb67d6a0e0bb48840bbc4a5a"
+  integrity sha512-obVBX13KR+/mYAgnZOqAlXR0XuR4DKTZxzJt3YbCJSmTQ2d2hJIyLotkR14QQimz30sa+nZcjhSJysifYEj1rQ==
 
-"@typescript/lib-es2022@npm:@better-typescript-lib/es2022@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2022/-/es2022-2.2.0.tgz#e0a35d92958135235845808e20105a86294bb6b4"
-  integrity sha512-km/oJkvPKfHejeZl95fAK1UO/LrtNw/+zS7h//KciYkRShapDrrROYf/m2kBrno253okBBM3RQ11gkSytYxRCg==
+"@typescript/lib-es2022@npm:@better-typescript-lib/es2022@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es2022/-/es2022-2.2.1.tgz#5a23b83a64a6f3757b5464e9a63ba4f0fdd5d664"
+  integrity sha512-s2ISBc6aWRqvXTzdeX1KZiqalnTAJfF+pgcTfmFdzjsz0s6SXBRP/WjYITGcftLAvlIczF1AfrEET4XV47jsJg==
 
-"@typescript/lib-es5@npm:@better-typescript-lib/es5@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es5/-/es5-2.2.0.tgz#701008c39ccdfa5122f4170bfdf57f84176e3b99"
-  integrity sha512-Dl7sUsOwqBSNhBSejR5FOQJD6OBAyMElG7SuZyJ41w1KiEkFliJDEKXuzl+tpmN7wSZKkHxL8MNwSA2PXewbSQ==
+"@typescript/lib-es5@npm:@better-typescript-lib/es5@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@better-typescript-lib/es5/-/es5-2.2.1.tgz#4ff9e1d1033fe67a94b348e29492bd543e1f3d71"
+  integrity sha512-6BSBrnN7jqxsFUtrG+7RCjZKY91xqinevo872dtLvLLKjxGQAwQbX09tDmc9a3IsnVbjgQxtRY1NkixusUraUA==
 
-"@typescript/lib-esnext@npm:@better-typescript-lib/esnext@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@better-typescript-lib/esnext/-/esnext-2.2.0.tgz#3de8cff27c5b78f480c56eaa1869cadc1ebb1897"
-  integrity sha512-mkPeBf4gPkFWT1uLwlrGRCSGMvG+Q3r2ocUjSsi6gNUVDy0d9SF3YWO8LqPYmlrHZT1yTcSjfwMVuGdfuKDeJQ==
+"@typescript/lib-esnext@npm:@better-typescript-lib/esnext@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@better-typescript-lib/esnext/-/esnext-2.2.1.tgz#86be37acb53c68b5a6f3f0b35840248e3c917e4a"
+  integrity sha512-LSbNSbSRkdqV+HLx4URvU9kWv7JCS4b5SCmSj5kd/BHUd4QgkkxqPJu1PJ3RgZjE+ypluOLac6T/JLHk/sV5zw==
 
-"@typescript/lib-header@npm:@better-typescript-lib/header@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@better-typescript-lib/header/-/header-2.2.0.tgz#3adb16472dc12f9e4538f7464e1d5a1ac897a4f5"
-  integrity sha512-eq1uj3L0acjDpCUk82mxDG0OaZ1h4KubgGoz+PSlx9jgbCEpmCt8gNKFZhHLkXYPa/xEG+CtfmT/AYEo+B1d9A==
+"@typescript/lib-header@npm:@better-typescript-lib/header@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@better-typescript-lib/header/-/header-2.2.1.tgz#96c9b1d84e72bcc4ae91f3cf294dff37666debfa"
+  integrity sha512-Ic2FHQOW5Q6m6CYX0QTN1Nw6FcWohfTXHQqq5C2yZmjJ5xOw+8OP+AKWPgZAd++OoOhNVdJC0P/Oz5jpnoI2rw==
 
-"@typescript/lib-scripthost@npm:@better-typescript-lib/scripthost@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@better-typescript-lib/scripthost/-/scripthost-2.2.0.tgz#219a66f0a2cc3b199e757d9607e603b3639098eb"
-  integrity sha512-RKs7t9sxoG1XOxBm3OZXrfXTvSCZ/dBnMSt/rsWZOWupLSOJMAYxvhOZwewhKID+6mNmViYaUV3HPSwvyN77cg==
+"@typescript/lib-scripthost@npm:@better-typescript-lib/scripthost@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@better-typescript-lib/scripthost/-/scripthost-2.2.1.tgz#f0e64e3198f50ba9918ee7d01f044342a823c51a"
+  integrity sha512-wU81IMAOi/KemR4npsWxX+9ZsAiSvVp+2G1oDbsH7toUzS+Y6s1wXhDbmLHb4wIbntpAh20YH3M4basBhwmeNQ==
 
-"@typescript/lib-webworker@npm:@better-typescript-lib/webworker@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@better-typescript-lib/webworker/-/webworker-2.2.0.tgz#b9951c7806f189a3a4d245c8c1fd5ada56ae8ad4"
-  integrity sha512-20LV67bogcT6OUEGsywWq2oAD3/9HQ5BN7TRs/VLtl0w9ijrasr3WlYXTKxm+17LWwHXTIpwPY93wSyvnqoWxQ==
+"@typescript/lib-webworker@npm:@better-typescript-lib/webworker@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@better-typescript-lib/webworker/-/webworker-2.2.1.tgz#4133869a5a59d493dbaa9d6ab4857eda040753e8"
+  integrity sha512-Ljl4jKQSZTCXB2nhsUmU7ghP3bcrExZCnGV8fL/qnYZ+Lj7zykF+51Q1P+EvipqGYvUGRSdffaP6A2hVhzKAPg==
 
 "@yarnpkg/lockfile@^1.1.0":
   version "1.1.0"
@@ -1093,25 +1093,25 @@ before-after-hook@^2.2.0:
   resolved "https://registry.yarnpkg.com/before-after-hook/-/before-after-hook-2.2.2.tgz#a6e8ca41028d90ee2c24222f201c90956091613e"
   integrity sha512-3pZEU3NT5BFUo/AD5ERPWOgQOCZITni6iavr5AUw5AUwQjMlI0kzu5btnyD39AF0gUEsDPwJT+oY1ORBJijPjQ==
 
-better-typescript-lib@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/better-typescript-lib/-/better-typescript-lib-2.2.0.tgz#b28571d25226e3d8719630bd23b4fb4e15756d1e"
-  integrity sha512-NJ3Z51C6oOQHw/3x9CVec4thmLi8D6Vpx7eS9M8uCIhcn08UO2Pt2dcb/nRb6hyI8hLFH/XCwoJiYxKnzuH6gw==
+better-typescript-lib@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/better-typescript-lib/-/better-typescript-lib-2.2.1.tgz#d23cf6f90e4a8f43de8798a16f5fddd92a3aa86f"
+  integrity sha512-AwfRaxvqAnXWbMwGgUmbX+RtBlBSjEax0nn97EvPAIjxtSVlzpKYyPfrZMlLagr/ePEQJrpDLf526lFrHrRMNg==
   dependencies:
-    "@typescript/lib-dom" "npm:@better-typescript-lib/dom@2.2.0"
-    "@typescript/lib-es2015" "npm:@better-typescript-lib/es2015@2.2.0"
-    "@typescript/lib-es2016" "npm:@better-typescript-lib/es2016@2.2.0"
-    "@typescript/lib-es2017" "npm:@better-typescript-lib/es2017@2.2.0"
-    "@typescript/lib-es2018" "npm:@better-typescript-lib/es2018@2.2.0"
-    "@typescript/lib-es2019" "npm:@better-typescript-lib/es2019@2.2.0"
-    "@typescript/lib-es2020" "npm:@better-typescript-lib/es2020@2.2.0"
-    "@typescript/lib-es2021" "npm:@better-typescript-lib/es2021@2.2.0"
-    "@typescript/lib-es2022" "npm:@better-typescript-lib/es2022@2.2.0"
-    "@typescript/lib-es5" "npm:@better-typescript-lib/es5@2.2.0"
-    "@typescript/lib-esnext" "npm:@better-typescript-lib/esnext@2.2.0"
-    "@typescript/lib-header" "npm:@better-typescript-lib/header@2.2.0"
-    "@typescript/lib-scripthost" "npm:@better-typescript-lib/scripthost@2.2.0"
-    "@typescript/lib-webworker" "npm:@better-typescript-lib/webworker@2.2.0"
+    "@typescript/lib-dom" "npm:@better-typescript-lib/dom@2.2.1"
+    "@typescript/lib-es2015" "npm:@better-typescript-lib/es2015@2.2.1"
+    "@typescript/lib-es2016" "npm:@better-typescript-lib/es2016@2.2.1"
+    "@typescript/lib-es2017" "npm:@better-typescript-lib/es2017@2.2.1"
+    "@typescript/lib-es2018" "npm:@better-typescript-lib/es2018@2.2.1"
+    "@typescript/lib-es2019" "npm:@better-typescript-lib/es2019@2.2.1"
+    "@typescript/lib-es2020" "npm:@better-typescript-lib/es2020@2.2.1"
+    "@typescript/lib-es2021" "npm:@better-typescript-lib/es2021@2.2.1"
+    "@typescript/lib-es2022" "npm:@better-typescript-lib/es2022@2.2.1"
+    "@typescript/lib-es5" "npm:@better-typescript-lib/es5@2.2.1"
+    "@typescript/lib-esnext" "npm:@better-typescript-lib/esnext@2.2.1"
+    "@typescript/lib-header" "npm:@better-typescript-lib/header@2.2.1"
+    "@typescript/lib-scripthost" "npm:@better-typescript-lib/scripthost@2.2.1"
+    "@typescript/lib-webworker" "npm:@better-typescript-lib/webworker@2.2.1"
 
 bin-links@^3.0.0:
   version "3.0.1"
@@ -2029,10 +2029,10 @@ eslint-visitor-keys@^3.0.0, eslint-visitor-keys@^3.3.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.3.0.tgz#f6480fa6b1f30efe2d1968aa8ac745b862469826"
   integrity sha512-mQ+suqKJVyeuwGYHAdjMFqjCyfl8+Ldnxuyp3ldiMBFKkvytrXUZWaiPCEav8qDHKty44bD+qV1IP4T+w+xXRA==
 
-eslint@8.33.0:
-  version "8.33.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.33.0.tgz#02f110f32998cb598c6461f24f4d306e41ca33d7"
-  integrity sha512-WjOpFQgKK8VrCnAtl8We0SUOy/oVZ5NHykyMiagV1M9r8IFpIJX7DduK6n1mpfhlG7T1NLWm2SuD8QB7KFySaA==
+eslint@8.34.0:
+  version "8.34.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.34.0.tgz#fe0ab0ef478104c1f9ebc5537e303d25a8fb22d6"
+  integrity sha512-1Z8iFsucw+7kSqXNZVslXS8Ioa4u2KM7GPwuKtkTFAqZ/cHMcEaR+1+Br0wLlot49cNxIiZk5wp8EAbPcYZxTg==
   dependencies:
     "@eslint/eslintrc" "^1.4.1"
     "@humanwhocodes/config-array" "^0.11.8"
@@ -4371,12 +4371,12 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier-plugin-packagejson@2.4.2:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-packagejson/-/prettier-plugin-packagejson-2.4.2.tgz#76dfd8b2bb723bc001abf3b0a383cd67235442b3"
-  integrity sha512-Y/sW29qq0FhEQRA+85K98VOlMW7/Wicrm0Tm2j/EZ+Eh7F6jVUpGVv7WIMku+WsaEab/PyxaA5ckmTd3E0seNg==
+prettier-plugin-packagejson@2.4.3:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-packagejson/-/prettier-plugin-packagejson-2.4.3.tgz#77f50538cc47c86d4fa510bc312a548e346fb724"
+  integrity sha512-kPeeviJiwy0BgOSk7No8NmzzXfW4R9FYWni6ziA5zc1kGVVrKnBzMZdu2TUhI+I7h8/5Htt3vARYOk7KKJTTNQ==
   dependencies:
-    sort-package-json "2.2.0"
+    sort-package-json "2.4.1"
     synckit "0.8.5"
 
 prettier-plugin-sort-json@1.0.0:
@@ -4913,10 +4913,10 @@ sort-object-keys@^1.1.3:
   resolved "https://registry.yarnpkg.com/sort-object-keys/-/sort-object-keys-1.1.3.tgz#bff833fe85cab147b34742e45863453c1e190b45"
   integrity sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==
 
-sort-package-json@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/sort-package-json/-/sort-package-json-2.2.0.tgz#1787f5662005c9b3bd3bc570e6d53ccc4ffc2c87"
-  integrity sha512-ux712xsrPqkW+0b51GdmC8QTvImM3wsdip9mNVSQTY9ZV3/1eTAK6jIcQ8Vz9kfN1WHL4wv/pLn89mrqeyQu6A==
+sort-package-json@2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/sort-package-json/-/sort-package-json-2.4.1.tgz#4ea68a0b9ef34c2bc519e86d0d07de56622a7600"
+  integrity sha512-Nd3rgLBJcZ4iw7tpuOhwBupG6SvUDU0Fy1cZGAMorA2JmDUb+29Dg5phJK9gapa2Ak9d15w/RuMl/viwX+nKwQ==
   dependencies:
     detect-indent "^7.0.1"
     detect-newline "^4.0.0"
