@@ -1,4 +1,4 @@
-import type { AxiosInstance, AxiosRequestConfig, AxiosStatic } from 'axios';
+import type { AxiosInstance, AxiosStatic, InternalAxiosRequestConfig } from 'axios';
 import { HttpCookieAgent, HttpsCookieAgent } from 'http-cookie-agent/http';
 import type { CookieJar } from 'tough-cookie';
 
@@ -10,7 +10,7 @@ declare module 'axios' {
   }
 }
 
-function requestInterceptor(config: AxiosRequestConfig): AxiosRequestConfig {
+function requestInterceptor(config: InternalAxiosRequestConfig): InternalAxiosRequestConfig {
   if (!config.jar) {
     return config;
   }
