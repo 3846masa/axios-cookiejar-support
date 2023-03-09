@@ -2,17 +2,17 @@
 # yarn lockfile v1
 
 
-"@3846masa/configs@github:3846masa/configs#98c54de9e6280cb13456978a72ec7c0c3f3004f8":
-  version "1.0.158"
-  uid "98c54de9e6280cb13456978a72ec7c0c3f3004f8"
-  resolved "https://codeload.github.com/3846masa/configs/tar.gz/98c54de9e6280cb13456978a72ec7c0c3f3004f8"
+"@3846masa/configs@github:3846masa/configs#833080f60949dc9ef4fa4e8d3bf1bf74dc0f24ea":
+  version "1.0.159"
+  uid "833080f60949dc9ef4fa4e8d3bf1bf74dc0f24ea"
+  resolved "https://codeload.github.com/3846masa/configs/tar.gz/833080f60949dc9ef4fa4e8d3bf1bf74dc0f24ea"
   dependencies:
     "@tsconfig/strictest" "1.0.2"
     "@typescript-eslint/eslint-plugin" "5.54.0"
     "@typescript-eslint/parser" "5.54.0"
     better-typescript-lib "2.2.1"
     eslint "8.35.0"
-    eslint-config-prettier "8.6.0"
+    eslint-config-prettier "8.7.0"
     eslint-import-resolver-typescript "3.5.3"
     eslint-plugin-import "2.27.5"
     eslint-plugin-sort "2.4.0"
@@ -1917,10 +1917,10 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-config-prettier@8.6.0:
-  version "8.6.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.6.0.tgz#dec1d29ab728f4fa63061774e1672ac4e363d207"
-  integrity sha512-bAF0eLpLVqP5oEVUFKpMA+NnRFICwn9X8B5jrR9FcqnYBuPbqWEjTEspPWMj5ye6czoSLDweCzSo3Ko7gGrZaA==
+eslint-config-prettier@8.7.0:
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.7.0.tgz#f1cc58a8afebc50980bd53475451df146c13182d"
+  integrity sha512-HHVXLSlVUhMSmyW4ZzEuvjpwqamgmlfkutD53cYXLikh4pt/modINRcCIApJ84czDxM4GZInwUrromsDdTImTA==
 
 eslint-import-resolver-node@^0.3.7:
   version "0.3.7"
