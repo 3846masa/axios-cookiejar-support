@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@3846masa/configs@github:3846masa/configs#bf876bd724b2ebe4a57cd46c302886e618d3f99a":
-  version "1.0.157"
-  uid bf876bd724b2ebe4a57cd46c302886e618d3f99a
-  resolved "https://codeload.github.com/3846masa/configs/tar.gz/bf876bd724b2ebe4a57cd46c302886e618d3f99a"
+"@3846masa/configs@github:3846masa/configs#98c54de9e6280cb13456978a72ec7c0c3f3004f8":
+  version "1.0.158"
+  uid "98c54de9e6280cb13456978a72ec7c0c3f3004f8"
+  resolved "https://codeload.github.com/3846masa/configs/tar.gz/98c54de9e6280cb13456978a72ec7c0c3f3004f8"
   dependencies:
     "@tsconfig/strictest" "1.0.2"
     "@typescript-eslint/eslint-plugin" "5.54.0"
@@ -16,7 +16,7 @@
     eslint-import-resolver-typescript "3.5.3"
     eslint-plugin-import "2.27.5"
     eslint-plugin-sort "2.4.0"
-    eslint-plugin-unicorn "45.0.2"
+    eslint-plugin-unicorn "46.0.0"
     prettier "2.8.4"
     prettier-plugin-packagejson "2.4.3"
     prettier-plugin-sort-json "1.0.0"
@@ -1979,10 +1979,10 @@ eslint-plugin-sort@2.4.0:
   dependencies:
     "@typescript-eslint/experimental-utils" "^5.9.0"
 
-eslint-plugin-unicorn@45.0.2:
-  version "45.0.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-45.0.2.tgz#d6ba704793a6909fe5dfe013900d2b05b715284c"
-  integrity sha512-Y0WUDXRyGDMcKLiwgL3zSMpHrXI00xmdyixEGIg90gHnj0PcHY4moNv3Ppje/kDivdAy5vUeUr7z211ImPv2gw==
+eslint-plugin-unicorn@46.0.0:
+  version "46.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-46.0.0.tgz#b5cdcc9465fd6e46ab7968b87dd4a43adc8d6031"
+  integrity sha512-j07WkC+PFZwk8J33LYp6JMoHa1lXc1u6R45pbSAipjpfpb7KIGr17VE2D685zCxR5VL4cjrl65kTJflziQWMDA==
   dependencies:
     "@babel/helper-validator-identifier" "^7.19.1"
     "@eslint-community/eslint-utils" "^4.1.2"
