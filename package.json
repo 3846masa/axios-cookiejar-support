@@ -59,7 +59,7 @@
   },
   "devDependencies": {
     "@3846masa/configs": "github:3846masa/configs#d1a0ddfa46d439a9aae82eaeb965a5c01fc53148",
-    "@ava/typescript": "3.0.1",
+    "@ava/typescript": "4.0.0",
     "@semantic-release/changelog": "6.0.2",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
