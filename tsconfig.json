@@ -6,7 +6,8 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "target": "ESNext",
-    "types": ["@types/node"]
+    "types": ["@types/node"],
+    "verbatimModuleSyntax": false
   },
   "extends": "@3846masa/configs/tsconfig.json",
   "include": ["src/**/*"]

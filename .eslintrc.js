@@ -10,6 +10,17 @@ module.exports = {
             ignore: ['ava', 'axios-cookiejar-support'],
           },
         ],
+        'import/order': [
+          'error',
+          {
+            pathGroups: [
+              {
+                group: 'external',
+                pattern: 'axios-cookiejar-support',
+              },
+            ],
+          },
+        ],
       },
     },
   ],
