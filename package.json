@@ -71,7 +71,7 @@
     "patch-package": "6.5.1",
     "semantic-release": "19.0.5",
     "tough-cookie": "4.1.2",
-    "typescript": "5.0.3"
+    "typescript": "5.0.4"
   },
   "peerDependencies": {
     "axios": ">=0.20.0",
