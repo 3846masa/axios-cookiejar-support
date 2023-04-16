@@ -58,7 +58,7 @@
     "http-cookie-agent": "^5.0.2"
   },
   "devDependencies": {
-    "@3846masa/configs": "github:3846masa/configs#205c4002d39aa84e6108a3ae41b451ed9d2fb802",
+    "@3846masa/configs": "github:3846masa/configs#efe2be2f428a821ee35ae964347f422fdbd712c7",
     "@ava/typescript": "4.0.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/exec": "6.0.3",
