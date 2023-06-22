@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@3846masa/configs@github:3846masa/configs#dd1a3fcea9590bb66eb6dd5f5b2f8e2cc6eca156":
-  version "1.0.211"
-  uid dd1a3fcea9590bb66eb6dd5f5b2f8e2cc6eca156
-  resolved "https://codeload.github.com/3846masa/configs/tar.gz/dd1a3fcea9590bb66eb6dd5f5b2f8e2cc6eca156"
+"@3846masa/configs@github:3846masa/configs#cc7782abe6e305c06eb22d5a0152141e226589d1":
+  version "1.0.212"
+  uid cc7782abe6e305c06eb22d5a0152141e226589d1
+  resolved "https://codeload.github.com/3846masa/configs/tar.gz/cc7782abe6e305c06eb22d5a0152141e226589d1"
   dependencies:
     "@tsconfig/strictest" "2.0.1"
     "@typescript-eslint/eslint-plugin" "5.59.11"
