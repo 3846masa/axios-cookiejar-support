@@ -845,6 +845,13 @@ agent-base@6, agent-base@^6.0.2:
   dependencies:
     debug "4"
 
+agent-base@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-7.1.0.tgz#536802b76bc0b34aa50195eb2442276d613e3434"
+  integrity sha512-o/zjMZRhJxny7OyEF+Op8X+efiELC7k7yOjMzgfzVqOzXqkBkWI79YoTdOtsuWd5BWhAGAuOY/Xa6xpiaWXiNg==
+  dependencies:
+    debug "^4.3.4"
+
 agentkeepalive@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/agentkeepalive/-/agentkeepalive-4.2.1.tgz#a7975cbb9f83b367f06c90cc51ff28fe7d499717"
@@ -2644,12 +2651,12 @@ http-cache-semantics@^4.1.0:
   resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.1.0.tgz#49e91c5cbf36c9b94bcfcd71c23d5249ec74e390"
   integrity sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ==
 
-http-cookie-agent@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/http-cookie-agent/-/http-cookie-agent-5.0.2.tgz#ec4d31ceebf64b1757225f5a68df635a61d44a79"
-  integrity sha512-BiBmZyIMGl5mLKmY7KH2uCVlcNUl1jexjdtWXFCUF4DFOrNZg1c5iPPTzWDzU7Ngfb6fB03DPpJQ80KQWmycsg==
+http-cookie-agent@^5.0.4:
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/http-cookie-agent/-/http-cookie-agent-5.0.4.tgz#b2dd3ba44f54f5c49387baac042c00ebba1216ae"
+  integrity sha512-OtvikW69RvfyP6Lsequ0fN5R49S+8QcS9zwd58k6VSr6r57T8G29BkPdyrBcSwLq6ExLs9V+rBlfxu7gDstJag==
   dependencies:
-    agent-base "^6.0.2"
+    agent-base "^7.1.0"
 
 http-proxy-agent@^5.0.0:
   version "5.0.0"
