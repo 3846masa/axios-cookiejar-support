@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@3846masa/configs@github:3846masa/configs#2bef7881a3b77fe0e5958fa714871940b1410af0":
-  version "1.0.244"
-  uid "2bef7881a3b77fe0e5958fa714871940b1410af0"
-  resolved "https://codeload.github.com/3846masa/configs/tar.gz/2bef7881a3b77fe0e5958fa714871940b1410af0"
+"@3846masa/configs@github:3846masa/configs#94e3c15aecd2807c66d9d0a53392a25f323b4428":
+  version "1.0.245"
+  uid "94e3c15aecd2807c66d9d0a53392a25f323b4428"
+  resolved "https://codeload.github.com/3846masa/configs/tar.gz/94e3c15aecd2807c66d9d0a53392a25f323b4428"
   dependencies:
-    "@tsconfig/strictest" "2.0.1"
+    "@tsconfig/strictest" "2.0.2"
     "@typescript-eslint/eslint-plugin" "5.62.0"
     "@typescript-eslint/parser" "5.62.0"
     better-typescript-lib "2.4.0"
@@ -536,10 +536,10 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
-"@tsconfig/strictest@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@tsconfig/strictest/-/strictest-2.0.1.tgz#c8f42be4d2c8a8fcef0afd482b730c1d55733776"
-  integrity sha512-7JHHCbyCsGUxLd0pDbp24yz3zjxw2t673W5oAP6HCEdr/UUhaRhYd3SSnUsGCk+VnPVJVA4mXROzbhI+nyIk+w==
+"@tsconfig/strictest@2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@tsconfig/strictest/-/strictest-2.0.2.tgz#97167bf99c03d0a010d9946ae8a702c4f62e2783"
+  integrity sha512-jt4jIsWKvUvuY6adJnQJlb/UR7DdjC8CjHI/OaSQruj2yX9/K6+KOvDt/vD6udqos/FUk5Op66CvYT7TBLYO5Q==
 
 "@types/json-schema@^7.0.9":
   version "7.0.11"
