@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@3846masa/configs@github:3846masa/configs#07e6c97740da57f38c695ab1d6d5a61534022414":
-  version "1.0.254"
-  uid "07e6c97740da57f38c695ab1d6d5a61534022414"
-  resolved "https://codeload.github.com/3846masa/configs/tar.gz/07e6c97740da57f38c695ab1d6d5a61534022414"
+"@3846masa/configs@github:3846masa/configs#8ebe1a8668ca74e16611d82554d123fb2a9169fb":
+  version "1.0.255"
+  uid "8ebe1a8668ca74e16611d82554d123fb2a9169fb"
+  resolved "https://codeload.github.com/3846masa/configs/tar.gz/8ebe1a8668ca74e16611d82554d123fb2a9169fb"
   dependencies:
     "@tsconfig/strictest" "2.0.2"
     "@typescript-eslint/eslint-plugin" "5.62.0"
@@ -18,7 +18,7 @@
     eslint-plugin-sort "2.10.0"
     eslint-plugin-unicorn "46.0.1"
     prettier "3.0.3"
-    prettier-plugin-packagejson "2.4.5"
+    prettier-plugin-packagejson "2.4.6"
     prettier-plugin-sort-json "1.0.0"
     typescript "5.2.2"
 
@@ -4483,12 +4483,12 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier-plugin-packagejson@2.4.5:
-  version "2.4.5"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-packagejson/-/prettier-plugin-packagejson-2.4.5.tgz#20cc396e5654b5736657bd2dfb7ac859afc618cc"
-  integrity sha512-glG71jE1gO3y5+JNAhC8X+4yrlN28rub6Aj461SKbaPie9RgMiHKcInH2Moi2VGOfkTXaEHBhg4uVMBqa+kBUA==
+prettier-plugin-packagejson@2.4.6:
+  version "2.4.6"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-packagejson/-/prettier-plugin-packagejson-2.4.6.tgz#b1d46b67fd4d80dd6b352d1f5cb472344e6db9be"
+  integrity sha512-5JGfzkJRL0DLNyhwmiAV9mV0hZLHDwddFCs2lc9CNxOChpoWUQVe8K4qTMktmevmDlMpok2uT10nvHUyU59sNw==
   dependencies:
-    sort-package-json "2.5.1"
+    sort-package-json "2.6.0"
     synckit "0.8.5"
 
 prettier-plugin-sort-json@1.0.0:
@@ -5035,10 +5035,10 @@ sort-object-keys@^1.1.3:
   resolved "https://registry.yarnpkg.com/sort-object-keys/-/sort-object-keys-1.1.3.tgz#bff833fe85cab147b34742e45863453c1e190b45"
   integrity sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==
 
-sort-package-json@2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/sort-package-json/-/sort-package-json-2.5.1.tgz#5c0f2ce8cc8851988e5039f76b8978439439039d"
-  integrity sha512-vx/KoZxm8YNMUqdlw7SGTfqR5pqZ/sUfgOuRtDILiOy/3AvzhAibyUe2cY3OpLs3oRSow9up4yLVtQaM24rbDQ==
+sort-package-json@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/sort-package-json/-/sort-package-json-2.6.0.tgz#68337dbbd267971add856308a9b454a7d6cbfc0a"
+  integrity sha512-XSQ+lY9bAYA8ZsoChcEoPlgcSMaheziEp1beox1JVxy1SV4F2jSq9+h2rJ+3mC/Dhu9Ius1DLnInD5AWcsDXZw==
   dependencies:
     detect-indent "^7.0.1"
     detect-newline "^4.0.0"
