@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@3846masa/configs@github:3846masa/configs#a63d81080a218bfab695fed10e37949fe57a471f":
-  version "1.0.262"
-  uid a63d81080a218bfab695fed10e37949fe57a471f
-  resolved "https://codeload.github.com/3846masa/configs/tar.gz/a63d81080a218bfab695fed10e37949fe57a471f"
+"@3846masa/configs@github:3846masa/configs#1ca77df5fba66914832b3083a9b391a7b7137848":
+  version "1.0.264"
+  uid "1ca77df5fba66914832b3083a9b391a7b7137848"
+  resolved "https://codeload.github.com/3846masa/configs/tar.gz/1ca77df5fba66914832b3083a9b391a7b7137848"
   dependencies:
     "@tsconfig/strictest" "2.0.2"
     "@typescript-eslint/eslint-plugin" "5.62.0"
@@ -15,7 +15,7 @@
     eslint-config-prettier "9.0.0"
     eslint-import-resolver-typescript "3.6.1"
     eslint-plugin-import "2.28.1"
-    eslint-plugin-sort "2.10.0"
+    eslint-plugin-sort "2.11.0"
     eslint-plugin-unicorn "46.0.1"
     prettier "3.0.3"
     prettier-plugin-packagejson "2.4.6"
@@ -2021,10 +2021,10 @@ eslint-plugin-import@2.28.1:
     semver "^6.3.1"
     tsconfig-paths "^3.14.2"
 
-eslint-plugin-sort@2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-sort/-/eslint-plugin-sort-2.10.0.tgz#7847534a1e88e3c81a4ca570df80f01fcecd4803"
-  integrity sha512-pxC3M5EqZ8uWMN9idk2AFeeXMdWiYzBbRapfiuS8+NDk4Oo56dgUJQ/BJxc4ZwoI/HmmnPlJGYeStnfCZlu0XQ==
+eslint-plugin-sort@2.11.0:
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-sort/-/eslint-plugin-sort-2.11.0.tgz#45d8725a94de76a3f0212f16dd81abc4dc65a199"
+  integrity sha512-Rvt4XZI42KfyBvjvtcoKFEWg6L/nAKfMBagxKwipNfQd6zetwyHgh284XC1rlRzxY7scn0yfKgqdMILQIyKdlA==
   dependencies:
     "@typescript-eslint/experimental-utils" "^5.54.1"
     isomorphic-resolve "^1.0.0"
