@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@3846masa/configs@github:3846masa/configs#ae91969a4d14505cfb7dcaae73133633e4baca97":
-  version "1.0.269"
-  uid ae91969a4d14505cfb7dcaae73133633e4baca97
-  resolved "https://codeload.github.com/3846masa/configs/tar.gz/ae91969a4d14505cfb7dcaae73133633e4baca97"
+"@3846masa/configs@github:3846masa/configs#e84a73bc17eb3e1aad19aa33ebb7e17e94e734d4":
+  version "1.0.270"
+  uid e84a73bc17eb3e1aad19aa33ebb7e17e94e734d4
+  resolved "https://codeload.github.com/3846masa/configs/tar.gz/e84a73bc17eb3e1aad19aa33ebb7e17e94e734d4"
   dependencies:
     "@tsconfig/strictest" "2.0.2"
     "@typescript-eslint/eslint-plugin" "5.62.0"
@@ -17,7 +17,7 @@
     eslint-plugin-import "2.29.0"
     eslint-plugin-sort "2.11.0"
     eslint-plugin-unicorn "46.0.1"
-    prettier "3.0.3"
+    prettier "3.1.0"
     prettier-plugin-packagejson "2.4.6"
     prettier-plugin-sort-json "1.0.0"
     typescript "5.2.2"
@@ -4518,10 +4518,10 @@ prettier-plugin-sort-json@1.0.0:
   dependencies:
     "@types/prettier" "^2.7.2"
 
-prettier@3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.0.3.tgz#432a51f7ba422d1469096c0fdc28e235db8f9643"
-  integrity sha512-L/4pUDMxcNa8R/EthV08Zt42WBO4h1rarVtK0K+QJG0X187OLo7l699jWw0GKuwzkPQ//jMFA/8Xm6Fh3J/DAg==
+prettier@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.1.0.tgz#c6d16474a5f764ea1a4a373c593b779697744d5e"
+  integrity sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==
 
 pretty-ms@^8.0.0:
   version "8.0.0"
