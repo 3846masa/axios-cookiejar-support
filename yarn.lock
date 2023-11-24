@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@3846masa/configs@github:3846masa/configs#285046156533672ebfbda57097b4412b3ae0c6a1":
-  version "1.0.271"
-  uid "285046156533672ebfbda57097b4412b3ae0c6a1"
-  resolved "https://codeload.github.com/3846masa/configs/tar.gz/285046156533672ebfbda57097b4412b3ae0c6a1"
+"@3846masa/configs@github:3846masa/configs#12ef6022b80b7d1c15a49666fa1d4e1b85b349f5":
+  version "1.0.272"
+  uid "12ef6022b80b7d1c15a49666fa1d4e1b85b349f5"
+  resolved "https://codeload.github.com/3846masa/configs/tar.gz/12ef6022b80b7d1c15a49666fa1d4e1b85b349f5"
   dependencies:
     "@tsconfig/strictest" "2.0.2"
     "@typescript-eslint/eslint-plugin" "5.62.0"
@@ -20,7 +20,7 @@
     prettier "3.1.0"
     prettier-plugin-packagejson "2.4.6"
     prettier-plugin-sort-json "1.0.0"
-    typescript "5.2.2"
+    typescript "5.3.2"
 
 "@aashutoshrathi/word-wrap@^1.2.3":
   version "1.2.6"
@@ -5567,11 +5567,6 @@ typed-array-length@^1.0.4:
     call-bind "^1.0.2"
     for-each "^0.3.3"
     is-typed-array "^1.1.9"
-
-typescript@5.2.2:
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.2.2.tgz#5ebb5e5a5b75f085f22bc3f8460fba308310fa78"
-  integrity sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==
 
 typescript@5.3.2:
   version "5.3.2"
