@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@3846masa/configs@github:3846masa/configs#bcc392b0ef0ada1eb8483fa04beac589746e1c54":
-  version "1.0.286"
-  uid bcc392b0ef0ada1eb8483fa04beac589746e1c54
-  resolved "https://codeload.github.com/3846masa/configs/tar.gz/bcc392b0ef0ada1eb8483fa04beac589746e1c54"
+"@3846masa/configs@github:3846masa/configs#c9c760737d0e57a1b1310d3c516fb3af3ce0fde5":
+  version "1.0.287"
+  uid c9c760737d0e57a1b1310d3c516fb3af3ce0fde5
+  resolved "https://codeload.github.com/3846masa/configs/tar.gz/c9c760737d0e57a1b1310d3c516fb3af3ce0fde5"
   dependencies:
     "@tsconfig/strictest" "2.0.2"
     "@typescript-eslint/eslint-plugin" "5.62.0"
@@ -18,7 +18,7 @@
     eslint-plugin-sort "2.11.0"
     eslint-plugin-unicorn "46.0.1"
     prettier "3.1.1"
-    prettier-plugin-packagejson "2.4.8"
+    prettier-plugin-packagejson "2.4.9"
     prettier-plugin-sort-json "1.0.0"
     typescript "5.3.3"
 
@@ -4467,13 +4467,13 @@ prelude-ls@^1.2.1:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prettier-plugin-packagejson@2.4.8:
-  version "2.4.8"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-packagejson/-/prettier-plugin-packagejson-2.4.8.tgz#73bdee384c11ffbd55e3c6e9832c8624b5a6e49f"
-  integrity sha512-ZK37c6pRUKeUIpQWNEdMgNUiGSG5BTfeeAIA01mRjVGTfWxxVzM55Cs+LaHyweFJbEgkgCNsqMA3LGEAjfOPtA==
+prettier-plugin-packagejson@2.4.9:
+  version "2.4.9"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-packagejson/-/prettier-plugin-packagejson-2.4.9.tgz#17e4aa6539f7d73490c4ff8f213a7b2e4e3f8a2a"
+  integrity sha512-b3Q7agXVqxK3UpYEJr0xLD51SxriYXESWUCjmxOBUGqnPFZOg9jZGZ+Ptzq252I6OqzXN2rj1tJIFq6KOGLLJw==
   dependencies:
     sort-package-json "2.6.0"
-    synckit "0.8.8"
+    synckit "0.9.0"
 
 prettier-plugin-sort-json@1.0.0:
   version "1.0.0"
@@ -5286,10 +5286,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-synckit@0.8.8:
-  version "0.8.8"
-  resolved "https://registry.yarnpkg.com/synckit/-/synckit-0.8.8.tgz#fe7fe446518e3d3d49f5e429f443cf08b6edfcd7"
-  integrity sha512-HwOKAP7Wc5aRGYdKH+dw0PRRpbO841v2DENBtjnR5HFWoiNByAl7vrx3p0G/rCyYXQsrxqtX48TImFtPcIHSpQ==
+synckit@0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/synckit/-/synckit-0.9.0.tgz#5b33b458b3775e4466a5b377fba69c63572ae449"
+  integrity sha512-7RnqIMq572L8PeEzKeBINYEJDDxpcH8JEgLwUqBd3TkofhFRbkq4QLR0u+36avGAhCRbk2nnmjcW9SE531hPDg==
   dependencies:
     "@pkgr/core" "^0.1.0"
     tslib "^2.6.2"
