@@ -55,7 +55,7 @@
     }
   },
   "dependencies": {
-    "http-cookie-agent": "^5.0.4"
+    "http-cookie-agent": "^6.0.1"
   },
   "devDependencies": {
     "@3846masa/configs": "github:3846masa/configs#ea36c5c02c9eb0a4f83e2c5ac448ebc3ae52568b",
@@ -78,7 +78,7 @@
     "tough-cookie": ">=4.0.0"
   },
   "engines": {
-    "node": ">=14.18.0 <15.0.0 || >=16.0.0"
+    "node": ">=18.0.0"
   },
   "publishConfig": {
     "access": "public"
