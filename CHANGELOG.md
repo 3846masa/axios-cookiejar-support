@@ -1,3 +1,15 @@
+# [5.0.0](https://github.com/3846masa/axios-cookiejar-support/compare/v4.0.7...v5.0.0) (2024-01-14)
+
+
+### Features
+
+* drop Node.js v14 and v16 ([#880](https://github.com/3846masa/axios-cookiejar-support/issues/880)) ([c7e5e0b](https://github.com/3846masa/axios-cookiejar-support/commit/c7e5e0b6572e9859c291906f079f654dd5a37c97))
+
+
+### BREAKING CHANGES
+
+* drop Node.js v14 and v16
+
 ## [4.0.7](https://github.com/3846masa/axios-cookiejar-support/compare/v4.0.6...v4.0.7) (2023-06-22)
 
 
