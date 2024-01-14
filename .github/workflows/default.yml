@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       - uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
-          node-version: "16"
+          node-version-file: .node-version
           cache: yarn
       - run: yarn install --frozen-lockfile
       - run: yarn lint
@@ -22,7 +22,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: ["14", "16", "18"]
+        node: ["18", "20"]
         os: ["ubuntu-latest", "macos-latest", "windows-latest"]
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
@@ -60,7 +60,7 @@ jobs:
           ssh-key: ${{ secrets.DEPLOY_GIT_SSH_PRIVATE_KEY }}
       - uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
-          node-version: "16"
+          node-version-file: .node-version
           cache: yarn
       - run: yarn install --frozen-lockfile
       - run: yarn patch-package
