@@ -1,7 +1,7 @@
 import http from 'node:http';
 import https from 'node:https';
 
-import test from 'ava';
+import { beforeAll, expect, test } from '@jest/globals';
 import axios from 'axios';
 import { CookieJar } from 'tough-cookie';
 
@@ -9,12 +9,12 @@ import { wrapper } from '../';
 
 import { createTestServer } from './helpers';
 
-test.before(() => {
+beforeAll(() => {
   wrapper(axios);
 });
 
-test.serial('should receive response correctly', async (t) => {
-  const { port } = await createTestServer([
+test('should receive response correctly', async () => {
+  using server = await createTestServer([
     (_req, res) => {
       res.end('Hello World!');
     },
@@ -22,15 +22,15 @@ test.serial('should receive response correctly', async (t) => {
 
   const jar = new CookieJar();
 
-  const { data, status } = await axios.get(`http://localhost:${port}`, { jar, responseType: 'text' });
-  t.is(status, 200);
-  t.is(data, 'Hello World!');
-
-  t.plan(2);
+  const actual = await axios.get(`http://localhost:${server.port}`, { jar, responseType: 'text' });
+  expect(actual).toMatchObject({
+    data: 'Hello World!',
+    status: 200,
+  });
 });
 
-test.serial('should store cookies to cookiejar', async (t) => {
-  const { port } = await createTestServer([
+test('should store cookies to cookiejar', async () => {
+  using server = await createTestServer([
     (_req, res) => {
       res.setHeader('Set-Cookie', 'key=value');
       res.end();
@@ -39,53 +39,48 @@ test.serial('should store cookies to cookiejar', async (t) => {
 
   const jar = new CookieJar();
 
-  await axios.get(`http://localhost:${port}`, { jar });
+  await axios.get(`http://localhost:${server.port}`, { jar });
 
-  const cookies = await jar.getCookies(`http://localhost:${port}`);
-  t.like(cookies, {
-    0: { key: 'key', value: 'value' },
-  });
-
-  t.plan(1);
+  const actual = await jar.getCookies(`http://localhost:${server.port}`);
+  expect(actual).toMatchObject([{ key: 'key', value: 'value' }]);
 });
 
-test.serial('should send cookies from cookiejar', async (t) => {
-  const { port } = await createTestServer([
+test('should send cookies from cookiejar', async () => {
+  using server = await createTestServer([
     (req, res) => {
-      t.is(req.headers['cookie'], 'key=value');
+      res.write(req.headers['cookie']);
       res.end();
     },
   ]);
 
   const jar = new CookieJar();
-  await jar.setCookie('key=value', `http://localhost:${port}`);
+  await jar.setCookie('key=value', `http://localhost:${server.port}`);
 
-  await axios.get(`http://localhost:${port}`, { jar });
-
-  t.plan(1);
+  const { data: actual } = await axios.get(`http://localhost:${server.port}`, { jar, responseType: 'text' });
+  expect(actual).toBe('key=value');
 });
 
-test.serial('should merge cookies from cookiejar and cookie header', async (t) => {
-  const { port } = await createTestServer([
+test('should merge cookies from cookiejar and cookie header', async () => {
+  using server = await createTestServer([
     (req, res) => {
-      t.is(req.headers['cookie'], 'key1=value1; key2=value2');
+      res.write(req.headers['cookie']);
       res.end();
     },
   ]);
 
   const jar = new CookieJar();
-  await jar.setCookie('key1=value1', `http://localhost:${port}`);
+  await jar.setCookie('key1=value1', `http://localhost:${server.port}`);
 
-  await axios.get(`http://localhost:${port}`, {
+  const { data: actual } = await axios.get(`http://localhost:${server.port}`, {
     headers: { Cookie: 'key2=value2' },
     jar,
+    responseType: 'text',
   });
-
-  t.plan(1);
+  expect(actual).toBe('key1=value1; key2=value2');
 });
 
-test.serial('should send cookies which received first request when redirecting to same domain', async (t) => {
-  const { port } = await createTestServer([
+test('should send cookies which received first request when redirecting to same domain', async () => {
+  using server = await createTestServer([
     (_req, res) => {
       res.statusCode = 301;
       res.setHeader('Location', '/another-path');
@@ -93,64 +88,61 @@ test.serial('should send cookies which received first request when redirecting t
       res.end();
     },
     (req, res) => {
-      t.is(req.headers['cookie'], 'key=value');
+      res.write(req.headers['cookie']);
       res.end();
     },
   ]);
 
   const jar = new CookieJar();
 
-  await axios.get(`http://localhost:${port}`, { jar });
-
-  t.plan(1);
+  const { data: actual } = await axios.get(`http://localhost:${server.port}`, { jar, responseType: 'text' });
+  expect(actual).toBe('key=value');
 });
 
-test.serial('should not send cookies which received first request when redirecting to another domain', async (t) => {
-  const { port } = await createTestServer([
+test('should not send cookies which received first request when redirecting to another domain', async () => {
+  using server = await createTestServer([
     (_req, res) => {
       res.statusCode = 301;
-      res.setHeader('Location', `http://127.0.0.1:${port}`);
+      res.setHeader('Location', `http://127.0.0.1:${server.port}`);
       res.setHeader('Set-Cookie', 'key=value');
       res.end();
     },
     (req, res) => {
-      t.false('cookie' in req.headers);
+      res.write(JSON.stringify(req.headers));
       res.end();
     },
   ]);
 
   const jar = new CookieJar();
 
-  await axios.get(`http://localhost:${port}`, { jar });
-
-  t.plan(1);
+  const { data: actual } = await axios.get(`http://localhost:${server.port}`, { jar, responseType: 'json' });
+  expect(actual).not.toHaveProperty('cookie');
 });
 
-test.serial('should send cookies even when target is same host but different port', async (t) => {
-  const { port: firstServerPort } = await createTestServer([
+test('should send cookies even when target is same host but different port', async () => {
+  using firstServer = await createTestServer([
     (_req, res) => {
       res.setHeader('Set-Cookie', 'key=expected');
       res.end();
     },
   ]);
 
-  const { port: secondServerPort } = await createTestServer([
+  using secondServer = await createTestServer([
     (req, res) => {
-      t.is(req.headers['cookie'], 'key=expected');
+      res.write(req.headers['cookie']);
       res.end();
     },
   ]);
 
   const jar = new CookieJar();
 
-  await axios.get(`http://localhost:${firstServerPort}`, { jar });
-  await axios.get(`http://localhost:${secondServerPort}`, { jar });
-
-  t.plan(1);
+  await axios.get(`http://localhost:${firstServer.port}`, { jar });
+  const { data: actual } = await axios.get(`http://localhost:${secondServer.port}`, { jar, responseType: 'text' });
+  expect(actual).toBe('key=expected');
 });
 
-test.serial('should throw error when config.httpAgent was assigned', async (t) => {
-  const { port, server } = await createTestServer([
+test('should throw error when config.httpAgent was assigned', async () => {
+  using server = await createTestServer([
     (_req, res) => {
       res.end();
     },
@@ -158,21 +150,14 @@ test.serial('should throw error when config.httpAgent was assigned', async (t) =
 
   const jar = new CookieJar();
 
-  await t.throwsAsync(
-    async () => {
-      await axios.get(`http://localhost:${port}`, { httpAgent: new http.Agent(), jar });
-    },
-    {
-      message: 'axios-cookiejar-support does not support for use with other http(s).Agent.',
-    },
-  );
-
-  t.plan(1);
-  server.close();
+  const actual = axios.get(`http://localhost:${server.port}`, { httpAgent: new http.Agent(), jar });
+  await expect(actual).rejects.toThrowError({
+    message: 'axios-cookiejar-support does not support for use with other http(s).Agent.',
+  });
 });
 
-test.serial('should throw error when config.httpsAgent was assigned', async (t) => {
-  const { port, server } = await createTestServer([
+test('should throw error when config.httpsAgent was assigned', async () => {
+  using server = await createTestServer([
     (_req, res) => {
       res.end();
     },
@@ -180,44 +165,30 @@ test.serial('should throw error when config.httpsAgent was assigned', async (t) 
 
   const jar = new CookieJar();
 
-  await t.throwsAsync(
-    async () => {
-      await axios.get(`http://localhost:${port}`, { httpsAgent: new https.Agent(), jar });
-    },
-    {
-      message: 'axios-cookiejar-support does not support for use with other http(s).Agent.',
-    },
-  );
-
-  t.plan(1);
-  server.close();
+  const actual = axios.get(`http://localhost:${server.port}`, { httpsAgent: new https.Agent(), jar });
+  await expect(actual).rejects.toThrowError({
+    message: 'axios-cookiejar-support does not support for use with other http(s).Agent.',
+  });
 });
 
-test.serial('should throw error when config.jar was assigned with boolean', async (t) => {
-  const { port, server } = await createTestServer([
+test('should throw error when config.jar was assigned with boolean', async () => {
+  using server = await createTestServer([
     (_req, res) => {
       res.end();
     },
   ]);
 
-  await t.throwsAsync(
-    async () => {
-      await axios.get(`http://localhost:${port}`, {
-        // @ts-expect-error ...
-        jar: true,
-      });
-    },
-    {
-      message: 'config.jar does not accept boolean since axios-cookiejar-support@2.0.0.',
-    },
-  );
-
-  t.plan(1);
-  server.close();
+  const actual = axios.get(`http://localhost:${server.port}`, {
+    // @ts-expect-error ...
+    jar: true,
+  });
+  await expect(actual).rejects.toThrowError({
+    message: 'config.jar does not accept boolean since axios-cookiejar-support@2.0.0.',
+  });
 });
 
-test.serial('should allow to reuse config', async (t) => {
-  const { port } = await createTestServer([
+test('should allow to reuse config', async () => {
+  using server = await createTestServer([
     (_req, res) => {
       res.end('Hello World!');
     },
@@ -228,7 +199,7 @@ test.serial('should allow to reuse config', async (t) => {
 
   const jar = new CookieJar();
 
-  const { config } = await axios.get(`http://localhost:${port}`, { jar, responseType: 'text' });
-  await axios.get(`http://localhost:${port}`, config);
-  t.pass();
+  const { config } = await axios.get(`http://localhost:${server.port}`, { jar, responseType: 'text' });
+  const actual = axios.get(`http://localhost:${server.port}`, config);
+  await expect(actual).resolves.not.toThrowError();
 });

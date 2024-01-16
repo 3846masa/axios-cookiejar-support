@@ -1,24 +1,24 @@
-import test from 'ava';
+import { beforeAll, expect, test } from '@jest/globals';
 import axios from 'axios';
 
 import { wrapper } from '../';
 
 import { createTestServer } from './helpers';
 
-test.before(() => {
+beforeAll(() => {
   wrapper(axios);
 });
 
-test.serial('should receive response correctly without cookiejar', async (t) => {
-  const { port } = await createTestServer([
+test('should receive response correctly without cookiejar', async () => {
+  using server = await createTestServer([
     (_req, res) => {
       res.end('Hello World!');
     },
   ]);
 
-  const { data, status } = await axios.get(`http://localhost:${port}`, { responseType: 'text' });
-  t.is(status, 200);
-  t.is(data, 'Hello World!');
-
-  t.plan(2);
+  const actual = await axios.get(`http://localhost:${server.port}`, { responseType: 'text' });
+  expect(actual).toMatchObject({
+    data: 'Hello World!',
+    status: 200,
+  });
 });

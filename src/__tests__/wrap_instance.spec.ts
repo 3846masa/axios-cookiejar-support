@@ -1,4 +1,4 @@
-import test from 'ava';
+import { expect, test } from '@jest/globals';
 import axios from 'axios';
 import { CookieJar } from 'tough-cookie';
 
@@ -6,8 +6,8 @@ import { wrapper } from '../';
 
 import { createTestServer } from './helpers';
 
-test.serial('should store cookies to cookiejar when instance was wrapped', async (t) => {
-  const { port } = await createTestServer([
+test('should store cookies to cookiejar when instance was wrapped', async () => {
+  using server = await createTestServer([
     (_req, res) => {
       res.setHeader('Set-Cookie', 'key=value');
       res.end();
@@ -17,29 +17,24 @@ test.serial('should store cookies to cookiejar when instance was wrapped', async
   const jar = new CookieJar();
   const client = wrapper(axios.create({ jar }));
 
-  await client.get(`http://localhost:${port}`);
+  await client.get(`http://localhost:${server.port}`);
 
-  const cookies = await jar.getCookies(`http://localhost:${port}`);
-  t.like(cookies, {
-    0: { key: 'key', value: 'value' },
-  });
-
-  t.plan(1);
+  const actual = await jar.getCookies(`http://localhost:${server.port}`);
+  expect(actual).toMatchObject([{ key: 'key', value: 'value' }]);
 });
 
-test.serial('should send cookies from cookiejar when instance was wrapped', async (t) => {
-  const { port } = await createTestServer([
+test('should send cookies from cookiejar when instance was wrapped', async () => {
+  using server = await createTestServer([
     (req, res) => {
-      t.is(req.headers['cookie'], 'key=value');
+      res.write(req.headers['cookie']);
       res.end();
     },
   ]);
 
   const jar = new CookieJar();
   const client = wrapper(axios.create({ jar }));
-  await jar.setCookie('key=value', `http://localhost:${port}`);
+  await jar.setCookie('key=value', `http://localhost:${server.port}`);
 
-  await client.get(`http://localhost:${port}`);
-
-  t.plan(1);
+  const { data: actual } = await client.get(`http://localhost:${server.port}`, { responseType: 'text' });
+  expect(actual).toBe('key=value');
 });
