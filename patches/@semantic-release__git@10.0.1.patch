@@ -1,7 +1,7 @@
-diff --git a/node_modules/@semantic-release/git/lib/git.js b/node_modules/@semantic-release/git/lib/git.js
-index 267ef1d..1911c90 100644
---- a/node_modules/@semantic-release/git/lib/git.js
-+++ b/node_modules/@semantic-release/git/lib/git.js
+diff --git a/lib/git.js b/lib/git.js
+index 267ef1d7a38a4de2c1b9986333eb8b2782ec358b..5644689352ab0dfe9f83dbfc5c37156a3db8b3f1 100644
+--- a/lib/git.js
++++ b/lib/git.js
 @@ -48,7 +48,7 @@ async function commit(message, execaOptions) {
   * @throws {Error} if the push failed.
   */
