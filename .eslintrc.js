@@ -7,7 +7,7 @@ module.exports = {
         'import/no-unresolved': [
           'error',
           {
-            ignore: ['ava', 'axios-cookiejar-support'],
+            ignore: ['axios-cookiejar-support'],
           },
         ],
         'import/order': [
@@ -24,12 +24,4 @@ module.exports = {
       },
     },
   ],
-  rules: {
-    'import/no-unresolved': [
-      'error',
-      {
-        ignore: ['ava'],
-      },
-    ],
-  },
 };
