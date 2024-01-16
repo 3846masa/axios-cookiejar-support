@@ -3,7 +3,7 @@ import { promisify } from 'node:util';
 
 export async function createTestServer(
   stories: http.RequestListener[],
-): Promise<{ port: number; server: http.Server }> {
+): Promise<{ [Symbol.dispose]: () => void; port: number }> {
   const server = http.createServer();
 
   await promisify(server.listen).apply(server);
@@ -15,16 +15,13 @@ export async function createTestServer(
 
   server.on('request', (req, res) => {
     const listener = stories.shift();
-    if (listener != null) {
-      listener(req, res);
-    }
-    if (stories.length === 0) {
-      server.close();
-    }
+    listener?.(req, res);
   });
 
   return {
+    [Symbol.dispose]: () => {
+      server.close();
+    },
     port: serverInfo.port,
-    server,
   };
 }

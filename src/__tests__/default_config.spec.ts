@@ -1,4 +1,4 @@
-import test from 'ava';
+import { afterEach, beforeAll, expect, test } from '@jest/globals';
 import axios from 'axios';
 import { CookieJar } from 'tough-cookie';
 
@@ -6,16 +6,16 @@ import { wrapper } from '../';
 
 import { createTestServer } from './helpers';
 
-test.before(() => {
+beforeAll(() => {
   wrapper(axios);
 });
 
-test.serial.afterEach.always(() => {
+afterEach(() => {
   delete axios.defaults.jar;
 });
 
-test.serial('should store cookies to cookiejar when default.jar was assigned', async (t) => {
-  const { port } = await createTestServer([
+test('should store cookies to cookiejar when default.jar was assigned', async () => {
+  using server = await createTestServer([
     (_req, res) => {
       res.setHeader('Set-Cookie', 'key=value');
       res.end();
@@ -25,49 +25,43 @@ test.serial('should store cookies to cookiejar when default.jar was assigned', a
   const jar = new CookieJar();
   axios.defaults.jar = jar;
 
-  await axios.get(`http://localhost:${port}`);
+  await axios.get(`http://localhost:${server.port}`);
 
-  const cookies = await jar.getCookies(`http://localhost:${port}`);
-  t.like(cookies, {
-    0: { key: 'key', value: 'value' },
-  });
-
-  t.plan(1);
+  const actual = await jar.getCookies(`http://localhost:${server.port}`);
+  expect(actual).toMatchObject([{ key: 'key', value: 'value' }]);
 });
 
-test.serial('should send cookies from cookiejar when default.jar was assigned', async (t) => {
-  const { port } = await createTestServer([
+test('should send cookies from cookiejar when default.jar was assigned', async () => {
+  using server = await createTestServer([
     (req, res) => {
-      t.is(req.headers['cookie'], 'key=value');
+      res.write(req.headers['cookie']);
       res.end();
     },
   ]);
 
   const jar = new CookieJar();
   axios.defaults.jar = jar;
-  await jar.setCookie('key=value', `http://localhost:${port}`);
+  await jar.setCookie('key=value', `http://localhost:${server.port}`);
 
-  await axios.get(`http://localhost:${port}`);
-
-  t.plan(1);
+  const { data: actual } = await axios.get(`http://localhost:${server.port}`, { responseType: 'text' });
+  expect(actual).toBe('key=value');
 });
 
-test.serial('should use config.cookiejar in preference to default.jar', async (t) => {
-  const { port } = await createTestServer([
+test('should use config.cookiejar in preference to default.jar', async () => {
+  using server = await createTestServer([
     (req, res) => {
-      t.is(req.headers['cookie'], 'key=config');
+      res.write(req.headers['cookie']);
       res.end();
     },
   ]);
 
   const defaultJar = new CookieJar();
   axios.defaults.jar = defaultJar;
-  await defaultJar.setCookie('key=default', `http://localhost:${port}`);
+  await defaultJar.setCookie('key=default', `http://localhost:${server.port}`);
 
   const configJar = new CookieJar();
-  await configJar.setCookie('key=config', `http://localhost:${port}`);
+  await configJar.setCookie('key=config', `http://localhost:${server.port}`);
 
-  await axios.get(`http://localhost:${port}`, { jar: configJar });
-
-  t.plan(1);
+  const { data: actual } = await axios.get(`http://localhost:${server.port}`, { jar: configJar, responseType: 'text' });
+  expect(actual).toBe('key=config');
 });
