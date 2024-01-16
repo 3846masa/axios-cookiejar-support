@@ -31,17 +31,16 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc",
-    "format": "npm-run-all format:*",
+    "format": "pnpm run --sequential \"/^format:.*/\"",
     "format:eslint": "eslint --fix --ext .js,.ts,.mjs,.mts .",
     "format:prettier": "prettier --write .",
-    "lint": "npm-run-all lint:*",
+    "lint": "pnpm run \"/^lint:.*/\"",
     "lint:eslint": "eslint --ext .js,.ts,.mjs,.mts .",
     "lint:prettier": "prettier --check .",
     "lint:tsc": "tsc --noEmit",
     "semantic-release": "semantic-release",
     "pretest": "npm run build",
-    "test": "ava",
-    "patch-package": "patch-package"
+    "test": "ava"
   },
   "ava": {
     "files": [
@@ -67,8 +66,6 @@
     "@types/tough-cookie": "4.0.5",
     "ava": "6.0.1",
     "axios": "1.6.5",
-    "npm-run-all": "4.1.5",
-    "patch-package": "8.0.0",
     "semantic-release": "19.0.5",
     "tough-cookie": "4.1.3",
     "typescript": "5.3.3"
@@ -77,10 +74,16 @@
     "axios": ">=0.20.0",
     "tough-cookie": ">=4.0.0"
   },
+  "packageManager": "pnpm@8.14.1+sha256.2df78e65d433d7693b9d3fbdaf431b2d96bb4f96a2ffecd51a50efe16e50a6a8",
   "engines": {
     "node": ">=18.0.0"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "@semantic-release/git@10.0.1": "patches/@semantic-release__git@10.0.1.patch"
+    }
   }
 }
