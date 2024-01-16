@@ -46,7 +46,6 @@
   },
   "devDependencies": {
     "@3846masa/configs": "github:3846masa/configs#2bb2326d925eade646df0d6614dc8f5f7a452729",
-    "@ava/typescript": "4.1.0",
     "@babel/plugin-proposal-explicit-resource-management": "7.23.3",
     "@babel/preset-env": "7.23.8",
     "@babel/preset-typescript": "7.23.3",
@@ -56,7 +55,6 @@
     "@semantic-release/git": "10.0.1",
     "@types/node": "14.18.63",
     "@types/tough-cookie": "4.0.5",
-    "ava": "6.0.1",
     "axios": "1.6.5",
     "babel-jest": "29.7.0",
     "disposablestack": "1.1.2",
