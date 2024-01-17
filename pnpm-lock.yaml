@@ -16,8 +16,8 @@ dependencies:
 
 devDependencies:
   '@3846masa/configs':
-    specifier: github:3846masa/configs#2bb2326d925eade646df0d6614dc8f5f7a452729
-    version: github.com/3846masa/configs/2bb2326d925eade646df0d6614dc8f5f7a452729
+    specifier: github:3846masa/configs#56d89526081411a805e7ea914ad5f0f6edd04b63
+    version: github.com/3846masa/configs/56d89526081411a805e7ea914ad5f0f6edd04b63
   '@babel/plugin-proposal-explicit-resource-management':
     specifier: 7.23.3
     version: 7.23.3(@babel/core@7.23.7)
@@ -5713,7 +5713,7 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-packagejson@2.4.9(prettier@3.2.1):
+  /prettier-plugin-packagejson@2.4.9(prettier@3.2.2):
     resolution: {integrity: sha512-b3Q7agXVqxK3UpYEJr0xLD51SxriYXESWUCjmxOBUGqnPFZOg9jZGZ+Ptzq252I6OqzXN2rj1tJIFq6KOGLLJw==}
     peerDependencies:
       prettier: '>= 1.16.0'
@@ -5721,22 +5721,22 @@ packages:
       prettier:
         optional: true
     dependencies:
-      prettier: 3.2.1
+      prettier: 3.2.2
       sort-package-json: 2.6.0
       synckit: 0.9.0
     dev: true
 
-  /prettier-plugin-sort-json@3.1.0(prettier@3.2.1):
+  /prettier-plugin-sort-json@3.1.0(prettier@3.2.2):
     resolution: {integrity: sha512-eIDEUjwzekiVd+oKrpd0aoACBTp5zOW71wDTNy+qQ5C9Q8oqt9n9wCm4F+SeRZbXfgblh/WYIguJynImlBXrvQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       prettier: ^3.0.0
     dependencies:
-      prettier: 3.2.1
+      prettier: 3.2.2
     dev: true
 
-  /prettier@3.2.1:
-    resolution: {integrity: sha512-qSUWshj1IobVbKc226Gw2pync27t0Kf0EdufZa9j7uBSJay1CC+B3K5lAAZoqgX3ASiKuWsk6OmzKRetXNObWg==}
+  /prettier@3.2.2:
+    resolution: {integrity: sha512-HTByuKZzw7utPiDO523Tt2pLtEyK7OibUD9suEJQrPUCYQqrHr74GGX6VidMrovbf/I50mPqr8j/II6oBAuc5A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -6903,10 +6903,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/3846masa/configs/2bb2326d925eade646df0d6614dc8f5f7a452729:
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/2bb2326d925eade646df0d6614dc8f5f7a452729}
+  github.com/3846masa/configs/56d89526081411a805e7ea914ad5f0f6edd04b63:
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/56d89526081411a805e7ea914ad5f0f6edd04b63}
     name: '@3846masa/configs'
-    version: 1.0.293
+    version: 1.0.294
     dependencies:
       '@tsconfig/strictest': 2.0.2
       '@typescript-eslint/eslint-plugin': 6.18.1(@typescript-eslint/parser@6.18.1)(eslint@8.56.0)(typescript@5.3.3)
@@ -6918,9 +6918,9 @@ packages:
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.18.1)(eslint-import-resolver-typescript@3.6.1)(eslint@8.56.0)
       eslint-plugin-sort: 2.11.0(eslint@8.56.0)(typescript@5.3.3)
       eslint-plugin-unicorn: 50.0.1(eslint@8.56.0)
-      prettier: 3.2.1
-      prettier-plugin-packagejson: 2.4.9(prettier@3.2.1)
-      prettier-plugin-sort-json: 3.1.0(prettier@3.2.1)
+      prettier: 3.2.2
+      prettier-plugin-packagejson: 2.4.9(prettier@3.2.2)
+      prettier-plugin-sort-json: 3.1.0(prettier@3.2.2)
       typescript: 5.3.3
     transitivePeerDependencies:
       - eslint-import-resolver-node
