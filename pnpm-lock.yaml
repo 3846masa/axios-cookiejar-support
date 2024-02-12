@@ -16,8 +16,8 @@ dependencies:
 
 devDependencies:
   '@3846masa/configs':
-    specifier: github:3846masa/configs#c08a72e48ebe8a8e7d1663c8bf0458fce122fe47
-    version: github.com/3846masa/configs/c08a72e48ebe8a8e7d1663c8bf0458fce122fe47
+    specifier: github:3846masa/configs#f18aed95b99a24cdd9ee6a517db1876ce125aff8
+    version: github.com/3846masa/configs/f18aed95b99a24cdd9ee6a517db1876ce125aff8
   '@babel/plugin-proposal-explicit-resource-management':
     specifier: 7.23.9
     version: 7.23.9(@babel/core@7.23.7)
@@ -2120,8 +2120,8 @@ packages:
       '@sinonjs/commons': 3.0.0
     dev: true
 
-  /@tsconfig/strictest@2.0.2:
-    resolution: {integrity: sha512-jt4jIsWKvUvuY6adJnQJlb/UR7DdjC8CjHI/OaSQruj2yX9/K6+KOvDt/vD6udqos/FUk5Op66CvYT7TBLYO5Q==}
+  /@tsconfig/strictest@2.0.3:
+    resolution: {integrity: sha512-MroLvRhMbqtXI5WBSwoomro6OQS4xnCoudUrMb20JO0vLKUs0bAaCEcvM/immEBSJjFAK1l6jW1oAO8q3Ancrg==}
     dev: true
 
   /@types/babel__core@7.20.5:
@@ -6911,12 +6911,12 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/3846masa/configs/c08a72e48ebe8a8e7d1663c8bf0458fce122fe47:
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/c08a72e48ebe8a8e7d1663c8bf0458fce122fe47}
+  github.com/3846masa/configs/f18aed95b99a24cdd9ee6a517db1876ce125aff8:
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/f18aed95b99a24cdd9ee6a517db1876ce125aff8}
     name: '@3846masa/configs'
-    version: 1.0.306
+    version: 1.0.307
     dependencies:
-      '@tsconfig/strictest': 2.0.2
+      '@tsconfig/strictest': 2.0.3
       '@typescript-eslint/eslint-plugin': 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3)
       '@typescript-eslint/parser': 6.21.0(eslint@8.56.0)(typescript@5.3.3)
       better-typescript-lib: 2.6.0(typescript@5.3.3)
