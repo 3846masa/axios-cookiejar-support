@@ -36,6 +36,26 @@ const client = wrapper(axios.create({ jar }));
 await client.get('https://example.com');
 ```
 
+## Passing Custom Agent Options
+
+```js
+import axios from 'axios';
+import { wrapper } from 'axios-cookiejar-support';
+import { CookieJar } from 'tough-cookie';
+
+const jar = new CookieJar();
+// Pass custom agent options
+const customAgentOptions = {
+  keepAlive: true,
+  maxSockets: 10,
+  // Add any other options supported by http-cookie-agent
+};
+
+const client = wrapper(axios.create({ jar }), customAgentOptions);
+
+await client.get('https://example.com');
+```
+
 See [examples](./examples) for more details.
 
 ### Extended Request Config
