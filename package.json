@@ -45,7 +45,7 @@
     "http-cookie-agent": "^6.0.1"
   },
   "devDependencies": {
-    "@3846masa/configs": "github:3846masa/configs#a0dccd23e6b43f9136dab8fb693668f974c45a23",
+    "@3846masa/configs": "github:3846masa/configs#8b4891aef05a8e2eaba8f74be622de17f8a40226",
     "@babel/plugin-proposal-explicit-resource-management": "7.24.1",
     "@babel/preset-env": "7.24.3",
     "@babel/preset-typescript": "7.24.1",
@@ -53,7 +53,7 @@
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@types/node": "18.19.26",
+    "@types/node": "18.19.29",
     "@types/tough-cookie": "4.0.5",
     "axios": "1.6.8",
     "babel-jest": "29.7.0",
