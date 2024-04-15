@@ -16,8 +16,8 @@ dependencies:
 
 devDependencies:
   '@3846masa/configs':
-    specifier: github:3846masa/configs#82eb9df6c1d6ca80b72597233890e1dea103cddd
-    version: github.com/3846masa/configs/82eb9df6c1d6ca80b72597233890e1dea103cddd
+    specifier: github:3846masa/configs#a66de0d058e7886ce01609032f2a433e45dcbc32
+    version: github.com/3846masa/configs/a66de0d058e7886ce01609032f2a433e45dcbc32
   '@babel/plugin-proposal-explicit-resource-management':
     specifier: 7.24.1
     version: 7.24.1(@babel/core@7.23.7)
@@ -5891,8 +5891,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-packagejson@2.4.14(prettier@3.2.5):
-    resolution: {integrity: sha512-sli+gV5tW7uxvzDZQscaBtSfbyAW2ToL6n/HGt51PipwX9vI7M54vefG0mKSfklVkT29TNGO6Mo6g8c6Z79gmw==}
+  /prettier-plugin-packagejson@2.5.0(prettier@3.2.5):
+    resolution: {integrity: sha512-6XkH3rpin5QEQodBSVNg+rBo4r91g/1mCaRwS1YGdQJZ6jwqrg2UchBsIG9tpS1yK1kNBvOt84OILsX8uHzBGg==}
     peerDependencies:
       prettier: '>= 1.16.0'
     peerDependenciesMeta:
@@ -7099,10 +7099,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/3846masa/configs/82eb9df6c1d6ca80b72597233890e1dea103cddd:
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/82eb9df6c1d6ca80b72597233890e1dea103cddd}
+  github.com/3846masa/configs/a66de0d058e7886ce01609032f2a433e45dcbc32:
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/a66de0d058e7886ce01609032f2a433e45dcbc32}
     name: '@3846masa/configs'
-    version: 1.0.349
+    version: 1.0.350
     dependencies:
       '@tsconfig/strictest': 2.0.5
       '@typescript-eslint/eslint-plugin': 7.6.0(@typescript-eslint/parser@7.6.0)(eslint@8.57.0)(typescript@5.4.5)
@@ -7115,7 +7115,7 @@ packages:
       eslint-plugin-sort: 3.0.2(eslint@8.57.0)(typescript@5.4.5)
       eslint-plugin-unicorn: 52.0.0(eslint@8.57.0)
       prettier: 3.2.5
-      prettier-plugin-packagejson: 2.4.14(prettier@3.2.5)
+      prettier-plugin-packagejson: 2.5.0(prettier@3.2.5)
       prettier-plugin-sort-json: 4.0.0(prettier@3.2.5)
       typescript: 5.4.5
     transitivePeerDependencies:
