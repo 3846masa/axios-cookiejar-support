@@ -16,8 +16,8 @@ dependencies:
 
 devDependencies:
   '@3846masa/configs':
-    specifier: github:3846masa/configs#2525c905324413d2d11cb07d488cd9cfda8fcc36
-    version: github.com/3846masa/configs/2525c905324413d2d11cb07d488cd9cfda8fcc36
+    specifier: github:3846masa/configs#fd7f7393431cfb6c2ac102dc13ba1da52fa1abc6
+    version: github.com/3846masa/configs/fd7f7393431cfb6c2ac102dc13ba1da52fa1abc6
   '@babel/plugin-proposal-explicit-resource-management':
     specifier: 7.24.1
     version: 7.24.1(@babel/core@7.23.7)
@@ -7099,10 +7099,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/3846masa/configs/2525c905324413d2d11cb07d488cd9cfda8fcc36:
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/2525c905324413d2d11cb07d488cd9cfda8fcc36}
+  github.com/3846masa/configs/fd7f7393431cfb6c2ac102dc13ba1da52fa1abc6:
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/fd7f7393431cfb6c2ac102dc13ba1da52fa1abc6}
     name: '@3846masa/configs'
-    version: 1.0.353
+    version: 1.0.354
     dependencies:
       '@tsconfig/strictest': 2.0.5
       '@typescript-eslint/eslint-plugin': 7.7.0(@typescript-eslint/parser@7.7.0)(eslint@8.57.0)(typescript@5.4.5)
