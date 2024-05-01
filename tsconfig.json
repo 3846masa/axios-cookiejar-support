@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "declaration": true,
     "lib": ["ESNext"],
     "module": "CommonJS",
-    "outDir": "./dist",
-    "rootDir": "./src",
+    "noEmit": true,
+    "paths": {
+      "axios-cookiejar-support": ["./"]
+    },
     "target": "ESNext",
     "types": ["@types/node"],
     "verbatimModuleSyntax": false
   },
-  "extends": "@3846masa/configs/tsconfig.json",
-  "include": ["src/**/*"]
+  "exclude": ["dist/"],
+  "extends": "@3846masa/configs/typescript/tsconfig.json",
+  "include": ["**/*", "**/.*"]
 }

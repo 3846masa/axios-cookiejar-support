@@ -30,7 +30,7 @@
   ],
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "tsc",
+    "build": "tsc --project tsconfig.build.json",
     "format": "pnpm run --sequential \"/^format:.*/\"",
     "format:eslint": "eslint --fix .",
     "format:prettier": "prettier --write .",
