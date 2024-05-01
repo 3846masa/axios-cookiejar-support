@@ -4,6 +4,10 @@ import type { CookieJar } from 'tough-cookie';
 
 const AGENT_CREATED_BY_AXIOS_COOKIEJAR_SUPPORT = Symbol('AGENT_CREATED_BY_AXIOS_COOKIEJAR_SUPPORT');
 
+type AttachedAgent = {
+  [AGENT_CREATED_BY_AXIOS_COOKIEJAR_SUPPORT]?: boolean;
+};
+
 declare module 'axios' {
   interface AxiosRequestConfig {
     jar?: CookieJar;
@@ -15,14 +19,16 @@ function requestInterceptor(config: InternalAxiosRequestConfig): InternalAxiosRe
     return config;
   }
 
-  // @ts-expect-error ...
+  // @ts-expect-error -- Legacy config allows to assign boolean as jar.
   if (config.jar === true) {
     throw new Error('config.jar does not accept boolean since axios-cookiejar-support@2.0.0.');
   }
 
   if (
-    (config.httpAgent != null && config.httpAgent[AGENT_CREATED_BY_AXIOS_COOKIEJAR_SUPPORT] !== true) ||
-    (config.httpsAgent != null && config.httpsAgent[AGENT_CREATED_BY_AXIOS_COOKIEJAR_SUPPORT] !== true)
+    (config.httpAgent != null &&
+      (config.httpAgent as AttachedAgent)[AGENT_CREATED_BY_AXIOS_COOKIEJAR_SUPPORT] !== true) ||
+    (config.httpsAgent != null &&
+      (config.httpsAgent as AttachedAgent)[AGENT_CREATED_BY_AXIOS_COOKIEJAR_SUPPORT] !== true)
   ) {
     throw new Error('axios-cookiejar-support does not support for use with other http(s).Agent.');
   }
@@ -56,7 +62,7 @@ export function wrapper<T extends AxiosStatic | AxiosInstance>(axios: T): T {
   axios.interceptors.request.use(requestInterceptor);
 
   if ('create' in axios) {
-    const create = axios.create;
+    const create = axios.create.bind(axios);
     axios.create = (...args) => {
       const instance = create.apply(axios, args);
       instance.interceptors.request.use(requestInterceptor);

@@ -6,7 +6,7 @@ export async function createTestServer(
 ): Promise<{ [Symbol.dispose]: () => void; port: number }> {
   const server = http.createServer();
 
-  await promisify(server.listen).apply(server);
+  await promisify(server.listen.bind(server)).apply(null);
 
   const serverInfo = server.address();
   if (serverInfo == null || typeof serverInfo === 'string') {

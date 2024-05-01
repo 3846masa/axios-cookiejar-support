@@ -25,9 +25,9 @@ test('should store cookies to cookiejar when default.jar was assigned', async ()
   const jar = new CookieJar();
   axios.defaults.jar = jar;
 
-  await axios.get(`http://localhost:${server.port}`);
+  await axios.get(`http://localhost:${server.port.toString(10)}`);
 
-  const actual = await jar.getCookies(`http://localhost:${server.port}`);
+  const actual = await jar.getCookies(`http://localhost:${server.port.toString(10)}`);
   expect(actual).toMatchObject([{ key: 'key', value: 'value' }]);
 });
 
@@ -41,9 +41,11 @@ test('should send cookies from cookiejar when default.jar was assigned', async (
 
   const jar = new CookieJar();
   axios.defaults.jar = jar;
-  await jar.setCookie('key=value', `http://localhost:${server.port}`);
+  await jar.setCookie('key=value', `http://localhost:${server.port.toString(10)}`);
 
-  const { data: actual } = await axios.get(`http://localhost:${server.port}`, { responseType: 'text' });
+  const { data: actual } = await axios.get<string>(`http://localhost:${server.port.toString(10)}`, {
+    responseType: 'text',
+  });
   expect(actual).toBe('key=value');
 });
 
@@ -57,11 +59,14 @@ test('should use config.cookiejar in preference to default.jar', async () => {
 
   const defaultJar = new CookieJar();
   axios.defaults.jar = defaultJar;
-  await defaultJar.setCookie('key=default', `http://localhost:${server.port}`);
+  await defaultJar.setCookie('key=default', `http://localhost:${server.port.toString(10)}`);
 
   const configJar = new CookieJar();
-  await configJar.setCookie('key=config', `http://localhost:${server.port}`);
+  await configJar.setCookie('key=config', `http://localhost:${server.port.toString(10)}`);
 
-  const { data: actual } = await axios.get(`http://localhost:${server.port}`, { jar: configJar, responseType: 'text' });
+  const { data: actual } = await axios.get<string>(`http://localhost:${server.port.toString(10)}`, {
+    jar: configJar,
+    responseType: 'text',
+  });
   expect(actual).toBe('key=config');
 });

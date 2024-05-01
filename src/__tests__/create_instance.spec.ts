@@ -21,9 +21,9 @@ test('should store cookies to cookiejar when using instance', async () => {
   const jar = new CookieJar();
   const client = axios.create({ jar });
 
-  await client.get(`http://localhost:${server.port}`);
+  await client.get(`http://localhost:${server.port.toString(10)}`);
 
-  const actual = await jar.getCookies(`http://localhost:${server.port}`);
+  const actual = await jar.getCookies(`http://localhost:${server.port.toString(10)}`);
   expect(actual).toMatchObject([{ key: 'key', value: 'value' }]);
 });
 
@@ -37,8 +37,10 @@ test('should send cookies from cookiejar when using instance', async () => {
 
   const jar = new CookieJar();
   const client = axios.create({ jar });
-  await jar.setCookie('key=value', `http://localhost:${server.port}`);
+  await jar.setCookie('key=value', `http://localhost:${server.port.toString(10)}`);
 
-  const { data: actual } = await client.get(`http://localhost:${server.port}`, { responseType: 'text' });
+  const { data: actual } = await client.get<string>(`http://localhost:${server.port.toString(10)}`, {
+    responseType: 'text',
+  });
   expect(actual).toBe('key=value');
 });
