@@ -16,7 +16,7 @@ test('should receive response correctly without cookiejar', async () => {
     },
   ]);
 
-  const actual = await axios.get(`http://localhost:${server.port}`, { responseType: 'text' });
+  const actual = await axios.get(`http://localhost:${server.port.toString(10)}`, { responseType: 'text' });
   expect(actual).toMatchObject({
     data: 'Hello World!',
     status: 200,

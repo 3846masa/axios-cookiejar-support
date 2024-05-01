@@ -7,6 +7,6 @@ const { wrapper } = require('axios-cookiejar-support');
 const jar = new CookieJar();
 const client = wrapper(axios.create({ jar }));
 
-client.get('https://httpbin.org/cookies/set/session/userid').then(({ config }) => {
-  console.log(config.jar.toJSON());
+void client.get('https://httpbin.org/cookies/set/session/userid').then(({ config }) => {
+  console.log(config.jar?.toJSON());
 });

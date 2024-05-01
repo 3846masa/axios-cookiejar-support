@@ -30,12 +30,13 @@
   ],
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "tsc",
+    "build": "tsc --project tsconfig.build.json",
     "format": "pnpm run --sequential \"/^format:.*/\"",
-    "format:eslint": "eslint --fix --ext .js,.ts,.mjs,.mts .",
+    "format:eslint": "eslint --fix .",
     "format:prettier": "prettier --write .",
+    "prelint": "pnpm run build",
     "lint": "pnpm run \"/^lint:.*/\"",
-    "lint:eslint": "eslint --ext .js,.ts,.mjs,.mts .",
+    "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",
     "lint:tsc": "tsc --noEmit",
     "semantic-release": "semantic-release",
@@ -45,7 +46,7 @@
     "http-cookie-agent": "^6.0.3"
   },
   "devDependencies": {
-    "@3846masa/configs": "github:3846masa/configs#f265612933e6b7731a1015b4b9d00abbdae0bab8",
+    "@3846masa/configs": "github:3846masa/configs#2803a8a67c8207078cf40c97468f60a51a70d5c0",
     "@babel/plugin-proposal-explicit-resource-management": "7.24.1",
     "@babel/preset-env": "7.24.4",
     "@babel/preset-typescript": "7.24.1",
@@ -53,6 +54,7 @@
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
+    "@types/eslint": "8.56.10",
     "@types/node": "18.19.31",
     "@types/tough-cookie": "4.0.5",
     "axios": "1.6.8",

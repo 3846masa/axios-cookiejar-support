@@ -22,7 +22,7 @@ test('should receive response correctly', async () => {
 
   const jar = new CookieJar();
 
-  const actual = await axios.get(`http://localhost:${server.port}`, { jar, responseType: 'text' });
+  const actual = await axios.get(`http://localhost:${server.port.toString(10)}`, { jar, responseType: 'text' });
   expect(actual).toMatchObject({
     data: 'Hello World!',
     status: 200,
@@ -39,9 +39,9 @@ test('should store cookies to cookiejar', async () => {
 
   const jar = new CookieJar();
 
-  await axios.get(`http://localhost:${server.port}`, { jar });
+  await axios.get(`http://localhost:${server.port.toString(10)}`, { jar });
 
-  const actual = await jar.getCookies(`http://localhost:${server.port}`);
+  const actual = await jar.getCookies(`http://localhost:${server.port.toString(10)}`);
   expect(actual).toMatchObject([{ key: 'key', value: 'value' }]);
 });
 
@@ -54,9 +54,12 @@ test('should send cookies from cookiejar', async () => {
   ]);
 
   const jar = new CookieJar();
-  await jar.setCookie('key=value', `http://localhost:${server.port}`);
+  await jar.setCookie('key=value', `http://localhost:${server.port.toString(10)}`);
 
-  const { data: actual } = await axios.get(`http://localhost:${server.port}`, { jar, responseType: 'text' });
+  const { data: actual } = await axios.get<string>(`http://localhost:${server.port.toString(10)}`, {
+    jar,
+    responseType: 'text',
+  });
   expect(actual).toBe('key=value');
 });
 
@@ -69,9 +72,9 @@ test('should merge cookies from cookiejar and cookie header', async () => {
   ]);
 
   const jar = new CookieJar();
-  await jar.setCookie('key1=value1', `http://localhost:${server.port}`);
+  await jar.setCookie('key1=value1', `http://localhost:${server.port.toString(10)}`);
 
-  const { data: actual } = await axios.get(`http://localhost:${server.port}`, {
+  const { data: actual } = await axios.get<string>(`http://localhost:${server.port.toString(10)}`, {
     headers: { Cookie: 'key2=value2' },
     jar,
     responseType: 'text',
@@ -95,7 +98,10 @@ test('should send cookies which received first request when redirecting to same 
 
   const jar = new CookieJar();
 
-  const { data: actual } = await axios.get(`http://localhost:${server.port}`, { jar, responseType: 'text' });
+  const { data: actual } = await axios.get<string>(`http://localhost:${server.port.toString(10)}`, {
+    jar,
+    responseType: 'text',
+  });
   expect(actual).toBe('key=value');
 });
 
@@ -103,7 +109,7 @@ test('should not send cookies which received first request when redirecting to a
   using server = await createTestServer([
     (_req, res) => {
       res.statusCode = 301;
-      res.setHeader('Location', `http://127.0.0.1:${server.port}`);
+      res.setHeader('Location', `http://127.0.0.1:${server.port.toString(10)}`);
       res.setHeader('Set-Cookie', 'key=value');
       res.end();
     },
@@ -115,7 +121,10 @@ test('should not send cookies which received first request when redirecting to a
 
   const jar = new CookieJar();
 
-  const { data: actual } = await axios.get(`http://localhost:${server.port}`, { jar, responseType: 'json' });
+  const { data: actual } = await axios.get<object>(`http://localhost:${server.port.toString(10)}`, {
+    jar,
+    responseType: 'json',
+  });
   expect(actual).not.toHaveProperty('cookie');
 });
 
@@ -136,8 +145,11 @@ test('should send cookies even when target is same host but different port', asy
 
   const jar = new CookieJar();
 
-  await axios.get(`http://localhost:${firstServer.port}`, { jar });
-  const { data: actual } = await axios.get(`http://localhost:${secondServer.port}`, { jar, responseType: 'text' });
+  await axios.get(`http://localhost:${firstServer.port.toString(10)}`, { jar });
+  const { data: actual } = await axios.get<string>(`http://localhost:${secondServer.port.toString(10)}`, {
+    jar,
+    responseType: 'text',
+  });
   expect(actual).toBe('key=expected');
 });
 
@@ -150,7 +162,7 @@ test('should throw error when config.httpAgent was assigned', async () => {
 
   const jar = new CookieJar();
 
-  const actual = axios.get(`http://localhost:${server.port}`, { httpAgent: new http.Agent(), jar });
+  const actual = axios.get(`http://localhost:${server.port.toString(10)}`, { httpAgent: new http.Agent(), jar });
   await expect(actual).rejects.toThrowError({
     message: 'axios-cookiejar-support does not support for use with other http(s).Agent.',
   });
@@ -165,7 +177,7 @@ test('should throw error when config.httpsAgent was assigned', async () => {
 
   const jar = new CookieJar();
 
-  const actual = axios.get(`http://localhost:${server.port}`, { httpsAgent: new https.Agent(), jar });
+  const actual = axios.get(`http://localhost:${server.port.toString(10)}`, { httpsAgent: new https.Agent(), jar });
   await expect(actual).rejects.toThrowError({
     message: 'axios-cookiejar-support does not support for use with other http(s).Agent.',
   });
@@ -178,8 +190,8 @@ test('should throw error when config.jar was assigned with boolean', async () =>
     },
   ]);
 
-  const actual = axios.get(`http://localhost:${server.port}`, {
-    // @ts-expect-error ...
+  const actual = axios.get(`http://localhost:${server.port.toString(10)}`, {
+    // @ts-expect-error -- Legacy version allows to assign boolean as jar.
     jar: true,
   });
   await expect(actual).rejects.toThrowError({
@@ -199,7 +211,7 @@ test('should allow to reuse config', async () => {
 
   const jar = new CookieJar();
 
-  const { config } = await axios.get(`http://localhost:${server.port}`, { jar, responseType: 'text' });
-  const actual = axios.get(`http://localhost:${server.port}`, config);
+  const { config } = await axios.get(`http://localhost:${server.port.toString(10)}`, { jar, responseType: 'text' });
+  const actual = axios.get(`http://localhost:${server.port.toString(10)}`, config);
   await expect(actual).resolves.not.toThrowError();
 });
