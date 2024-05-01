@@ -34,6 +34,7 @@
     "format": "pnpm run --sequential \"/^format:.*/\"",
     "format:eslint": "eslint --fix .",
     "format:prettier": "prettier --write .",
+    "prelint": "pnpm run build",
     "lint": "pnpm run \"/^lint:.*/\"",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",
