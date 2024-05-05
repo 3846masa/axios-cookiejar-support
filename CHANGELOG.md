@@ -1,3 +1,10 @@
+## [5.0.2](https://github.com/3846masa/axios-cookiejar-support/compare/v5.0.1...v5.0.2) (2024-05-05)
+
+
+### Bug Fixes
+
+* **npm:** update dependency http-cookie-agent to ^6.0.5 ([#996](https://github.com/3846masa/axios-cookiejar-support/issues/996)) ([5a16f9f](https://github.com/3846masa/axios-cookiejar-support/commit/5a16f9fb99a0536319d74bfba681a16945a135f4))
+
 ## [5.0.1](https://github.com/3846masa/axios-cookiejar-support/compare/v5.0.0...v5.0.1) (2024-04-07)
 
 
