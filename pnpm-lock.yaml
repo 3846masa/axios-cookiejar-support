@@ -18,8 +18,8 @@ importers:
         version: 6.0.5(tough-cookie@4.1.4)
     devDependencies:
       '@3846masa/configs':
-        specifier: github:3846masa/configs#ff1fa25fe54e989c7c8cdb943142cbf1ad636f32
-        version: https://codeload.github.com/3846masa/configs/tar.gz/ff1fa25fe54e989c7c8cdb943142cbf1ad636f32(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))
+        specifier: github:3846masa/configs#28af521b8f1951c525e45189d3938fdb6294f64d
+        version: https://codeload.github.com/3846masa/configs/tar.gz/28af521b8f1951c525e45189d3938fdb6294f64d(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))
       '@babel/plugin-proposal-explicit-resource-management':
         specifier: 7.24.5
         version: 7.24.5(@babel/core@7.23.7)
@@ -77,9 +77,9 @@ importers:
 
 packages:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/ff1fa25fe54e989c7c8cdb943142cbf1ad636f32':
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/ff1fa25fe54e989c7c8cdb943142cbf1ad636f32}
-    version: 1.0.370
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/28af521b8f1951c525e45189d3938fdb6294f64d':
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/28af521b8f1951c525e45189d3938fdb6294f64d}
+    version: 1.0.372
 
   '@aashutoshrathi/word-wrap@1.2.6':
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
@@ -3744,7 +3744,7 @@ packages:
 
 snapshots:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/ff1fa25fe54e989c7c8cdb943142cbf1ad636f32(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))':
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/28af521b8f1951c525e45189d3938fdb6294f64d(@typescript-eslint/parser@7.8.0(eslint@9.2.0)(typescript@5.4.5))':
     dependencies:
       '@eslint/js': 9.2.0
       '@tsconfig/strictest': 2.0.5
