@@ -18,8 +18,8 @@ importers:
         version: 6.0.5(tough-cookie@4.1.4)
     devDependencies:
       '@3846masa/configs':
-        specifier: github:3846masa/configs#be6b55126de2692334ac5d48324d2250e800e669
-        version: https://codeload.github.com/3846masa/configs/tar.gz/be6b55126de2692334ac5d48324d2250e800e669(@typescript-eslint/parser@7.9.0(eslint@9.3.0)(typescript@5.4.5))
+        specifier: github:3846masa/configs#55334ca27f16c95acc54409eef017a814cc1adb9
+        version: https://codeload.github.com/3846masa/configs/tar.gz/55334ca27f16c95acc54409eef017a814cc1adb9(@typescript-eslint/parser@7.9.0(eslint@9.3.0)(typescript@5.4.5))
       '@babel/plugin-proposal-explicit-resource-management':
         specifier: 7.24.5
         version: 7.24.5(@babel/core@7.23.7)
@@ -77,9 +77,9 @@ importers:
 
 packages:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/be6b55126de2692334ac5d48324d2250e800e669':
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/be6b55126de2692334ac5d48324d2250e800e669}
-    version: 1.0.380
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/55334ca27f16c95acc54409eef017a814cc1adb9':
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/55334ca27f16c95acc54409eef017a814cc1adb9}
+    version: 1.0.381
 
   '@aashutoshrathi/word-wrap@1.2.6':
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
@@ -3734,7 +3734,7 @@ packages:
 
 snapshots:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/be6b55126de2692334ac5d48324d2250e800e669(@typescript-eslint/parser@7.9.0(eslint@9.3.0)(typescript@5.4.5))':
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/55334ca27f16c95acc54409eef017a814cc1adb9(@typescript-eslint/parser@7.9.0(eslint@9.3.0)(typescript@5.4.5))':
     dependencies:
       '@eslint/js': 9.3.0
       '@tsconfig/strictest': 2.0.5
@@ -5243,7 +5243,7 @@ snapshots:
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.6.0
+      semver: 7.6.2
       tsutils: 3.21.0(typescript@5.4.5)
     optionalDependencies:
       typescript: 5.4.5
@@ -5258,7 +5258,7 @@ snapshots:
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.4
-      semver: 7.6.0
+      semver: 7.6.2
       ts-api-utils: 1.3.0(typescript@5.4.5)
     optionalDependencies:
       typescript: 5.4.5
@@ -5275,7 +5275,7 @@ snapshots:
       '@typescript-eslint/typescript-estree': 5.62.0(typescript@5.4.5)
       eslint: 9.3.0
       eslint-scope: 5.1.1
-      semver: 7.6.0
+      semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -6599,7 +6599,7 @@ snapshots:
       '@babel/parser': 7.24.1
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.2
-      semver: 7.6.0
+      semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
 
@@ -6886,7 +6886,7 @@ snapshots:
       jest-util: 29.7.0
       natural-compare: 1.4.0
       pretty-format: 29.7.0
-      semver: 7.6.0
+      semver: 7.6.2
     transitivePeerDependencies:
       - supports-color
 
@@ -7048,7 +7048,7 @@ snapshots:
 
   make-dir@4.0.0:
     dependencies:
-      semver: 7.6.0
+      semver: 7.6.2
 
   makeerror@1.0.12:
     dependencies:
@@ -7158,7 +7158,7 @@ snapshots:
     dependencies:
       hosted-git-info: 4.1.0
       is-core-module: 2.13.1
-      semver: 7.6.0
+      semver: 7.6.2
       validate-npm-package-license: 3.0.4
 
   normalize-path@3.0.0: {}
@@ -7611,7 +7611,7 @@ snapshots:
       git-hooks-list: 3.1.0
       globby: 13.2.2
       is-plain-obj: 4.1.0
-      semver: 7.6.0
+      semver: 7.6.2
       sort-object-keys: 1.1.3
 
   source-map-support@0.5.13:
