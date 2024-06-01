@@ -57,8 +57,8 @@ importers:
         specifier: 29.7.0
         version: 29.7.0(@babel/core@7.23.7)
       disposablestack:
-        specifier: 1.1.5
-        version: 1.1.5
+        specifier: 1.1.6
+        version: 1.1.6
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@18.19.33)
@@ -1768,8 +1768,8 @@ packages:
     resolution: {integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==}
     engines: {node: '>=8'}
 
-  disposablestack@1.1.5:
-    resolution: {integrity: sha512-IdFBDMZxddlECKNUyMZ/ja1BkTGbhvtWGZ4lQ1/BotTXN/0Tz3as5AL/pu/z3xYAZl/JtQleUf7JBQf1+Ehtdg==}
+  disposablestack@1.1.6:
+    resolution: {integrity: sha512-bah1d3fXuUrtjWEkS627JTKLejcozm69OVcHgjKBbnwmN2WkHlqVeH3caFmkaEZ6+lIEsIXmz9NLPK+coJFO5w==}
     engines: {node: '>= 0.4'}
 
   doctrine@2.1.0:
@@ -5907,7 +5907,7 @@ snapshots:
     dependencies:
       path-type: 4.0.0
 
-  disposablestack@1.1.5:
+  disposablestack@1.1.6:
     dependencies:
       call-bind: 1.0.7
       define-properties: 1.2.1
