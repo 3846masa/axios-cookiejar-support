@@ -47,9 +47,9 @@
   },
   "devDependencies": {
     "@3846masa/configs": "github:3846masa/configs#26aff6618a67a8591770378bd28fe73dd5a914c0",
-    "@babel/plugin-proposal-explicit-resource-management": "7.24.6",
-    "@babel/preset-env": "7.24.6",
-    "@babel/preset-typescript": "7.24.6",
+    "@babel/plugin-proposal-explicit-resource-management": "7.24.7",
+    "@babel/preset-env": "7.24.7",
+    "@babel/preset-typescript": "7.24.7",
     "@jest/globals": "29.7.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/exec": "6.0.3",
