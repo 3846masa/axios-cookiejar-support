@@ -54,7 +54,7 @@
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/exec": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@types/eslint": "8.56.10",
+    "@types/eslint": "8.56.11",
     "@types/node": "18.19.41",
     "@types/tough-cookie": "4.0.5",
     "axios": "1.7.2",
