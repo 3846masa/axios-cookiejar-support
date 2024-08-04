@@ -61,7 +61,7 @@
     "babel-jest": "29.7.0",
     "disposablestack": "1.1.6",
     "jest": "29.7.0",
-    "rimraf": "5.0.9",
+    "rimraf": "5.0.10",
     "semantic-release": "19.0.5",
     "tough-cookie": "4.1.4",
     "typescript": "5.5.4"
