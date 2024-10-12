@@ -18,8 +18,8 @@ importers:
         version: 6.0.6(tough-cookie@5.0.0)
     devDependencies:
       '@3846masa/configs':
-        specifier: github:3846masa/configs#68b95ae0264727bf1e5f0ec62e9dc6c0c0a94e31
-        version: https://codeload.github.com/3846masa/configs/tar.gz/68b95ae0264727bf1e5f0ec62e9dc6c0c0a94e31(@typescript-eslint/parser@8.8.1(eslint@9.12.0)(typescript@5.6.2))
+        specifier: github:3846masa/configs#24b4a602d414dd2bc34b5d3eeb0849b9ccdd207b
+        version: https://codeload.github.com/3846masa/configs/tar.gz/24b4a602d414dd2bc34b5d3eeb0849b9ccdd207b(@typescript-eslint/parser@8.8.1(eslint@9.12.0)(typescript@5.6.2))
       '@babel/plugin-proposal-explicit-resource-management':
         specifier: 7.25.7
         version: 7.25.7(@babel/core@7.23.7)
@@ -74,9 +74,9 @@ importers:
 
 packages:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/68b95ae0264727bf1e5f0ec62e9dc6c0c0a94e31':
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/68b95ae0264727bf1e5f0ec62e9dc6c0c0a94e31}
-    version: 1.0.482
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/24b4a602d414dd2bc34b5d3eeb0849b9ccdd207b':
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/24b4a602d414dd2bc34b5d3eeb0849b9ccdd207b}
+    version: 1.0.483
 
   '@aashutoshrathi/word-wrap@1.2.6':
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
@@ -3005,8 +3005,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-packagejson@2.5.2:
-    resolution: {integrity: sha512-w+TmoLv2pIa+siplW1cCj2ujEXQQS6z7wmWLOiLQK/2QVl7Wy6xh/ZUpqQw8tbKMXDodmSW4GONxlA33xpdNOg==}
+  prettier-plugin-packagejson@2.5.3:
+    resolution: {integrity: sha512-ATMEEXr+ywls1kgrZEWl4SBPEm0uDdyDAjyNzUC0/Z8WZTD3RqbJcQDR+Dau+wYkW9KHK6zqQIsFyfn+9aduWg==}
     peerDependencies:
       prettier: '>= 1.16.0'
     peerDependenciesMeta:
@@ -3389,8 +3389,8 @@ packages:
     resolution: {integrity: sha512-6+ZiCVUmDLFRyYRswTrDTYWaM/IT01W/cqQBLnnyg8T0njVrWj3tP+EXFevXk6qK61yDXnmZsOFVzFfYoUy/KA==}
     engines: {node: '>= 0.4'}
 
-  synckit@0.9.1:
-    resolution: {integrity: sha512-7gr8p9TQP6RAHusBOSLs46F4564ZrjV8xFmw5zCmgmhGUcw2hxsShhJ6CEiHQMgPDwAQ1fWHPM0ypc4RMAig4A==}
+  synckit@0.9.2:
+    resolution: {integrity: sha512-vrozgXDQwYO72vHjUb/HnFbQx1exDjoKzqx23aXEg2a9VIg2TSFZ8FmeZpTjUCFMYw7mpX4BE2SFu8wI7asYsw==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
   tapable@2.2.1:
@@ -3685,7 +3685,7 @@ packages:
 
 snapshots:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/68b95ae0264727bf1e5f0ec62e9dc6c0c0a94e31(@typescript-eslint/parser@8.8.1(eslint@9.12.0)(typescript@5.6.2))':
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/24b4a602d414dd2bc34b5d3eeb0849b9ccdd207b(@typescript-eslint/parser@8.8.1(eslint@9.12.0)(typescript@5.6.2))':
     dependencies:
       '@eslint/js': 9.12.0
       '@tsconfig/strictest': 2.0.5
@@ -3698,7 +3698,7 @@ snapshots:
       eslint-plugin-unicorn: 56.0.0(eslint@9.12.0)
       globals: 15.10.0
       prettier: 3.3.3
-      prettier-plugin-packagejson: 2.5.2(prettier@3.3.3)
+      prettier-plugin-packagejson: 2.5.3(prettier@3.3.3)
       prettier-plugin-sort-json: 4.0.0(prettier@3.3.3)
       typescript: 5.6.2
       typescript-eslint: 8.8.1(eslint@9.12.0)(typescript@5.6.2)
@@ -7280,10 +7280,10 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-packagejson@2.5.2(prettier@3.3.3):
+  prettier-plugin-packagejson@2.5.3(prettier@3.3.3):
     dependencies:
       sort-package-json: 2.10.1
-      synckit: 0.9.1
+      synckit: 0.9.2
     optionalDependencies:
       prettier: 3.3.3
 
@@ -7706,7 +7706,7 @@ snapshots:
       has-property-descriptors: 1.0.2
       set-function-name: 2.0.1
 
-  synckit@0.9.1:
+  synckit@0.9.2:
     dependencies:
       '@pkgr/core': 0.1.1
       tslib: 2.6.2
