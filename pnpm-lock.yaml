@@ -24,11 +24,11 @@ importers:
         specifier: 7.25.9
         version: 7.25.9(@babel/core@7.23.7)
       '@babel/preset-env':
-        specifier: 7.25.9
-        version: 7.25.9(@babel/core@7.23.7)
+        specifier: 7.26.0
+        version: 7.26.0(@babel/core@7.23.7)
       '@babel/preset-typescript':
-        specifier: 7.25.9
-        version: 7.25.9(@babel/core@7.23.7)
+        specifier: 7.26.0
+        version: 7.26.0(@babel/core@7.23.7)
       '@jest/globals':
         specifier: 29.7.0
         version: 29.7.0
@@ -565,6 +565,12 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
+  '@babel/plugin-transform-regexp-modifiers@7.26.0':
+    resolution: {integrity: sha512-vN6saax7lrA2yA/Pak3sCxuD6F5InBjn9IcrIKQPjpsLvuHYLVroTxjdlVRHjjBWxKOqIwpTXDkOssYT4BFdRw==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+
   '@babel/plugin-transform-reserved-words@7.25.9':
     resolution: {integrity: sha512-7DL7DKYjn5Su++4RXu8puKZm2XBPHyjWLUidaPEkCUBbE7IPcsrkRHggAOOKydH1dASWdcUBxrkOGNxUv5P3Jg==}
     engines: {node: '>=6.9.0'}
@@ -631,8 +637,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0
 
-  '@babel/preset-env@7.25.9':
-    resolution: {integrity: sha512-XqDEt+hfsQukahSX9JOBDHhpUHDhj2zGSxoqWQFCMajOSBnbhBdgON/bU/5PkBA1yX5tqW6tTzuIPVsZTQ7h5Q==}
+  '@babel/preset-env@7.26.0':
+    resolution: {integrity: sha512-H84Fxq0CQJNdPFT2DrfnylZ3cf5K43rGfWK4LJGPpjKHiZlk0/RzwEus3PDDZZg+/Er7lCA03MVacueUuXdzfw==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -642,8 +648,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0 || ^8.0.0-0 <8.0.0
 
-  '@babel/preset-typescript@7.25.9':
-    resolution: {integrity: sha512-XWxw1AcKk36kgxf4C//fl0ikjLeqGUWn062/Fd8GtpTfDJOX6Ud95FK+4JlDA36BX4bNGndXi3a6Vr4Jo5/61A==}
+  '@babel/preset-typescript@7.26.0':
+    resolution: {integrity: sha512-NMk1IGZ5I/oHhoXEElcm+xUnL/szL6xflkFZmoEU9xj1qSJXpiS7rsspYo92B4DRCDvZn2erT5LdsCeXAKNCkg==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -4240,6 +4246,12 @@ snapshots:
       '@babel/helper-plugin-utils': 7.25.9
       regenerator-transform: 0.15.2
 
+  '@babel/plugin-transform-regexp-modifiers@7.26.0(@babel/core@7.23.7)':
+    dependencies:
+      '@babel/core': 7.23.7
+      '@babel/helper-create-regexp-features-plugin': 7.25.9(@babel/core@7.23.7)
+      '@babel/helper-plugin-utils': 7.25.9
+
   '@babel/plugin-transform-reserved-words@7.25.9(@babel/core@7.23.7)':
     dependencies:
       '@babel/core': 7.23.7
@@ -4307,7 +4319,7 @@ snapshots:
       '@babel/helper-create-regexp-features-plugin': 7.25.9(@babel/core@7.23.7)
       '@babel/helper-plugin-utils': 7.25.9
 
-  '@babel/preset-env@7.25.9(@babel/core@7.23.7)':
+  '@babel/preset-env@7.26.0(@babel/core@7.23.7)':
     dependencies:
       '@babel/compat-data': 7.26.0
       '@babel/core': 7.23.7
@@ -4362,6 +4374,7 @@ snapshots:
       '@babel/plugin-transform-private-property-in-object': 7.25.9(@babel/core@7.23.7)
       '@babel/plugin-transform-property-literals': 7.25.9(@babel/core@7.23.7)
       '@babel/plugin-transform-regenerator': 7.25.9(@babel/core@7.23.7)
+      '@babel/plugin-transform-regexp-modifiers': 7.26.0(@babel/core@7.23.7)
       '@babel/plugin-transform-reserved-words': 7.25.9(@babel/core@7.23.7)
       '@babel/plugin-transform-shorthand-properties': 7.25.9(@babel/core@7.23.7)
       '@babel/plugin-transform-spread': 7.25.9(@babel/core@7.23.7)
@@ -4388,7 +4401,7 @@ snapshots:
       '@babel/types': 7.26.0
       esutils: 2.0.3
 
-  '@babel/preset-typescript@7.25.9(@babel/core@7.23.7)':
+  '@babel/preset-typescript@7.26.0(@babel/core@7.23.7)':
     dependencies:
       '@babel/core': 7.23.7
       '@babel/helper-plugin-utils': 7.25.9
