@@ -1,6 +1,6 @@
 {
   "name": "axios-cookiejar-support",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "description": "Add tough-cookie support to axios.",
   "keywords": [
     "axios",
