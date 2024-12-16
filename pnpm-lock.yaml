@@ -14,7 +14,7 @@ importers:
   .:
     dependencies:
       http-cookie-agent:
-        specifier: ^6.0.7
+        specifier: ^6.0.8
         version: 6.0.8(tough-cookie@5.0.0)
     devDependencies:
       '@3846masa/configs':
