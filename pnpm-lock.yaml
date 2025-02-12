@@ -15,7 +15,7 @@ importers:
     dependencies:
       http-cookie-agent:
         specifier: ^6.0.8
-        version: 6.0.8(tough-cookie@5.1.0)
+        version: 6.0.8(tough-cookie@5.1.1)
     devDependencies:
       '@3846masa/configs':
         specifier: github:3846masa/configs#0e10b137199fb53ea78ba97796ee52c98b5024dd
@@ -66,8 +66,8 @@ importers:
         specifier: 19.0.5
         version: 19.0.5
       tough-cookie:
-        specifier: 5.1.0
-        version: 5.1.0
+        specifier: 5.1.1
+        version: 5.1.1
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -3438,8 +3438,8 @@ packages:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
 
-  tough-cookie@5.1.0:
-    resolution: {integrity: sha512-rvZUv+7MoBYTiDmFPBrhL7Ujx9Sk+q9wwm22x8c8T5IJaR+Wsyc7TNxbVxo84kZoRJZZMazowFLqpankBEQrGg==}
+  tough-cookie@5.1.1:
+    resolution: {integrity: sha512-Ek7HndSVkp10hmHP9V4qZO1u+pn1RU5sI0Fw+jCU3lyvuMZcgqsNgc6CmJJZyByK4Vm/qotGRJlfgAX8q+4JiA==}
     engines: {node: '>=16'}
 
   tr46@0.0.3:
@@ -6248,10 +6248,10 @@ snapshots:
 
   html-escaper@2.0.2: {}
 
-  http-cookie-agent@6.0.8(tough-cookie@5.1.0):
+  http-cookie-agent@6.0.8(tough-cookie@5.1.1):
     dependencies:
       agent-base: 7.1.3
-      tough-cookie: 5.1.0
+      tough-cookie: 5.1.1
 
   http-proxy-agent@7.0.0:
     dependencies:
@@ -7709,7 +7709,7 @@ snapshots:
     dependencies:
       is-number: 7.0.0
 
-  tough-cookie@5.1.0:
+  tough-cookie@5.1.1:
     dependencies:
       tldts: 6.1.48
 
