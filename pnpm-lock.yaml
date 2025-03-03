@@ -18,8 +18,8 @@ importers:
         version: 6.0.8(tough-cookie@5.1.1)
     devDependencies:
       '@3846masa/configs':
-        specifier: github:3846masa/configs#563da305bf0cd7e089fb34c31aa668201e1219f9
-        version: https://codeload.github.com/3846masa/configs/tar.gz/563da305bf0cd7e089fb34c31aa668201e1219f9(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.7.3))
+        specifier: github:3846masa/configs#828572a0157116495d7b8525aabdf3f5d04c942c
+        version: https://codeload.github.com/3846masa/configs/tar.gz/828572a0157116495d7b8525aabdf3f5d04c942c(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.7.3))
       '@babel/plugin-proposal-explicit-resource-management':
         specifier: 7.25.9
         version: 7.25.9(@babel/core@7.23.7)
@@ -74,9 +74,9 @@ importers:
 
 packages:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/563da305bf0cd7e089fb34c31aa668201e1219f9':
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/563da305bf0cd7e089fb34c31aa668201e1219f9}
-    version: 1.0.584
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/828572a0157116495d7b8525aabdf3f5d04c942c':
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/828572a0157116495d7b8525aabdf3f5d04c942c}
+    version: 1.0.585
 
   '@aashutoshrathi/word-wrap@1.2.6':
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
@@ -1698,8 +1698,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-config-prettier@10.0.1:
-    resolution: {integrity: sha512-lZBts941cyJyeaooiKxAtzoPHTN+GbQTJFAIdQbRhA4/8whaAraEh47Whw/ZFfrjNSnlAxqfm9i0XVAEkULjCw==}
+  eslint-config-prettier@10.0.2:
+    resolution: {integrity: sha512-1105/17ZIMjmCOJOPNfVdbXafLCLj3hPmkmB7dLgt7XsQ/zkxSuDerE/xgO3RxoHysR1N1whmquY0lSn2O0VLg==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -3669,13 +3669,13 @@ packages:
 
 snapshots:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/563da305bf0cd7e089fb34c31aa668201e1219f9(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.7.3))':
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/828572a0157116495d7b8525aabdf3f5d04c942c(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.7.3))':
     dependencies:
       '@eslint/js': 9.21.0
       '@tsconfig/strictest': 2.0.5
       better-typescript-lib: 2.10.1(typescript@5.7.3)
       eslint: 9.21.0
-      eslint-config-prettier: 10.0.1(eslint@9.21.0)
+      eslint-config-prettier: 10.0.2(eslint@9.21.0)
       eslint-import-resolver-typescript: 3.8.3(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.7.3))(eslint@9.21.0))(eslint@9.21.0)
       eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.7.3))(eslint-import-resolver-typescript@3.8.3(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.7.3))(eslint@9.21.0))(eslint@9.21.0))(eslint@9.21.0)
       eslint-plugin-sort: 4.0.0(eslint@9.21.0)(typescript@5.7.3)
@@ -5796,7 +5796,7 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-prettier@10.0.1(eslint@9.21.0):
+  eslint-config-prettier@10.0.2(eslint@9.21.0):
     dependencies:
       eslint: 9.21.0
 
