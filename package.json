@@ -62,7 +62,7 @@
     "jest": "29.7.0",
     "rimraf": "5.0.10",
     "semantic-release": "19.0.5",
-    "tough-cookie": "5.1.1",
+    "tough-cookie": "5.1.2",
     "typescript": "5.7.3"
   },
   "peerDependencies": {
