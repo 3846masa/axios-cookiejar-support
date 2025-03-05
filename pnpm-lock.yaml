@@ -18,8 +18,8 @@ importers:
         version: 6.0.8(tough-cookie@5.1.2)
     devDependencies:
       '@3846masa/configs':
-        specifier: github:3846masa/configs#bc9534391413790329b3320f2f64d8d1e7940e40
-        version: https://codeload.github.com/3846masa/configs/tar.gz/bc9534391413790329b3320f2f64d8d1e7940e40(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.7.3))
+        specifier: github:3846masa/configs#d44856664e00892d4f55abbde00767685b813891
+        version: https://codeload.github.com/3846masa/configs/tar.gz/d44856664e00892d4f55abbde00767685b813891(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.8.2))
       '@babel/plugin-proposal-explicit-resource-management':
         specifier: 7.25.9
         version: 7.25.9(@babel/core@7.23.7)
@@ -74,9 +74,9 @@ importers:
 
 packages:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/bc9534391413790329b3320f2f64d8d1e7940e40':
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/bc9534391413790329b3320f2f64d8d1e7940e40}
-    version: 1.0.586
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/d44856664e00892d4f55abbde00767685b813891':
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/d44856664e00892d4f55abbde00767685b813891}
+    version: 1.0.588
 
   '@aashutoshrathi/word-wrap@1.2.6':
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
@@ -2982,8 +2982,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-packagejson@2.5.8:
-    resolution: {integrity: sha512-BaGOF63I0IJZoudxpuQe17naV93BRtK8b3byWktkJReKEMX9CC4qdGUzThPDVO/AUhPzlqDiAXbp18U6X8wLKA==}
+  prettier-plugin-packagejson@2.5.9:
+    resolution: {integrity: sha512-lhVEpWyYPtO+g9/zQLk6CLkMqcpwR8YGO4mwbbHJaFXoXVeK0LtcgTTalp8vZVmMyHKbcv/zhA1Xp4uQKoeCww==}
     peerDependencies:
       prettier: '>= 1.16.0'
     peerDependenciesMeta:
@@ -3249,8 +3249,8 @@ packages:
   sort-object-keys@1.1.3:
     resolution: {integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==}
 
-  sort-package-json@2.14.0:
-    resolution: {integrity: sha512-xBRdmMjFB/KW3l51mP31dhlaiFmqkHLfWTfZAno8prb/wbDxwBPWFpxB16GZbiPbYr3wL41H8Kx22QIDWRe8WQ==}
+  sort-package-json@2.15.0:
+    resolution: {integrity: sha512-wpKu3DvFuymcRvPqJR7VN5J6wnqR+SYZ4SZmnJa9ckpV+BuoE0XYHZYsoWaJbt6oz8OwOXb4eoMjlEBM6hwhBw==}
     hasBin: true
 
   source-map-support@0.5.13:
@@ -3516,11 +3516,6 @@ packages:
       eslint: ^8.57.0 || ^9.0.0
       typescript: '>=4.8.4 <5.8.0'
 
-  typescript@5.7.3:
-    resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
-    engines: {node: '>=14.17'}
-    hasBin: true
-
   typescript@5.8.2:
     resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
     engines: {node: '>=14.17'}
@@ -3674,23 +3669,23 @@ packages:
 
 snapshots:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/bc9534391413790329b3320f2f64d8d1e7940e40(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.7.3))':
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/d44856664e00892d4f55abbde00767685b813891(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.8.2))':
     dependencies:
       '@eslint/js': 9.21.0
       '@tsconfig/strictest': 2.0.5
-      better-typescript-lib: 2.10.1(typescript@5.7.3)
+      better-typescript-lib: 2.10.1(typescript@5.8.2)
       eslint: 9.21.0
       eslint-config-prettier: 10.0.2(eslint@9.21.0)
       eslint-import-resolver-typescript: 3.8.3(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.8.2))(eslint@9.21.0))(eslint@9.21.0)
       eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.8.2))(eslint-import-resolver-typescript@3.8.3(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.8.2))(eslint@9.21.0))(eslint@9.21.0))(eslint@9.21.0)
-      eslint-plugin-sort: 4.0.0(eslint@9.21.0)(typescript@5.7.3)
+      eslint-plugin-sort: 4.0.0(eslint@9.21.0)(typescript@5.8.2)
       eslint-plugin-unicorn: 56.0.1(eslint@9.21.0)
       globals: 15.15.0
       prettier: 3.5.2
-      prettier-plugin-packagejson: 2.5.8(prettier@3.5.2)
+      prettier-plugin-packagejson: 2.5.9(prettier@3.5.2)
       prettier-plugin-sort-json: 4.1.1(prettier@3.5.2)
-      typescript: 5.7.3
-      typescript-eslint: 8.24.1(eslint@9.21.0)(typescript@5.7.3)
+      typescript: 5.8.2
+      typescript-eslint: 8.24.1(eslint@9.21.0)(typescript@5.8.2)
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
       - eslint-import-resolver-webpack
@@ -4446,73 +4441,73 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@better-typescript-lib/decorators@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/decorators@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/dom@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/dom@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/es2015@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/es2015@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/es2016@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/es2016@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/es2017@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/es2017@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/es2018@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/es2018@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/es2019@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/es2019@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/es2020@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/es2020@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/es2021@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/es2021@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/es2022@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/es2022@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/es2023@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/es2023@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/es2024@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/es2024@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/es5@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/es5@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/es6@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/es6@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/esnext@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/esnext@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/scripthost@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/scripthost@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
-  '@better-typescript-lib/webworker@2.10.1(typescript@5.7.3)':
+  '@better-typescript-lib/webworker@2.10.1(typescript@5.8.2)':
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
   '@colors/colors@1.5.0':
     optional: true
@@ -5056,32 +5051,32 @@ snapshots:
     dependencies:
       '@types/yargs-parser': 21.0.3
 
-  '@typescript-eslint/eslint-plugin@8.24.1(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.7.3))(eslint@9.21.0)(typescript@5.7.3)':
+  '@typescript-eslint/eslint-plugin@8.24.1(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.8.2))(eslint@9.21.0)(typescript@5.8.2)':
     dependencies:
       '@eslint-community/regexpp': 4.12.1
-      '@typescript-eslint/parser': 8.24.1(eslint@9.21.0)(typescript@5.7.3)
+      '@typescript-eslint/parser': 8.24.1(eslint@9.21.0)(typescript@5.8.2)
       '@typescript-eslint/scope-manager': 8.24.1
-      '@typescript-eslint/type-utils': 8.24.1(eslint@9.21.0)(typescript@5.7.3)
-      '@typescript-eslint/utils': 8.24.1(eslint@9.21.0)(typescript@5.7.3)
+      '@typescript-eslint/type-utils': 8.24.1(eslint@9.21.0)(typescript@5.8.2)
+      '@typescript-eslint/utils': 8.24.1(eslint@9.21.0)(typescript@5.8.2)
       '@typescript-eslint/visitor-keys': 8.24.1
       eslint: 9.21.0
       graphemer: 1.4.0
       ignore: 5.3.1
       natural-compare: 1.4.0
-      ts-api-utils: 2.0.1(typescript@5.7.3)
-      typescript: 5.7.3
+      ts-api-utils: 2.0.1(typescript@5.8.2)
+      typescript: 5.8.2
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.7.3)':
+  '@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.8.2)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.24.1
       '@typescript-eslint/types': 8.24.1
-      '@typescript-eslint/typescript-estree': 8.24.1(typescript@5.7.3)
+      '@typescript-eslint/typescript-estree': 8.24.1(typescript@5.8.2)
       '@typescript-eslint/visitor-keys': 8.24.1
       debug: 4.3.7
       eslint: 9.21.0
-      typescript: 5.7.3
+      typescript: 5.8.2
     transitivePeerDependencies:
       - supports-color
 
@@ -5090,20 +5085,20 @@ snapshots:
       '@typescript-eslint/types': 8.24.1
       '@typescript-eslint/visitor-keys': 8.24.1
 
-  '@typescript-eslint/type-utils@8.24.1(eslint@9.21.0)(typescript@5.7.3)':
+  '@typescript-eslint/type-utils@8.24.1(eslint@9.21.0)(typescript@5.8.2)':
     dependencies:
-      '@typescript-eslint/typescript-estree': 8.24.1(typescript@5.7.3)
-      '@typescript-eslint/utils': 8.24.1(eslint@9.21.0)(typescript@5.7.3)
+      '@typescript-eslint/typescript-estree': 8.24.1(typescript@5.8.2)
+      '@typescript-eslint/utils': 8.24.1(eslint@9.21.0)(typescript@5.8.2)
       debug: 4.3.7
       eslint: 9.21.0
-      ts-api-utils: 2.0.1(typescript@5.7.3)
-      typescript: 5.7.3
+      ts-api-utils: 2.0.1(typescript@5.8.2)
+      typescript: 5.8.2
     transitivePeerDependencies:
       - supports-color
 
   '@typescript-eslint/types@8.24.1': {}
 
-  '@typescript-eslint/typescript-estree@8.24.1(typescript@5.7.3)':
+  '@typescript-eslint/typescript-estree@8.24.1(typescript@5.8.2)':
     dependencies:
       '@typescript-eslint/types': 8.24.1
       '@typescript-eslint/visitor-keys': 8.24.1
@@ -5112,19 +5107,19 @@ snapshots:
       is-glob: 4.0.3
       minimatch: 9.0.4
       semver: 7.6.3
-      ts-api-utils: 2.0.1(typescript@5.7.3)
-      typescript: 5.7.3
+      ts-api-utils: 2.0.1(typescript@5.8.2)
+      typescript: 5.8.2
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@8.24.1(eslint@9.21.0)(typescript@5.7.3)':
+  '@typescript-eslint/utils@8.24.1(eslint@9.21.0)(typescript@5.8.2)':
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.21.0)
       '@typescript-eslint/scope-manager': 8.24.1
       '@typescript-eslint/types': 8.24.1
-      '@typescript-eslint/typescript-estree': 8.24.1(typescript@5.7.3)
+      '@typescript-eslint/typescript-estree': 8.24.1(typescript@5.8.2)
       eslint: 9.21.0
-      typescript: 5.7.3
+      typescript: 5.8.2
     transitivePeerDependencies:
       - supports-color
 
@@ -5344,26 +5339,26 @@ snapshots:
 
   before-after-hook@2.2.3: {}
 
-  better-typescript-lib@2.10.1(typescript@5.7.3):
+  better-typescript-lib@2.10.1(typescript@5.8.2):
     dependencies:
-      '@typescript/lib-decorators': '@better-typescript-lib/decorators@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-dom': '@better-typescript-lib/dom@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-es2015': '@better-typescript-lib/es2015@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-es2016': '@better-typescript-lib/es2016@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-es2017': '@better-typescript-lib/es2017@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-es2018': '@better-typescript-lib/es2018@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-es2019': '@better-typescript-lib/es2019@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-es2020': '@better-typescript-lib/es2020@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-es2021': '@better-typescript-lib/es2021@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-es2022': '@better-typescript-lib/es2022@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-es2023': '@better-typescript-lib/es2023@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-es2024': '@better-typescript-lib/es2024@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-es5': '@better-typescript-lib/es5@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-es6': '@better-typescript-lib/es6@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-esnext': '@better-typescript-lib/esnext@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-scripthost': '@better-typescript-lib/scripthost@2.10.1(typescript@5.7.3)'
-      '@typescript/lib-webworker': '@better-typescript-lib/webworker@2.10.1(typescript@5.7.3)'
-      typescript: 5.7.3
+      '@typescript/lib-decorators': '@better-typescript-lib/decorators@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-dom': '@better-typescript-lib/dom@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-es2015': '@better-typescript-lib/es2015@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-es2016': '@better-typescript-lib/es2016@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-es2017': '@better-typescript-lib/es2017@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-es2018': '@better-typescript-lib/es2018@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-es2019': '@better-typescript-lib/es2019@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-es2020': '@better-typescript-lib/es2020@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-es2021': '@better-typescript-lib/es2021@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-es2022': '@better-typescript-lib/es2022@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-es2023': '@better-typescript-lib/es2023@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-es2024': '@better-typescript-lib/es2024@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-es5': '@better-typescript-lib/es5@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-es6': '@better-typescript-lib/es6@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-esnext': '@better-typescript-lib/esnext@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-scripthost': '@better-typescript-lib/scripthost@2.10.1(typescript@5.8.2)'
+      '@typescript/lib-webworker': '@better-typescript-lib/webworker@2.10.1(typescript@5.8.2)'
+      typescript: 5.8.2
 
   bottleneck@2.19.5: {}
 
@@ -5832,7 +5827,7 @@ snapshots:
     dependencies:
       debug: 3.2.7
     optionalDependencies:
-      '@typescript-eslint/parser': 8.24.1(eslint@9.21.0)(typescript@5.7.3)
+      '@typescript-eslint/parser': 8.24.1(eslint@9.21.0)(typescript@5.8.2)
       eslint: 9.21.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.8.3(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.8.2))(eslint@9.21.0))(eslint@9.21.0)
@@ -5862,15 +5857,15 @@ snapshots:
       string.prototype.trimend: 1.0.9
       tsconfig-paths: 3.15.0
     optionalDependencies:
-      '@typescript-eslint/parser': 8.24.1(eslint@9.21.0)(typescript@5.7.3)
+      '@typescript-eslint/parser': 8.24.1(eslint@9.21.0)(typescript@5.8.2)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-sort@4.0.0(eslint@9.21.0)(typescript@5.7.3):
+  eslint-plugin-sort@4.0.0(eslint@9.21.0)(typescript@5.8.2):
     dependencies:
-      '@typescript-eslint/utils': 8.24.1(eslint@9.21.0)(typescript@5.7.3)
+      '@typescript-eslint/utils': 8.24.1(eslint@9.21.0)(typescript@5.8.2)
       eslint: 9.21.0
       isomorphic-resolve: 1.0.0
       natural-compare: 1.4.0
@@ -7187,9 +7182,9 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-packagejson@2.5.8(prettier@3.5.2):
+  prettier-plugin-packagejson@2.5.9(prettier@3.5.2):
     dependencies:
-      sort-package-json: 2.14.0
+      sort-package-json: 2.15.0
       synckit: 0.9.2
     optionalDependencies:
       prettier: 3.5.2
@@ -7493,7 +7488,7 @@ snapshots:
 
   sort-object-keys@1.1.3: {}
 
-  sort-package-json@2.14.0:
+  sort-package-json@2.15.0:
     dependencies:
       detect-indent: 7.0.1
       detect-newline: 4.0.1
@@ -7715,9 +7710,9 @@ snapshots:
 
   trim-newlines@3.0.1: {}
 
-  ts-api-utils@2.0.1(typescript@5.7.3):
+  ts-api-utils@2.0.1(typescript@5.8.2):
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
 
   tsconfig-paths@3.15.0:
     dependencies:
@@ -7779,17 +7774,15 @@ snapshots:
       possible-typed-array-names: 1.0.0
       reflect.getprototypeof: 1.0.8
 
-  typescript-eslint@8.24.1(eslint@9.21.0)(typescript@5.7.3):
+  typescript-eslint@8.24.1(eslint@9.21.0)(typescript@5.8.2):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.24.1(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.7.3))(eslint@9.21.0)(typescript@5.7.3)
-      '@typescript-eslint/parser': 8.24.1(eslint@9.21.0)(typescript@5.7.3)
-      '@typescript-eslint/utils': 8.24.1(eslint@9.21.0)(typescript@5.7.3)
+      '@typescript-eslint/eslint-plugin': 8.24.1(@typescript-eslint/parser@8.24.1(eslint@9.21.0)(typescript@5.8.2))(eslint@9.21.0)(typescript@5.8.2)
+      '@typescript-eslint/parser': 8.24.1(eslint@9.21.0)(typescript@5.8.2)
+      '@typescript-eslint/utils': 8.24.1(eslint@9.21.0)(typescript@5.8.2)
       eslint: 9.21.0
-      typescript: 5.7.3
+      typescript: 5.8.2
     transitivePeerDependencies:
       - supports-color
-
-  typescript@5.7.3: {}
 
   typescript@5.8.2: {}
 
