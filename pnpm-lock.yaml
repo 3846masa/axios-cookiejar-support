@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-patchedDependencies:
-  '@semantic-release/git@10.0.1':
-    hash: 543e9f65e4aca3091e75eff9fa6791d66cf95bd7b1906b2bcf9128da46766051
-    path: patches/@semantic-release__git@10.0.1.patch
-
 importers:
 
   .:
@@ -40,7 +35,7 @@ importers:
         version: 6.0.3(semantic-release@19.0.5)
       '@semantic-release/git':
         specifier: 10.0.1
-        version: 10.0.1(patch_hash=543e9f65e4aca3091e75eff9fa6791d66cf95bd7b1906b2bcf9128da46766051)(semantic-release@19.0.5)
+        version: 10.0.1(semantic-release@19.0.5)
       '@types/eslint':
         specifier: 9.6.1
         version: 9.6.1
@@ -4904,7 +4899,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/git@10.0.1(patch_hash=543e9f65e4aca3091e75eff9fa6791d66cf95bd7b1906b2bcf9128da46766051)(semantic-release@19.0.5)':
+  '@semantic-release/git@10.0.1(semantic-release@19.0.5)':
     dependencies:
       '@semantic-release/error': 3.0.0
       aggregate-error: 3.1.0
