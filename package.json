@@ -49,7 +49,7 @@
     "@3846masa/configs": "github:3846masa/configs#608b5452a72226d787a3852af7df36d262147d66",
     "@babel/plugin-proposal-explicit-resource-management": "7.25.9",
     "@babel/preset-env": "7.26.9",
-    "@babel/preset-typescript": "7.26.0",
+    "@babel/preset-typescript": "7.27.0",
     "@jest/globals": "29.7.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/exec": "6.0.3",
