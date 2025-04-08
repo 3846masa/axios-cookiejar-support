@@ -63,7 +63,7 @@
     "rimraf": "5.0.10",
     "semantic-release": "19.0.5",
     "tough-cookie": "5.1.2",
-    "typescript": "5.8.2"
+    "typescript": "5.8.3"
   },
   "peerDependencies": {
     "axios": ">=0.20.0",
