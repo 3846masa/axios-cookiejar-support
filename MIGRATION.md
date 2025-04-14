@@ -1,5 +1,13 @@
 # MIGRATION GUIDES
 
+## Migration guide from v5.x.x to v6.0.0
+
+- [CommonJS is no longer provided.](#commonjs-is-no-longer-provided)
+
+### CommonJS is no longer provided.
+
+If using Node.js >= v20.19.0 or >= v22.12.0, axios-cookiejar-support can be loaded from a CommonJS file.
+
 ## Migration guide from v3.x.x to v4.0.0
 
 - [An asynchronous Cookie store is no longer supported.](#an-asynchronous-cookie-store-is-no-longer-supported)
