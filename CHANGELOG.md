@@ -1,3 +1,26 @@
+# [6.0.0](https://github.com/3846masa/axios-cookiejar-support/compare/v5.0.5...v6.0.0) (2025-04-14)
+
+
+### Bug Fixes
+
+* **npm:** update dependency http-cookie-agent to v7 ([#1342](https://github.com/3846masa/axios-cookiejar-support/issues/1342)) ([8f51516](https://github.com/3846masa/axios-cookiejar-support/commit/8f51516630260c6e443057bf7a79ca0ee1b3570f))
+
+
+### chore
+
+* drop support for Node.js v18 ([#1341](https://github.com/3846masa/axios-cookiejar-support/issues/1341)) ([7cd7817](https://github.com/3846masa/axios-cookiejar-support/commit/7cd78175922242135c7c9265abb1f93c5a4f79c4))
+
+
+### Features
+
+* provides ESM only ([#1340](https://github.com/3846masa/axios-cookiejar-support/issues/1340)) ([5ffb726](https://github.com/3846masa/axios-cookiejar-support/commit/5ffb7261a9312598a63012c3cc035e89963433d8))
+
+
+### BREAKING CHANGES
+
+* Drop support for Node.js v18. See MIGRATION.md
+* CommonJS is no longer provided. See MIGRATION.md
+
 ## [5.0.5](https://github.com/3846masa/axios-cookiejar-support/compare/v5.0.4...v5.0.5) (2024-12-16)
 
 
