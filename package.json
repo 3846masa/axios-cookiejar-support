@@ -20,13 +20,22 @@
   "funding": "https://github.com/sponsors/3846masa",
   "license": "MIT",
   "author": "3846masa <3846masahiro+git@gmail.com>",
-  "main": "dist/index.js",
-  "browser": "noop.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "node": {
+        "default": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "browser": {
+        "default": "./noop.js",
+        "types": "./dist/index.d.ts"
+      }
+    }
+  },
   "files": [
     "dist",
-    "noop.js",
-    "!**/__tests__"
+    "noop.js"
   ],
   "scripts": {
     "prebuild": "rimraf dist",
