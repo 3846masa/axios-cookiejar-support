@@ -1,10 +1,13 @@
 {
   "compilerOptions": {
     "declaration": true,
+    "module": "CommonJS",
+    "moduleResolution": "node10",
     "noEmit": false,
     "outDir": "./dist",
     "rootDir": "./src"
   },
+  "exclude": ["**/__tests__"],
   "extends": "./tsconfig.json",
   "include": ["src/"]
 }

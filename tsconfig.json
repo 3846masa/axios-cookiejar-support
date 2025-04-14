@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "lib": ["ESNext"],
-    "module": "CommonJS",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "noEmit": true,
     "paths": {
       "axios-cookiejar-support": ["./"]
@@ -10,7 +11,7 @@
     "types": ["@types/node"],
     "verbatimModuleSyntax": false
   },
-  "exclude": ["dist/"],
+  "exclude": ["dist/", "examples/"],
   "extends": "@3846masa/configs/typescript/tsconfig.json",
   "include": ["**/*", "**/.*"]
 }

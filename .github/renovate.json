@@ -1,11 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>3846masa/configs//renovate/default"],
+  "extends": ["github>3846masa/configs//renovate/default#e0c70a82447c0b40dfdf556cd94c02bbd2be9a81"],
   "npm": {
     "packageRules": [
       {
         "groupName": "semantic-release",
-        "matchPackagePatterns": ["^semantic-release$", "^@semantic-release/"]
+        "matchPackageNames": ["semantic-release", "@semantic-release/*"]
       }
     ]
   }
