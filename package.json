@@ -52,7 +52,7 @@
     "test": "NODE_OPTIONS=\"--experimental-vm-modules\" jest"
   },
   "dependencies": {
-    "http-cookie-agent": "^6.0.8"
+    "http-cookie-agent": "^7.0.1"
   },
   "devDependencies": {
     "@3846masa/configs": "github:3846masa/configs#e0c70a82447c0b40dfdf556cd94c02bbd2be9a81",
