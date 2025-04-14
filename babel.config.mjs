@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   plugins: ['@babel/plugin-proposal-explicit-resource-management'],
   presets: [
     [
@@ -11,3 +11,5 @@ module.exports = {
     ['@babel/preset-typescript'],
   ],
 };
+
+export default config;

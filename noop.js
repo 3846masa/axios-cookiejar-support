@@ -1,12 +1,8 @@
-'use strict';
-Object.defineProperty(exports, '__esModule', { value: true });
-
 /**
- * @param {import('axios').AxiosInstance} axios
- * @returns {import('axios').AxiosInstance}
+ * @template T
+ * @param {T} axios
+ * @returns {T}
  */
-function noop(axios) {
+export function wrapper(axios) {
   return axios;
 }
-
-exports.wrapper = noop;
