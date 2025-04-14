@@ -1,9 +1,9 @@
-import { configs as sharedConfigs } from '@3846masa/configs/eslint/config.mjs';
+import { configs as sharedConfigs } from '@3846masa/configs/eslint';
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   {
-    ignores: ['dist/**'],
+    ignores: ['dist/**', 'examples/**'],
   },
   ...sharedConfigs,
   {
