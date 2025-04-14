@@ -2,7 +2,12 @@
 
 ## Migration guide from v5.x.x to v6.0.0
 
+- [Update requirements.](#update-requirements)
 - [CommonJS is no longer provided.](#commonjs-is-no-longer-provided)
+
+### Update requirements.
+
+- Node.js v20.0.0 or above
 
 ### CommonJS is no longer provided.
 
@@ -41,7 +46,7 @@ await client.get('https://example.com');
 
 ## Migration guide from v2.x.x to v3.0.0
 
-- [Update requirements.](#update-requirements)
+- [Update requirements.](#update-requirements-1)
 
 ### Update requirements.
 
@@ -49,7 +54,7 @@ await client.get('https://example.com');
 
 ## Migration guide from v1.0.x to v2.0.0
 
-- [Update requirements.](#update-requirements-1)
+- [Update requirements.](#update-requirements-2)
 - [The wrapper function are exported as "named exports".](#the-wrapper-function-are-exported-as-named-exports)
 - [No longer refers to `config.withCredentials`.](#no-longer-refers-to-configwithcredentials)
 - [`config.httpAgent` / `config.httpsAgent` cannot use with `axios-cookiejar-support`.](#confighttpagent--confighttpsagent-cannot-use-with-axios-cookiejar-support)
