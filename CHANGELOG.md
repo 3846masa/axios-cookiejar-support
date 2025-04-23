@@ -1,3 +1,10 @@
+## [6.0.1](https://github.com/3846masa/axios-cookiejar-support/compare/v6.0.0...v6.0.1) (2025-04-23)
+
+
+### Bug Fixes
+
+* restore main / types fields for npm ts badge ([#1348](https://github.com/3846masa/axios-cookiejar-support/issues/1348)) ([0970328](https://github.com/3846masa/axios-cookiejar-support/commit/097032888a2dd1a2e0bc687c615edb09c6af2209))
+
 # [6.0.0](https://github.com/3846masa/axios-cookiejar-support/compare/v5.0.5...v6.0.0) (2025-04-14)
 
 
