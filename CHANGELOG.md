@@ -1,3 +1,10 @@
+## [6.0.2](https://github.com/3846masa/axios-cookiejar-support/compare/v6.0.1...v6.0.2) (2025-04-26)
+
+
+### Bug Fixes
+
+* improve module resolution compatibility with bundlers ([#1350](https://github.com/3846masa/axios-cookiejar-support/issues/1350)) ([4619c4d](https://github.com/3846masa/axios-cookiejar-support/commit/4619c4d812e4721a90d96bd0ff6faf374b6f3ecc))
+
 ## [6.0.1](https://github.com/3846masa/axios-cookiejar-support/compare/v6.0.0...v6.0.1) (2025-04-23)
 
 
