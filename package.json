@@ -67,7 +67,7 @@
     "@babel/preset-typescript": "7.27.1",
     "@jest/globals": "29.7.0",
     "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/exec": "7.0.3",
+    "@semantic-release/exec": "7.1.0",
     "@semantic-release/git": "10.0.1",
     "@types/eslint": "9.6.1",
     "@types/node": "20.17.46",
