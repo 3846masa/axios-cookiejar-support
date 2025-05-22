@@ -18,8 +18,8 @@ importers:
         version: 7.0.1(tough-cookie@5.1.2)
     devDependencies:
       '@3846masa/configs':
-        specifier: github:3846masa/configs#bfbd39868f881e307f406dafc6f8e4e7cb140572
-        version: https://codeload.github.com/3846masa/configs/tar.gz/bfbd39868f881e307f406dafc6f8e4e7cb140572(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))
+        specifier: github:3846masa/configs#23f901fce875d96c4c120f12aa67b57e130c528b
+        version: https://codeload.github.com/3846masa/configs/tar.gz/23f901fce875d96c4c120f12aa67b57e130c528b(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))
       '@babel/plugin-proposal-explicit-resource-management':
         specifier: 7.27.1
         version: 7.27.1(@babel/core@7.23.7)
@@ -74,9 +74,9 @@ importers:
 
 packages:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/bfbd39868f881e307f406dafc6f8e4e7cb140572':
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/bfbd39868f881e307f406dafc6f8e4e7cb140572}
-    version: 1.0.678
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/23f901fce875d96c4c120f12aa67b57e130c528b':
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/23f901fce875d96c4c120f12aa67b57e130c528b}
+    version: 1.0.679
 
   '@aashutoshrathi/word-wrap@1.2.6':
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
@@ -3150,8 +3150,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-packagejson@2.5.13:
-    resolution: {integrity: sha512-94B/Xy25HwiwSkGUGnwQw3cBw9jg9L5LfKCHpuRMjC8ETPq4oCMa2S4EblV628E0XER9n6v5rH0TQY9cUd10pg==}
+  prettier-plugin-packagejson@2.5.14:
+    resolution: {integrity: sha512-h+3tSpr2nVpp+YOK1MDIYtYhHVXr8/0V59UUbJpIJFaqi3w4fvUokJo6eV8W+vELrUXIZzJ+DKm5G7lYzrMcKQ==}
     peerDependencies:
       prettier: '>= 1.16.0'
     peerDependenciesMeta:
@@ -3522,8 +3522,8 @@ packages:
     resolution: {integrity: sha512-6+ZiCVUmDLFRyYRswTrDTYWaM/IT01W/cqQBLnnyg8T0njVrWj3tP+EXFevXk6qK61yDXnmZsOFVzFfYoUy/KA==}
     engines: {node: '>= 0.4'}
 
-  synckit@0.11.5:
-    resolution: {integrity: sha512-frqvfWyDA5VPVdrWfH24uM6SI/O8NLpVbIIJxb8t/a3YGsp4AW9CYgSKC0OaSEfexnp7Y1pVh2Y6IHO8ggGDmA==}
+  synckit@0.11.6:
+    resolution: {integrity: sha512-2pR2ubZSV64f/vqm9eLPz/KOvR9Dm+Co/5ChLgeHl0yEDRc6h5hXHoxEQH8Y5Ljycozd3p1k5TTSVdzYGkPvLw==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
   temp-dir@3.0.0:
@@ -3797,7 +3797,7 @@ packages:
 
 snapshots:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/bfbd39868f881e307f406dafc6f8e4e7cb140572(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))':
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/23f901fce875d96c4c120f12aa67b57e130c528b(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))':
     dependencies:
       '@eslint/js': 9.27.0
       '@tsconfig/strictest': 2.0.5
@@ -3805,12 +3805,12 @@ snapshots:
       eslint: 9.27.0
       eslint-config-prettier: 10.1.5(eslint@9.27.0)
       eslint-import-resolver-typescript: 4.3.5(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))(eslint@9.27.0))(eslint@9.27.0)
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))(eslint-import-resolver-typescript@4.3.5(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))(eslint@9.27.0))(eslint@9.27.0))(eslint@9.27.0)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))(eslint-import-resolver-typescript@4.3.5)(eslint@9.27.0)
       eslint-plugin-sort: 4.0.0(eslint@9.27.0)(typescript@5.8.3)
       eslint-plugin-unicorn: 59.0.1(eslint@9.27.0)
       globals: 16.1.0
       prettier: 3.5.3
-      prettier-plugin-packagejson: 2.5.13(prettier@3.5.3)
+      prettier-plugin-packagejson: 2.5.14(prettier@3.5.3)
       prettier-plugin-sort-json: 4.1.1(prettier@3.5.3)
       typescript: 5.8.3
       typescript-eslint: 8.32.1(eslint@9.27.0)(typescript@5.8.3)
@@ -5997,7 +5997,7 @@ snapshots:
       tinyglobby: 0.2.13
       unrs-resolver: 1.7.2
     optionalDependencies:
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))(eslint-import-resolver-typescript@4.3.5(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))(eslint@9.27.0))(eslint@9.27.0))(eslint@9.27.0)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))(eslint-import-resolver-typescript@4.3.5)(eslint@9.27.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -6012,7 +6012,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))(eslint-import-resolver-typescript@4.3.5(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))(eslint@9.27.0))(eslint@9.27.0))(eslint@9.27.0):
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))(eslint-import-resolver-typescript@4.3.5)(eslint@9.27.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.8
@@ -7422,10 +7422,10 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-packagejson@2.5.13(prettier@3.5.3):
+  prettier-plugin-packagejson@2.5.14(prettier@3.5.3):
     dependencies:
       sort-package-json: 3.2.1
-      synckit: 0.11.5
+      synckit: 0.11.6
     optionalDependencies:
       prettier: 3.5.3
 
@@ -7859,10 +7859,9 @@ snapshots:
       has-property-descriptors: 1.0.2
       set-function-name: 2.0.2
 
-  synckit@0.11.5:
+  synckit@0.11.6:
     dependencies:
       '@pkgr/core': 0.2.4
-      tslib: 2.8.1
 
   temp-dir@3.0.0: {}
 
@@ -7930,7 +7929,8 @@ snapshots:
       minimist: 1.2.8
       strip-bom: 3.0.0
 
-  tslib@2.8.1: {}
+  tslib@2.8.1:
+    optional: true
 
   type-check@0.4.0:
     dependencies:
