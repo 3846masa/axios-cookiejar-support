@@ -18,8 +18,8 @@ importers:
         version: 7.0.1(tough-cookie@5.1.2)
     devDependencies:
       '@3846masa/configs':
-        specifier: github:3846masa/configs#7727f118a77e04658e504fe60f66274e01feb155
-        version: https://codeload.github.com/3846masa/configs/tar.gz/7727f118a77e04658e504fe60f66274e01feb155(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))
+        specifier: github:3846masa/configs#dcdf008eac72010cfa663699ac1592b4d34d529b
+        version: https://codeload.github.com/3846masa/configs/tar.gz/dcdf008eac72010cfa663699ac1592b4d34d529b(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))
       '@babel/plugin-proposal-explicit-resource-management':
         specifier: 7.27.1
         version: 7.27.1(@babel/core@7.23.7)
@@ -74,9 +74,9 @@ importers:
 
 packages:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/7727f118a77e04658e504fe60f66274e01feb155':
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/7727f118a77e04658e504fe60f66274e01feb155}
-    version: 1.0.683
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/dcdf008eac72010cfa663699ac1592b4d34d529b':
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/dcdf008eac72010cfa663699ac1592b4d34d529b}
+    version: 1.0.684
 
   '@aashutoshrathi/word-wrap@1.2.6':
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
@@ -3561,10 +3561,6 @@ packages:
     resolution: {integrity: sha512-75voc/9G4rDIJleOo4jPvN4/YC4GRZrY8yy1uU4lwrB3XEQbWve8zXoO5No4eFrGcTAMYyoY67p8jRQdtA1HbA==}
     engines: {node: '>=12'}
 
-  tinyglobby@0.2.13:
-    resolution: {integrity: sha512-mEwzpUgrLySlveBwEVDMKk5B57bhLPYovRfPAXD5gA/98Opn0rCDj3GtLwFvCvH5RK9uPCExUROW5NjDwvqkxw==}
-    engines: {node: '>=12.0.0'}
-
   tinyglobby@0.2.14:
     resolution: {integrity: sha512-tX5e7OM1HnYr2+a2C/4V0htOcSQcoSTH9KgJnVvNm5zm/cyEWKJ7j7YutsH9CxMdtOkkLFy2AHrMci9IM8IPZQ==}
     engines: {node: '>=12.0.0'}
@@ -3810,7 +3806,7 @@ packages:
 
 snapshots:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/7727f118a77e04658e504fe60f66274e01feb155(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))':
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/dcdf008eac72010cfa663699ac1592b4d34d529b(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))':
     dependencies:
       '@eslint/js': 9.27.0
       '@tsconfig/strictest': 2.0.5
@@ -7733,7 +7729,7 @@ snapshots:
       is-plain-obj: 4.1.0
       semver: 7.7.1
       sort-object-keys: 1.1.3
-      tinyglobby: 0.2.13
+      tinyglobby: 0.2.14
 
   source-map-support@0.5.13:
     dependencies:
@@ -7915,11 +7911,6 @@ snapshots:
   time-span@5.1.0:
     dependencies:
       convert-hrtime: 5.0.0
-
-  tinyglobby@0.2.13:
-    dependencies:
-      fdir: 6.4.4(picomatch@4.0.2)
-      picomatch: 4.0.2
 
   tinyglobby@0.2.14:
     dependencies:
