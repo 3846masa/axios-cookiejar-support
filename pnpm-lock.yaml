@@ -21,8 +21,8 @@ importers:
         specifier: github:3846masa/configs#dcdf008eac72010cfa663699ac1592b4d34d529b
         version: https://codeload.github.com/3846masa/configs/tar.gz/dcdf008eac72010cfa663699ac1592b4d34d529b(@typescript-eslint/parser@8.32.1(eslint@9.27.0)(typescript@5.8.3))
       '@babel/plugin-proposal-explicit-resource-management':
-        specifier: 7.27.1
-        version: 7.27.1(@babel/core@7.23.7)
+        specifier: 7.27.3
+        version: 7.27.3(@babel/core@7.23.7)
       '@babel/preset-env':
         specifier: 7.27.2
         version: 7.27.2(@babel/core@7.23.7)
@@ -220,8 +220,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0
 
-  '@babel/plugin-proposal-explicit-resource-management@7.27.1':
-    resolution: {integrity: sha512-XYOgHCv2IO+OtCjttDzuXLgHQEaPq8tdDGdeXRNRK4XobeXSF/SuMKndvdgvzQbMzKGQ1ANkjFICA5BS55rCMg==}
+  '@babel/plugin-proposal-explicit-resource-management@7.27.3':
+    resolution: {integrity: sha512-CdsNicQNytx+eE70lrWlhNuE4oImmIMMUMQXWU7L1pVKV37/Cxw9TDrc8H/CoIZvt2ahZ2aQvBTomWSg+51ITA==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -377,8 +377,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
-  '@babel/plugin-transform-destructuring@7.27.1':
-    resolution: {integrity: sha512-ttDCqhfvpE9emVkXbPD8vyxxh4TWYACVybGkDj+oReOGwnp066ITEivDlLwe0b1R0+evJ13IXQuLNB5w1fhC5Q==}
+  '@babel/plugin-transform-destructuring@7.27.3':
+    resolution: {integrity: sha512-s4Jrok82JpiaIprtY2nHsYmrThKvvwgHwjgd7UMiYhZaN0asdXNLr0y+NjTfkA7SyQE5i2Fb7eawUOZmLvyqOA==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -4031,10 +4031,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/plugin-proposal-explicit-resource-management@7.27.1(@babel/core@7.23.7)':
+  '@babel/plugin-proposal-explicit-resource-management@7.27.3(@babel/core@7.23.7)':
     dependencies:
       '@babel/core': 7.23.7
       '@babel/helper-plugin-utils': 7.27.1
+      '@babel/plugin-transform-destructuring': 7.27.3(@babel/core@7.23.7)
 
   '@babel/plugin-proposal-private-property-in-object@7.21.0-placeholder-for-preset-env.2(@babel/core@7.23.7)':
     dependencies:
@@ -4193,7 +4194,7 @@ snapshots:
       '@babel/helper-plugin-utils': 7.27.1
       '@babel/template': 7.27.1
 
-  '@babel/plugin-transform-destructuring@7.27.1(@babel/core@7.23.7)':
+  '@babel/plugin-transform-destructuring@7.27.3(@babel/core@7.23.7)':
     dependencies:
       '@babel/core': 7.23.7
       '@babel/helper-plugin-utils': 7.27.1
@@ -4327,7 +4328,7 @@ snapshots:
       '@babel/core': 7.23.7
       '@babel/helper-compilation-targets': 7.27.2
       '@babel/helper-plugin-utils': 7.27.1
-      '@babel/plugin-transform-destructuring': 7.27.1(@babel/core@7.23.7)
+      '@babel/plugin-transform-destructuring': 7.27.3(@babel/core@7.23.7)
       '@babel/plugin-transform-parameters': 7.27.1(@babel/core@7.23.7)
 
   '@babel/plugin-transform-object-super@7.27.1(@babel/core@7.23.7)':
@@ -4481,7 +4482,7 @@ snapshots:
       '@babel/plugin-transform-class-static-block': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-classes': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-computed-properties': 7.27.1(@babel/core@7.23.7)
-      '@babel/plugin-transform-destructuring': 7.27.1(@babel/core@7.23.7)
+      '@babel/plugin-transform-destructuring': 7.27.3(@babel/core@7.23.7)
       '@babel/plugin-transform-dotall-regex': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-duplicate-keys': 7.27.1(@babel/core@7.23.7)
       '@babel/plugin-transform-duplicate-named-capturing-groups-regex': 7.27.1(@babel/core@7.23.7)
