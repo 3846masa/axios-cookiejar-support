@@ -18,8 +18,8 @@ importers:
         version: 7.0.1(tough-cookie@5.1.2)
     devDependencies:
       '@3846masa/configs':
-        specifier: github:3846masa/configs#3ce845de2024c148d9593ffb961f8fd77a42e006
-        version: https://codeload.github.com/3846masa/configs/tar.gz/3ce845de2024c148d9593ffb961f8fd77a42e006(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))
+        specifier: github:3846masa/configs#05110fa6b5cb737913b2072e16d67cbbdb591acf
+        version: https://codeload.github.com/3846masa/configs/tar.gz/05110fa6b5cb737913b2072e16d67cbbdb591acf(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))
       '@babel/plugin-proposal-explicit-resource-management':
         specifier: 7.27.4
         version: 7.27.4(@babel/core@7.23.7)
@@ -74,9 +74,9 @@ importers:
 
 packages:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/3ce845de2024c148d9593ffb961f8fd77a42e006':
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/3ce845de2024c148d9593ffb961f8fd77a42e006}
-    version: 1.0.693
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/05110fa6b5cb737913b2072e16d67cbbdb591acf':
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/05110fa6b5cb737913b2072e16d67cbbdb591acf}
+    version: 1.0.694
 
   '@aashutoshrathi/word-wrap@1.2.6':
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
@@ -3819,7 +3819,7 @@ packages:
 
 snapshots:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/3ce845de2024c148d9593ffb961f8fd77a42e006(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))':
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/05110fa6b5cb737913b2072e16d67cbbdb591acf(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))':
     dependencies:
       '@eslint/js': 9.28.0
       '@tsconfig/strictest': 2.0.5
@@ -3827,7 +3827,7 @@ snapshots:
       eslint: 9.28.0
       eslint-config-prettier: 10.1.5(eslint@9.28.0)
       eslint-import-resolver-typescript: 4.4.3(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))(eslint@9.28.0))(eslint@9.28.0)
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))(eslint-import-resolver-typescript@4.4.3)(eslint@9.28.0)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))(eslint-import-resolver-typescript@4.4.3(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))(eslint@9.28.0))(eslint@9.28.0))(eslint@9.28.0)
       eslint-plugin-sort: 4.0.0(eslint@9.28.0)(typescript@5.8.3)
       eslint-plugin-unicorn: 59.0.1(eslint@9.28.0)
       globals: 16.2.0
@@ -6043,7 +6043,7 @@ snapshots:
       tinyglobby: 0.2.14
       unrs-resolver: 1.7.12
     optionalDependencies:
-      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))(eslint-import-resolver-typescript@4.4.3)(eslint@9.28.0)
+      eslint-plugin-import: 2.31.0(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))(eslint-import-resolver-typescript@4.4.3(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))(eslint@9.28.0))(eslint@9.28.0))(eslint@9.28.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -6058,7 +6058,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))(eslint-import-resolver-typescript@4.4.3)(eslint@9.28.0):
+  eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))(eslint-import-resolver-typescript@4.4.3(eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.33.1(eslint@9.28.0)(typescript@5.8.3))(eslint@9.28.0))(eslint@9.28.0))(eslint@9.28.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.8
