@@ -70,7 +70,7 @@
     "@semantic-release/exec": "7.1.0",
     "@semantic-release/git": "10.0.1",
     "@types/eslint": "9.6.1",
-    "@types/node": "20.19.0",
+    "@types/node": "20.19.1",
     "axios": "1.9.0",
     "babel-jest": "29.7.0",
     "disposablestack": "1.1.7",
