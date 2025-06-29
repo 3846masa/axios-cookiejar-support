@@ -1,3 +1,10 @@
+## [6.0.3](https://github.com/3846masa/axios-cookiejar-support/compare/v6.0.2...v6.0.3) (2025-06-29)
+
+
+### Bug Fixes
+
+* reorder "exports" field in package.json to place "default" key last ([#1398](https://github.com/3846masa/axios-cookiejar-support/issues/1398)) ([1f18baf](https://github.com/3846masa/axios-cookiejar-support/commit/1f18baf5424a93d56943bdbc50eec5a0c968771e))
+
 ## [6.0.2](https://github.com/3846masa/axios-cookiejar-support/compare/v6.0.1...v6.0.2) (2025-04-26)
 
 
