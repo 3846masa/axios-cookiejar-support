@@ -1,9 +1,9 @@
 import http from 'node:http';
 import https from 'node:https';
 
-import { beforeAll, expect, test } from '@jest/globals';
 import axios from 'axios';
 import { CookieJar } from 'tough-cookie';
+import { beforeAll, expect, test } from 'vitest';
 
 import { wrapper } from '../';
 
@@ -163,9 +163,11 @@ test('should throw error when config.httpAgent was assigned', async () => {
   const jar = new CookieJar();
 
   const actual = axios.get(`http://localhost:${server.port.toString(10)}`, { httpAgent: new http.Agent(), jar });
-  await expect(actual).rejects.toThrowError({
-    message: 'axios-cookiejar-support does not support for use with other http(s).Agent.',
-  });
+  await expect(actual).rejects.toThrowError(
+    expect.objectContaining({
+      message: 'axios-cookiejar-support does not support for use with other http(s).Agent.',
+    }) as Error,
+  );
 });
 
 test('should throw error when config.httpsAgent was assigned', async () => {
@@ -178,9 +180,11 @@ test('should throw error when config.httpsAgent was assigned', async () => {
   const jar = new CookieJar();
 
   const actual = axios.get(`http://localhost:${server.port.toString(10)}`, { httpsAgent: new https.Agent(), jar });
-  await expect(actual).rejects.toThrowError({
-    message: 'axios-cookiejar-support does not support for use with other http(s).Agent.',
-  });
+  await expect(actual).rejects.toThrowError(
+    expect.objectContaining({
+      message: 'axios-cookiejar-support does not support for use with other http(s).Agent.',
+    }) as Error,
+  );
 });
 
 test('should throw error when config.jar was assigned with boolean', async () => {
@@ -194,9 +198,11 @@ test('should throw error when config.jar was assigned with boolean', async () =>
     // @ts-expect-error -- Legacy version allows to assign boolean as jar.
     jar: true,
   });
-  await expect(actual).rejects.toThrowError({
-    message: 'config.jar does not accept boolean since axios-cookiejar-support@2.0.0.',
-  });
+  await expect(actual).rejects.toThrowError(
+    expect.objectContaining({
+      message: 'config.jar does not accept boolean since axios-cookiejar-support@2.0.0.',
+    }) as Error,
+  );
 });
 
 test('should allow to reuse config', async () => {
