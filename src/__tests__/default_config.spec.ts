@@ -1,6 +1,6 @@
-import { afterEach, beforeAll, expect, test } from '@jest/globals';
 import axios from 'axios';
 import { CookieJar } from 'tough-cookie';
+import { afterEach, beforeAll, expect, test } from 'vitest';
 
 import { wrapper } from '../';
 

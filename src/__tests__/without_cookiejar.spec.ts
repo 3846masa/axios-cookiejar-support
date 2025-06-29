@@ -1,5 +1,5 @@
-import { beforeAll, expect, test } from '@jest/globals';
 import axios from 'axios';
+import { beforeAll, expect, test } from 'vitest';
 
 import { wrapper } from '../';
 
