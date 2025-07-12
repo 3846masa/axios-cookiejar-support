@@ -61,7 +61,7 @@
     "http-cookie-agent": "^7.0.1"
   },
   "devDependencies": {
-    "@3846masa/configs": "github:3846masa/configs#f755ce51697eeba82b9736e6f6a263dc8042978a",
+    "@3846masa/configs": "github:3846masa/configs#0f4b2552c7874dae503bf50eee7dca57df497d69",
     "@babel/plugin-proposal-explicit-resource-management": "7.27.4",
     "@babel/preset-env": "7.28.0",
     "@babel/preset-typescript": "7.27.1",
