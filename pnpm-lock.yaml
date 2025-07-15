@@ -42,8 +42,8 @@ importers:
         specifier: 9.6.1
         version: 9.6.1
       '@types/node':
-        specifier: 20.19.7
-        version: 20.19.7
+        specifier: 20.19.8
+        version: 20.19.8
       axios:
         specifier: 1.10.0
         version: 1.10.0
@@ -64,7 +64,7 @@ importers:
         version: 5.8.3
       vitest:
         specifier: 3.2.4
-        version: 3.2.4(@types/node@20.19.7)
+        version: 3.2.4(@types/node@20.19.8)
 
 packages:
 
@@ -221,6 +221,7 @@ packages:
   '@babel/plugin-proposal-explicit-resource-management@7.27.4':
     resolution: {integrity: sha512-1SwtCDdZWQvUU1i7wt/ihP7W38WjC3CSTOHAl+Xnbze8+bbMNjRvRQydnj0k9J1jPqCAZctBFp6NHJXkrVVmEA==}
     engines: {node: '>=6.9.0'}
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-explicit-resource-management instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
@@ -1209,8 +1210,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@20.19.7':
-    resolution: {integrity: sha512-1GM9z6BJOv86qkPvzh2i6VW5+VVrXxCLknfmTkWEqz+6DqosiY28XUWCTmBcJ0ACzKqx/iwdIREfo1fwExIlkA==}
+  '@types/node@20.19.8':
+    resolution: {integrity: sha512-HzbgCY53T6bfu4tT7Aq3TvViJyHjLjPNaAS3HOuMc9pw97KHsUtXNX4L+wu59g1WnjsZSko35MbEqnO58rihhw==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -4963,7 +4964,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@20.19.7':
+  '@types/node@20.19.8':
     dependencies:
       undici-types: 6.21.0
 
@@ -5122,13 +5123,13 @@ snapshots:
       chai: 5.2.0
       tinyrainbow: 2.0.0
 
-  '@vitest/mocker@3.2.4(vite@7.0.0(@types/node@20.19.7))':
+  '@vitest/mocker@3.2.4(vite@7.0.0(@types/node@20.19.8))':
     dependencies:
       '@vitest/spy': 3.2.4
       estree-walker: 3.0.3
       magic-string: 0.30.17
     optionalDependencies:
-      vite: 7.0.0(@types/node@20.19.7)
+      vite: 7.0.0(@types/node@20.19.8)
 
   '@vitest/pretty-format@3.2.4':
     dependencies:
@@ -7444,13 +7445,13 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-node@3.2.4(@types/node@20.19.7):
+  vite-node@3.2.4(@types/node@20.19.8):
     dependencies:
       cac: 6.7.14
       debug: 4.4.1
       es-module-lexer: 1.7.0
       pathe: 2.0.3
-      vite: 7.0.0(@types/node@20.19.7)
+      vite: 7.0.0(@types/node@20.19.8)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -7465,7 +7466,7 @@ snapshots:
       - tsx
       - yaml
 
-  vite@7.0.0(@types/node@20.19.7):
+  vite@7.0.0(@types/node@20.19.8):
     dependencies:
       esbuild: 0.25.5
       fdir: 6.4.6(picomatch@4.0.2)
@@ -7474,14 +7475,14 @@ snapshots:
       rollup: 4.44.1
       tinyglobby: 0.2.14
     optionalDependencies:
-      '@types/node': 20.19.7
+      '@types/node': 20.19.8
       fsevents: 2.3.3
 
-  vitest@3.2.4(@types/node@20.19.7):
+  vitest@3.2.4(@types/node@20.19.8):
     dependencies:
       '@types/chai': 5.2.2
       '@vitest/expect': 3.2.4
-      '@vitest/mocker': 3.2.4(vite@7.0.0(@types/node@20.19.7))
+      '@vitest/mocker': 3.2.4(vite@7.0.0(@types/node@20.19.8))
       '@vitest/pretty-format': 3.2.4
       '@vitest/runner': 3.2.4
       '@vitest/snapshot': 3.2.4
@@ -7499,11 +7500,11 @@ snapshots:
       tinyglobby: 0.2.14
       tinypool: 1.1.1
       tinyrainbow: 2.0.0
-      vite: 7.0.0(@types/node@20.19.7)
-      vite-node: 3.2.4(@types/node@20.19.7)
+      vite: 7.0.0(@types/node@20.19.8)
+      vite-node: 3.2.4(@types/node@20.19.8)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 20.19.7
+      '@types/node': 20.19.8
     transitivePeerDependencies:
       - jiti
       - less
