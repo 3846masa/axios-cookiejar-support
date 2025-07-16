@@ -58,7 +58,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "http-cookie-agent": "^7.0.1"
+    "http-cookie-agent": "^7.0.2"
   },
   "devDependencies": {
     "@3846masa/configs": "github:3846masa/configs#6d886368a53bbe52a8dc599de1b24441691439ed",
