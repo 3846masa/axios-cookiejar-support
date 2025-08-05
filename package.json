@@ -75,7 +75,7 @@
     "rimraf": "6.0.1",
     "semantic-release": "24.2.7",
     "tough-cookie": "5.1.2",
-    "typescript": "5.8.3",
+    "typescript": "5.9.2",
     "vitest": "3.2.4"
   },
   "peerDependencies": {
