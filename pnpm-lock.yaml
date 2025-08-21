@@ -15,7 +15,7 @@ importers:
     dependencies:
       http-cookie-agent:
         specifier: ^7.0.2
-        version: 7.0.2(tough-cookie@5.1.2)
+        version: 7.0.2(tough-cookie@6.0.0)
     devDependencies:
       '@3846masa/configs':
         specifier: github:3846masa/configs#a8041d4d3c636d254429685dd769a48b40f116fb
@@ -57,8 +57,8 @@ importers:
         specifier: 24.2.7
         version: 24.2.7(typescript@5.9.2)
       tough-cookie:
-        specifier: 5.1.2
-        version: 5.1.2
+        specifier: 6.0.0
+        version: 6.0.0
       typescript:
         specifier: 5.9.2
         version: 5.9.2
@@ -3393,19 +3393,19 @@ packages:
     resolution: {integrity: sha512-t2T/WLB2WRgZ9EpE4jgPJ9w+i66UZfDc8wHh0xrwiRNN+UwH98GIJkTeZqX9rg0i0ptwzqW+uYeIF0T4F8LR7A==}
     engines: {node: '>=14.0.0'}
 
-  tldts-core@6.1.48:
-    resolution: {integrity: sha512-3gD9iKn/n2UuFH1uilBviK9gvTNT6iYwdqrj1Vr5mh8FuelvpRNaYVH4pNYqUgOGU4aAdL9X35eLuuj0gRsx+A==}
+  tldts-core@7.0.12:
+    resolution: {integrity: sha512-3K76aXywJFduGRsOYoY5JzINLs/WMlOkeDwPL+8OCPq2Rh39gkSDtWAxdJQlWjpun/xF/LHf29yqCi6VC/rHDA==}
 
-  tldts@6.1.48:
-    resolution: {integrity: sha512-SPbnh1zaSzi/OsmHb1vrPNnYuwJbdWjwo5TbBYYMlTtH3/1DSb41t8bcSxkwDmmbG2q6VLPVvQc7Yf23T+1EEw==}
+  tldts@7.0.12:
+    resolution: {integrity: sha512-M9ZQBPp6FyqhMcl233vHYyYRkxXOA1SKGlnq13S0mJdUhRSwr2w6I8rlchPL73wBwRlyIZpFvpu2VcdSMWLYXw==}
     hasBin: true
 
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
 
-  tough-cookie@5.1.2:
-    resolution: {integrity: sha512-FVDYdxtnj0G6Qm/DhNPSb8Ju59ULcup3tuJxkFb5K8Bv2pUXILbf0xZWU8PX8Ov19OXljbUyveOFwRMwkXzO+A==}
+  tough-cookie@6.0.0:
+    resolution: {integrity: sha512-kXuRi1mtaKMrsLUxz3sQYvVl37B0Ns6MzfrtV5DvJceE9bPyspOqk9xxv7XbZWcfLWbFmm997vl83qUWVJA64w==}
     engines: {node: '>=16'}
 
   traverse@0.6.8:
@@ -6209,10 +6209,10 @@ snapshots:
     dependencies:
       lru-cache: 10.1.0
 
-  http-cookie-agent@7.0.2(tough-cookie@5.1.2):
+  http-cookie-agent@7.0.2(tough-cookie@6.0.0):
     dependencies:
       agent-base: 7.1.4
-      tough-cookie: 5.1.2
+      tough-cookie: 6.0.0
 
   http-proxy-agent@7.0.0:
     dependencies:
@@ -7285,19 +7285,19 @@ snapshots:
 
   tinyspy@4.0.3: {}
 
-  tldts-core@6.1.48: {}
+  tldts-core@7.0.12: {}
 
-  tldts@6.1.48:
+  tldts@7.0.12:
     dependencies:
-      tldts-core: 6.1.48
+      tldts-core: 7.0.12
 
   to-regex-range@5.0.1:
     dependencies:
       is-number: 7.0.0
 
-  tough-cookie@5.1.2:
+  tough-cookie@6.0.0:
     dependencies:
-      tldts: 6.1.48
+      tldts: 7.0.12
 
   traverse@0.6.8: {}
 
