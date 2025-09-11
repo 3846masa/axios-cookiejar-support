@@ -18,8 +18,8 @@ importers:
         version: 7.0.2(tough-cookie@6.0.0)
     devDependencies:
       '@3846masa/configs':
-        specifier: github:3846masa/configs#60a1e10d5b5a8eb961a2687834cbbcbd36df6db7
-        version: https://codeload.github.com/3846masa/configs/tar.gz/60a1e10d5b5a8eb961a2687834cbbcbd36df6db7(@typescript-eslint/parser@8.42.0(eslint@9.35.0)(typescript@5.9.2))
+        specifier: github:3846masa/configs#ecc3c186fb27faf67be2db3f898b57826c2d4efc
+        version: https://codeload.github.com/3846masa/configs/tar.gz/ecc3c186fb27faf67be2db3f898b57826c2d4efc(@typescript-eslint/parser@8.42.0(eslint@9.35.0)(typescript@5.9.2))
       '@babel/plugin-proposal-explicit-resource-management':
         specifier: 7.27.4
         version: 7.27.4(@babel/core@7.23.7)
@@ -68,8 +68,8 @@ importers:
 
 packages:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/60a1e10d5b5a8eb961a2687834cbbcbd36df6db7':
-    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/60a1e10d5b5a8eb961a2687834cbbcbd36df6db7}
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/ecc3c186fb27faf67be2db3f898b57826c2d4efc':
+    resolution: {tarball: https://codeload.github.com/3846masa/configs/tar.gz/ecc3c186fb27faf67be2db3f898b57826c2d4efc}
     version: 1.0.750
 
   '@aashutoshrathi/word-wrap@1.2.6':
@@ -849,12 +849,6 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
-
-  '@eslint-community/eslint-utils@4.7.0':
-    resolution: {integrity: sha512-dyybb3AcajC7uha6CvhdVRJqaKyn7w2YKqKyAN37NKYgZT36w+iRb0Dymmc5qEJ549c/S31cMMSFd75bteCpCw==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    peerDependencies:
-      eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
 
   '@eslint-community/eslint-utils@4.9.0':
     resolution: {integrity: sha512-ayVFHdtZ+hsq1t2Dy24wCmGXGe4q9Gu3smhLYALJrr473ZH27MsnSL+LKUlimp4BWJqMDMLmPpx/Q9R3OAlL4g==}
@@ -3689,7 +3683,7 @@ packages:
 
 snapshots:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/60a1e10d5b5a8eb961a2687834cbbcbd36df6db7(@typescript-eslint/parser@8.42.0(eslint@9.35.0)(typescript@5.9.2))':
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/ecc3c186fb27faf67be2db3f898b57826c2d4efc(@typescript-eslint/parser@8.42.0(eslint@9.35.0)(typescript@5.9.2))':
     dependencies:
       '@eslint/js': 9.35.0
       '@tsconfig/strictest': 2.0.5
@@ -4577,11 +4571,6 @@ snapshots:
   '@esbuild/win32-x64@0.25.5':
     optional: true
 
-  '@eslint-community/eslint-utils@4.7.0(eslint@9.35.0)':
-    dependencies:
-      eslint: 9.35.0
-      eslint-visitor-keys: 3.4.3
-
   '@eslint-community/eslint-utils@4.9.0(eslint@9.35.0)':
     dependencies:
       eslint: 9.35.0
@@ -5046,7 +5035,7 @@ snapshots:
 
   '@typescript-eslint/utils@8.42.0(eslint@9.35.0)(typescript@5.9.2)':
     dependencies:
-      '@eslint-community/eslint-utils': 4.7.0(eslint@9.35.0)
+      '@eslint-community/eslint-utils': 4.9.0(eslint@9.35.0)
       '@typescript-eslint/scope-manager': 8.42.0
       '@typescript-eslint/types': 8.42.0
       '@typescript-eslint/typescript-estree': 8.42.0(typescript@5.9.2)
@@ -5825,7 +5814,7 @@ snapshots:
   eslint-plugin-unicorn@60.0.0(eslint@9.35.0):
     dependencies:
       '@babel/helper-validator-identifier': 7.27.1
-      '@eslint-community/eslint-utils': 4.7.0(eslint@9.35.0)
+      '@eslint-community/eslint-utils': 4.9.0(eslint@9.35.0)
       '@eslint/plugin-kit': 0.3.5
       change-case: 5.4.4
       ci-info: 4.3.0
