@@ -73,7 +73,7 @@
     "axios": "1.11.0",
     "disposablestack": "1.1.7",
     "rimraf": "6.0.1",
-    "semantic-release": "24.2.7",
+    "semantic-release": "24.2.8",
     "tough-cookie": "6.0.0",
     "typescript": "5.9.2",
     "vitest": "3.2.4"
