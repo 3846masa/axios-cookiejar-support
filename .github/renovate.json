@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>3846masa/configs//renovate/default#d81e2431b2b96b40623470f017436138776a37fc"],
+  "extends": ["github>3846masa/configs//renovate/default#e863276f4c846862854433f21910379acd9c2278"],
   "npm": {
     "packageRules": [
       {
