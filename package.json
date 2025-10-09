@@ -82,7 +82,7 @@
     "axios": ">=0.20.0",
     "tough-cookie": ">=4.0.0"
   },
-  "packageManager": "pnpm@10.18.0",
+  "packageManager": "pnpm@10.18.1",
   "engines": {
     "node": ">=20.0.0"
   },
