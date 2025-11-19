@@ -14,8 +14,8 @@ importers:
   .:
     dependencies:
       http-cookie-agent:
-        specifier: ^7.0.2
-        version: 7.0.2(tough-cookie@6.0.0)
+        specifier: ^7.0.3
+        version: 7.0.3(tough-cookie@6.0.0)
     devDependencies:
       '@3846masa/configs':
         specifier: github:3846masa/configs#fde6015cc9703c2aee5630993ba80e43ce7120ba
@@ -2237,11 +2237,11 @@ packages:
     resolution: {integrity: sha512-sYKnA7eGln5ov8T8gnYlkSOxFJvywzEx9BueN6xo/GKO8PGiI6uK6xx+DIGe45T3bdVjLAQDQW1aicT8z8JwQg==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  http-cookie-agent@7.0.2:
-    resolution: {integrity: sha512-aHaES6SOFtnSlmWu0yEaaQvu+QexUG2gscSAvMhJ7auzW8r/jYOgGrzuAm9G9nHbksuhz7Lw4zOwDHmfQaxZvw==}
+  http-cookie-agent@7.0.3:
+    resolution: {integrity: sha512-EeZo7CGhfqPW6R006rJa4QtZZUpBygDa2HZH3DJqsTzTjyRE6foDBVQIv/pjVsxHC8z2GIdbB1Hvn9SRorP3WQ==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
-      tough-cookie: ^4.0.0 || ^5.0.0
+      tough-cookie: ^4.0.0 || ^5.0.0 || ^6.0.0
       undici: ^7.0.0
     peerDependenciesMeta:
       undici:
@@ -6184,7 +6184,7 @@ snapshots:
     dependencies:
       lru-cache: 10.1.0
 
-  http-cookie-agent@7.0.2(tough-cookie@6.0.0):
+  http-cookie-agent@7.0.3(tough-cookie@6.0.0):
     dependencies:
       agent-base: 7.1.4
       tough-cookie: 6.0.0
