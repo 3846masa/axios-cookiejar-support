@@ -54,7 +54,7 @@
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",
     "lint:tsc": "tsc --noEmit",
-    "semantic-release": "semantic-release",
+    "release": "release-it",
     "test": "vitest run"
   },
   "dependencies": {
@@ -65,15 +65,14 @@
     "@babel/plugin-proposal-explicit-resource-management": "7.27.4",
     "@babel/preset-env": "7.28.5",
     "@babel/preset-typescript": "7.28.5",
-    "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/exec": "7.1.0",
-    "@semantic-release/git": "10.0.1",
+    "@release-it/conventional-changelog": "10.0.3",
     "@types/eslint": "9.6.1",
     "@types/node": "20.19.26",
     "axios": "1.13.2",
+    "conventional-changelog-conventionalcommits": "9.1.0",
     "disposablestack": "1.1.7",
+    "release-it": "19.1.0",
     "rimraf": "6.1.2",
-    "semantic-release": "24.2.9",
     "tough-cookie": "6.0.0",
     "typescript": "5.9.3",
     "vitest": "4.0.15"
@@ -90,8 +89,8 @@
     "access": "public"
   },
   "pnpm": {
-    "patchedDependencies": {
-      "@semantic-release/git@10.0.1": "patches/@semantic-release__git@10.0.1.patch"
+    "overrides": {
+      "conventional-changelog-conventionalcommits": "$conventional-changelog-conventionalcommits"
     }
   }
 }
