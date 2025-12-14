@@ -95,8 +95,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RELEASE_GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
-        run: pnpm run release
-      - name: Release scoped package
         run: |
+          pnpm run release
+          # Release under the scoped package name
           jq '.name |= "@3846masa/axios-cookiejar-support"' package.json > /tmp/package.json && mv /tmp/package.json package.json
-          npm publish --access public
+          pnpm run release --no-increment --no-git --no-github.release
