@@ -29,7 +29,7 @@ importers:
         version: 7.28.5(@babel/core@7.23.7)
       '@release-it/conventional-changelog':
         specifier: 10.0.4
-        version: 10.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)(release-it@19.2.1(@types/node@20.19.27))
+        version: 10.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)(release-it@19.2.2(@types/node@20.19.27))
       '@types/eslint':
         specifier: 9.6.1
         version: 9.6.1
@@ -46,8 +46,8 @@ importers:
         specifier: 1.1.7
         version: 1.1.7
       release-it:
-        specifier: 19.2.1
-        version: 19.2.1(@types/node@20.19.27)
+        specifier: 19.2.2
+        version: 19.2.2(@types/node@20.19.27)
       rimraf:
         specifier: 6.1.2
         version: 6.1.2
@@ -2916,8 +2916,8 @@ packages:
     resolution: {integrity: sha512-cnE+y8bz4NhMjISKbgeVJtqNbtf5QpjZP+Bslo+UqkIt9QPnX9q095eiRRASJG1/tz6dlNr6Z5NsBiWYokp6EQ==}
     hasBin: true
 
-  release-it@19.2.1:
-    resolution: {integrity: sha512-Tu9kZKtCJkrLG6nD0OLbVdVP8wHgpQBpRvtZQmdEgGHDwg0FiiHmdnnPskTQllPWJFMtpHo3O7MHtr8/AWEFbA==}
+  release-it@19.2.2:
+    resolution: {integrity: sha512-57TBUTBbBXLJsPufYS+Hsb1dSZKZ0ktiYgPkNc3Pmlq/QQtH9X0oD0SG2ib5CsXHTI11m19pyK60NXmvtE6cLg==}
     engines: {node: ^20.12.0 || >=22.0.0}
     hasBin: true
 
@@ -4641,7 +4641,7 @@ snapshots:
 
   '@pkgr/core@0.2.9': {}
 
-  '@release-it/conventional-changelog@10.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)(release-it@19.2.1(@types/node@20.19.27))':
+  '@release-it/conventional-changelog@10.0.4(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)(release-it@19.2.2(@types/node@20.19.27))':
     dependencies:
       '@conventional-changelog/git-client': 2.5.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)
       concat-stream: 2.0.0
@@ -4649,7 +4649,7 @@ snapshots:
       conventional-changelog-angular: 8.1.0
       conventional-changelog-conventionalcommits: 9.1.0
       conventional-recommended-bump: 11.2.0
-      release-it: 19.2.1(@types/node@20.19.27)
+      release-it: 19.2.2(@types/node@20.19.27)
       semver: 7.7.3
     transitivePeerDependencies:
       - conventional-commits-filter
@@ -6541,7 +6541,7 @@ snapshots:
     dependencies:
       jsesc: 3.0.2
 
-  release-it@19.2.1(@types/node@20.19.27):
+  release-it@19.2.2(@types/node@20.19.27):
     dependencies:
       '@nodeutils/defaults-deep': 1.1.0
       '@octokit/rest': 22.0.1
