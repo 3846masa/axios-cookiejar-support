@@ -75,7 +75,7 @@
     "rimraf": "6.1.2",
     "tough-cookie": "6.0.0",
     "typescript": "5.9.3",
-    "vitest": "4.0.17"
+    "vitest": "4.0.18"
   },
   "peerDependencies": {
     "axios": ">=0.20.0",
