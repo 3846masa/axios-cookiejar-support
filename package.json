@@ -67,7 +67,7 @@
     "@babel/preset-typescript": "7.28.5",
     "@release-it/conventional-changelog": "10.0.4",
     "@types/eslint": "9.6.1",
-    "@types/node": "20.19.32",
+    "@types/node": "20.19.33",
     "axios": "1.13.2",
     "conventional-changelog-conventionalcommits": "9.1.0",
     "disposablestack": "1.1.7",
