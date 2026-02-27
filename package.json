@@ -68,7 +68,7 @@
     "@release-it/conventional-changelog": "10.0.5",
     "@types/eslint": "9.6.1",
     "@types/node": "20.19.35",
-    "axios": "1.13.2",
+    "axios": "1.13.5",
     "conventional-changelog-conventionalcommits": "9.1.0",
     "disposablestack": "1.1.7",
     "release-it": "19.2.4",
