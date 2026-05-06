@@ -65,7 +65,7 @@
     "@babel/plugin-proposal-explicit-resource-management": "7.27.4",
     "@babel/preset-env": "7.29.3",
     "@babel/preset-typescript": "7.28.5",
-    "@release-it/conventional-changelog": "10.0.6",
+    "@release-it/conventional-changelog": "11.0.0",
     "@types/eslint": "9.6.1",
     "@types/node": "20.19.39",
     "axios": "1.16.0",
