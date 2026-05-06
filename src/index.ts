@@ -53,7 +53,7 @@ function requestInterceptor(config: InternalAxiosRequestConfig): InternalAxiosRe
 }
 
 export function wrapper<T extends AxiosStatic | AxiosInstance>(axios: T): T {
-  const isWrapped = axios.interceptors.request.handlers.find(({ fulfilled }) => fulfilled === requestInterceptor);
+  const isWrapped = axios.interceptors.request.handlers?.find(({ fulfilled }) => fulfilled === requestInterceptor);
 
   if (isWrapped) {
     return axios;
