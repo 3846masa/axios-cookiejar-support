@@ -58,7 +58,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "http-cookie-agent": "^7.0.3"
+    "http-cookie-agent": "^8.0.0"
   },
   "devDependencies": {
     "@3846masa/configs": "github:3846masa/configs#6be5ac743b5cca398e436bd5e73dd9f99671a60d",
@@ -67,7 +67,7 @@
     "@babel/preset-typescript": "7.28.5",
     "@release-it/conventional-changelog": "11.0.0",
     "@types/eslint": "9.6.1",
-    "@types/node": "20.19.39",
+    "@types/node": "22.19.17",
     "axios": "1.16.0",
     "conventional-changelog-conventionalcommits": "9.3.1",
     "disposablestack": "1.1.8",
@@ -83,7 +83,7 @@
   },
   "packageManager": "pnpm@10.33.2",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.0.0"
   },
   "publishConfig": {
     "access": "public"
