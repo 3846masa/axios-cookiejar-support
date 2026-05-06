@@ -62,9 +62,6 @@
   },
   "devDependencies": {
     "@3846masa/configs": "github:3846masa/configs#6be5ac743b5cca398e436bd5e73dd9f99671a60d",
-    "@babel/plugin-proposal-explicit-resource-management": "7.27.4",
-    "@babel/preset-env": "7.29.3",
-    "@babel/preset-typescript": "7.28.5",
     "@release-it/conventional-changelog": "11.0.0",
     "@types/eslint": "9.6.1",
     "@types/node": "22.19.17",
