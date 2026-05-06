@@ -1,3 +1,15 @@
+# Changelog
+
+## [7.0.0](https://github.com/3846masa/axios-cookiejar-support/compare/v6.0.5...v7.0.0) (2026-05-06)
+
+### ⚠ BREAKING CHANGES
+
+* Drop support for Node.js v20
+
+### Features
+
+* update dependency http-cookie-agent to v8 ([#1638](https://github.com/3846masa/axios-cookiejar-support/issues/1638)) ([4f22d5d](https://github.com/3846masa/axios-cookiejar-support/commit/4f22d5d3d195a89ce9f7f055de6e8de656933d42))
+
 ## [6.0.5](https://github.com/3846masa/axios-cookiejar-support/compare/v6.0.4...v6.0.5) (2025-11-19)
 
 
