@@ -16,8 +16,8 @@ importers:
         version: 8.0.0(tough-cookie@6.0.1)(undici@7.24.5)
     devDependencies:
       '@3846masa/configs':
-        specifier: github:3846masa/configs#d47780f05642fb481d61f6789507c4b2561a25bf
-        version: https://codeload.github.com/3846masa/configs/tar.gz/d47780f05642fb481d61f6789507c4b2561a25bf(@typescript-eslint/utils@8.61.0(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.61.0(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.4.1(jiti@2.6.1)))(jiti@2.6.1)
+        specifier: github:3846masa/configs#f77981ad50643137e102adcd547dfead450d1508
+        version: https://codeload.github.com/3846masa/configs/tar.gz/f77981ad50643137e102adcd547dfead450d1508(@typescript-eslint/utils@8.61.0(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.61.0(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.4.1(jiti@2.6.1)))(jiti@2.6.1)
       '@release-it/conventional-changelog':
         specifier: 11.0.1
         version: 11.0.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0)(release-it@20.2.0(@types/node@22.19.17))
@@ -54,9 +54,9 @@ importers:
 
 packages:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/d47780f05642fb481d61f6789507c4b2561a25bf':
-    resolution: {gitHosted: true, integrity: sha512-YfuPURkxiq4lB0IgTNSp+WydTsu3t9uKjyFpiKutA/AJ+tdZArTTIzoK10VrGCzCBObexj3kRsoFAfi3RyFR+Q==, tarball: https://codeload.github.com/3846masa/configs/tar.gz/d47780f05642fb481d61f6789507c4b2561a25bf}
-    version: 1.0.882
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/f77981ad50643137e102adcd547dfead450d1508':
+    resolution: {gitHosted: true, tarball: https://codeload.github.com/3846masa/configs/tar.gz/f77981ad50643137e102adcd547dfead450d1508}
+    version: 1.0.883
 
   '@aashutoshrathi/word-wrap@1.2.6':
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
@@ -2191,8 +2191,8 @@ packages:
     peerDependencies:
       prettier: ^3.0.0
 
-  prettier@3.8.3:
-    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
+  prettier@3.8.4:
+    resolution: {integrity: sha512-N2MylSdi48+5N/6S5j+maeHbUSIzzZ5uOcX5Hm4QpV8Dkb1HFjfAKTKX6yNPJQD9AhcT3ifHNB66tWTTJDi11Q==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -2703,7 +2703,7 @@ packages:
 
 snapshots:
 
-  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/d47780f05642fb481d61f6789507c4b2561a25bf(@typescript-eslint/utils@8.61.0(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.61.0(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.4.1(jiti@2.6.1)))(jiti@2.6.1)':
+  '@3846masa/configs@https://codeload.github.com/3846masa/configs/tar.gz/f77981ad50643137e102adcd547dfead450d1508(@typescript-eslint/utils@8.61.0(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.61.0(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3))(eslint@10.4.1(jiti@2.6.1)))(jiti@2.6.1)':
     dependencies:
       '@eslint/js': 10.0.1(eslint@10.4.1(jiti@2.6.1))
       '@tsconfig/strictest': 2.0.8
@@ -2715,9 +2715,9 @@ snapshots:
       eslint-plugin-sort: 4.0.0(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3)
       eslint-plugin-unicorn: 64.0.0(eslint@10.4.1(jiti@2.6.1))
       globals: 17.6.0
-      prettier: 3.8.3
-      prettier-plugin-packagejson: 3.0.2(prettier@3.8.3)
-      prettier-plugin-sort-json: 4.2.0(prettier@3.8.3)
+      prettier: 3.8.4
+      prettier-plugin-packagejson: 3.0.2(prettier@3.8.4)
+      prettier-plugin-sort-json: 4.2.0(prettier@3.8.4)
       typescript: 6.0.3
       typescript-eslint: 8.61.0(eslint@10.4.1(jiti@2.6.1))(typescript@6.0.3)
     transitivePeerDependencies:
@@ -4868,17 +4868,17 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-packagejson@3.0.2(prettier@3.8.3):
+  prettier-plugin-packagejson@3.0.2(prettier@3.8.4):
     dependencies:
       sort-package-json: 3.6.1
     optionalDependencies:
-      prettier: 3.8.3
+      prettier: 3.8.4
 
-  prettier-plugin-sort-json@4.2.0(prettier@3.8.3):
+  prettier-plugin-sort-json@4.2.0(prettier@3.8.4):
     dependencies:
-      prettier: 3.8.3
+      prettier: 3.8.4
 
-  prettier@3.8.3: {}
+  prettier@3.8.4: {}
 
   protocols@2.0.2: {}
 
