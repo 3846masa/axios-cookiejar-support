@@ -66,7 +66,7 @@
     "@types/eslint": "9.6.1",
     "@types/node": "22.19.17",
     "axios": "1.18.1",
-    "conventional-changelog-conventionalcommits": "9.3.1",
+    "conventional-changelog-conventionalcommits": "10.2.1",
     "disposablestack": "1.1.8",
     "release-it": "20.2.1",
     "rimraf": "6.1.3",
