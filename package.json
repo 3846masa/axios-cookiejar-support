@@ -61,7 +61,7 @@
     "http-cookie-agent": "^8.0.0"
   },
   "devDependencies": {
-    "@3846masa/configs": "github:3846masa/configs#e2e4ce04caddaa61949d47a5f06081db4cb72326",
+    "@3846masa/configs": "github:3846masa/configs#7d1a741b91282a45ed29a8f584911c0615e5248d",
     "@release-it/conventional-changelog": "11.0.1",
     "@types/eslint": "9.6.1",
     "@types/node": "22.19.17",
