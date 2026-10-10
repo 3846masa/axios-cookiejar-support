@@ -62,7 +62,7 @@
   },
   "devDependencies": {
     "@3846masa/configs": "github:3846masa/configs#7a24f666eb65a379e09ee52f6f45be3ef89ecd62",
-    "@release-it/conventional-changelog": "11.0.1",
+    "@release-it/conventional-changelog": "12.0.2",
     "@types/eslint": "9.6.1",
     "@types/node": "22.19.17",
     "axios": "1.20.0",
