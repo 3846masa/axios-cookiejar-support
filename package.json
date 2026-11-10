@@ -70,7 +70,7 @@
     "disposablestack": "1.1.8",
     "release-it": "20.2.1",
     "rimraf": "6.1.4",
-    "tough-cookie": "6.0.2",
+    "tough-cookie": "6.1.0",
     "typescript": "6.0.3",
     "vitest": "4.1.12"
   },
