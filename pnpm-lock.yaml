@@ -13,7 +13,7 @@ importers:
     dependencies:
       http-cookie-agent:
         specifier: ^8.0.0
-        version: 8.0.0(tough-cookie@6.0.2)(undici@7.28.0)
+        version: 8.0.0(tough-cookie@6.1.0)(undici@7.28.0)
     devDependencies:
       '@3846masa/configs':
         specifier: github:3846masa/configs#f2a2e23ee18b9031107aef4324ee7f420edb362e
@@ -43,8 +43,8 @@ importers:
         specifier: 6.1.4
         version: 6.1.4
       tough-cookie:
-        specifier: 6.0.2
-        version: 6.0.2
+        specifier: 6.1.0
+        version: 6.1.0
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -2499,8 +2499,8 @@ packages:
     resolution: {integrity: sha512-M9ZQBPp6FyqhMcl233vHYyYRkxXOA1SKGlnq13S0mJdUhRSwr2w6I8rlchPL73wBwRlyIZpFvpu2VcdSMWLYXw==}
     hasBin: true
 
-  tough-cookie@6.0.2:
-    resolution: {integrity: sha512-exgYmnmL/sJpR3upZfXG5PoatXQii55xAiXGXzY+sROLZ/Y+SLcp9PgJNI9Vz37HpQ74WvDcLT8eqm+kV3FzrA==}
+  tough-cookie@6.1.0:
+    resolution: {integrity: sha512-FTxc8u8Kl2tz0Lat1u8ksvcy8bwHRyEMawwTWybo51JqaC6O7SvfuhAKg+Ld6VqyIe2QRJBzY9HA7y2WyFRT2w==}
     engines: {node: '>=16'}
 
   ts-api-utils@2.5.0:
@@ -4455,10 +4455,10 @@ snapshots:
     dependencies:
       lru-cache: 10.1.0
 
-  http-cookie-agent@8.0.0(tough-cookie@6.0.2)(undici@7.28.0):
+  http-cookie-agent@8.0.0(tough-cookie@6.1.0)(undici@7.28.0):
     dependencies:
       agent-base: 9.0.0
-      tough-cookie: 6.0.2
+      tough-cookie: 6.1.0
     optionalDependencies:
       undici: 7.28.0
 
@@ -5316,7 +5316,7 @@ snapshots:
     dependencies:
       tldts-core: 7.0.12
 
-  tough-cookie@6.0.2:
+  tough-cookie@6.1.0:
     dependencies:
       tldts: 7.0.12
 
